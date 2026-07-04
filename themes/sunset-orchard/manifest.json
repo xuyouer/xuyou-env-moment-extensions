@@ -1,0 +1,41 @@
+{
+  "id": "sunset-orchard",
+  "name": "日落果园",
+  "version": "1.0.0",
+  "description": "暖色亮色主题，灵感来自日落时分果园的金橙与暖红，温润舒适。",
+  "author": "XuYou",
+  "origin": "official",
+  "family": "warm",
+  "mode": "light",
+  "colors": {
+    "bg": "#fdf6ed",
+    "surface": "#ffffff",
+    "surfaceRaised": "#ffffff",
+    "surfaceSunken": "#f7ecdc",
+    "text": "#3d2a1a",
+    "textSecondary": "#6b5340",
+    "textMuted": "#9a8268",
+    "border": "#ecd9bf",
+    "borderSubtle": "#f3e7d3",
+    "accent": "#d9742b",
+    "accentHover": "#c2641f",
+    "accentText": "#a04f15",
+    "accentSoft": "#f7e2cc",
+    "warning": "#b8862b",
+    "warningSoft": "#f3e6c4",
+    "warningText": "#7d5c1a",
+    "success": "#5a8f4e",
+    "successSoft": "#dceadc",
+    "error": "#c0493b",
+    "errorSoft": "#f3dad5",
+    "hoverBg": "#f7ecdc",
+    "hoverBgActive": "#f0dfc4"
+  },
+  "swatches": [
+    "#d9742b",
+    "#b8862b",
+    "#5a8f4e",
+    "#3d2a1a"
+  ],
+  "baseFont": "\"PingFang SC\", \"Microsoft YaHei\", \"Segoe UI\", Roboto, sans-serif"
+}

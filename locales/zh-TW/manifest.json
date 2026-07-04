@@ -1,0 +1,42 @@
+{
+  "id": "zh-TW",
+  "code": "zh-TW",
+  "nativeName": "繁體中文",
+  "flag": "🇹🇼",
+  "version": "1.0.0",
+  "author": "XuYou",
+  "origin": "official",
+  "description": "繁體中文（台灣）語言包。",
+  "messages": {
+    "menu": {
+      "home": "首頁",
+      "backHome": "返回首頁",
+      "app": "應用",
+      "envScan": "環境掃描",
+      "envInstall": "環境安裝",
+      "themeCenter": "主題中心",
+      "pluginCenter": "插件中心",
+      "settings": "設置",
+      "generalSettings": "通用設置",
+      "languageCenter": "語言中心",
+      "help": "幫助",
+      "helpDoc": "幫助文檔",
+      "whatsNew": "最新動態",
+      "shortcuts": "快捷鍵",
+      "feedback": "反饋",
+      "openLogs": "打開日誌",
+      "collectLogs": "收集日誌",
+      "about": "關於",
+      "aboutApp": "關於許柚環境時刻",
+      "checkUpdates": "檢查更新",
+      "github": "GitHub"
+    },
+    "page": {
+      "home": {
+        "heroTitle": "許柚環境時刻",
+        "heroSubtitle": "開發者的一站式環境管理",
+        "startScan": "開始掃描"
+      }
+    }
+  }
+}

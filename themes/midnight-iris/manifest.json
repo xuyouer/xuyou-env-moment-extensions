@@ -1,0 +1,41 @@
+{
+  "id": "midnight-iris",
+  "name": "午夜鸢尾",
+  "version": "1.0.0",
+  "description": "冷色暗色主题，灵感来自午夜鸢尾花的深紫与靛蓝，沉静专注。",
+  "author": "XuYou",
+  "origin": "official",
+  "family": "cool",
+  "mode": "dark",
+  "colors": {
+    "bg": "#0f0d1f",
+    "surface": "#181530",
+    "surfaceRaised": "#1f1b3d",
+    "surfaceSunken": "#0a0817",
+    "text": "#e4e0f5",
+    "textSecondary": "#a8a0d0",
+    "textMuted": "#756b9a",
+    "border": "#2d2750",
+    "borderSubtle": "#221d42",
+    "accent": "#8b7ae8",
+    "accentHover": "#7a68de",
+    "accentText": "#a99af0",
+    "accentSoft": "#2a2348",
+    "warning": "#e0a73a",
+    "warningSoft": "#3a2f15",
+    "warningText": "#f0c463",
+    "success": "#5fbc7e",
+    "successSoft": "#1a3a25",
+    "error": "#e85d6f",
+    "errorSoft": "#3d1820",
+    "hoverBg": "#1f1b3d",
+    "hoverBgActive": "#272148"
+  },
+  "swatches": [
+    "#8b7ae8",
+    "#e0a73a",
+    "#5fbc7e",
+    "#0f0d1f"
+  ],
+  "baseFont": "\"PingFang SC\", \"Microsoft YaHei\", \"Segoe UI\", Roboto, sans-serif"
+}

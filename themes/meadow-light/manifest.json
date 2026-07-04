@@ -1,0 +1,41 @@
+{
+  "id": "meadow-light",
+  "name": "草甸浅色",
+  "version": "1.0.0",
+  "description": "自然系浅色主题，灵感来自清晨草甸的柔和绿意与暖光，长时间使用不刺眼。",
+  "author": "XuYou",
+  "origin": "official",
+  "family": "natural",
+  "mode": "light",
+  "colors": {
+    "bg": "#f5f8f2",
+    "surface": "#ffffff",
+    "surfaceRaised": "#ffffff",
+    "surfaceSunken": "#eef2e8",
+    "text": "#2c3327",
+    "textSecondary": "#5a6650",
+    "textMuted": "#8a9580",
+    "border": "#dde4d4",
+    "borderSubtle": "#e8ede0",
+    "accent": "#5a8f4e",
+    "accentHover": "#4d7d42",
+    "accentText": "#3f6b35",
+    "accentSoft": "#e3eede",
+    "warning": "#c98a2b",
+    "warningSoft": "#f6e8cf",
+    "warningText": "#8a5e1a",
+    "success": "#4d8a3f",
+    "successSoft": "#dceadc",
+    "error": "#c0493b",
+    "errorSoft": "#f3dad5",
+    "hoverBg": "#eef2e8",
+    "hoverBgActive": "#e3ead9"
+  },
+  "swatches": [
+    "#5a8f4e",
+    "#c98a2b",
+    "#4d8a3f",
+    "#2c3327"
+  ],
+  "baseFont": "\"PingFang SC\", \"Microsoft YaHei\", \"Segoe UI\", Roboto, sans-serif"
+}

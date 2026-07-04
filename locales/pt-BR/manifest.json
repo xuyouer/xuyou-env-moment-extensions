@@ -1,0 +1,42 @@
+{
+  "id": "pt-BR",
+  "code": "pt-BR",
+  "nativeName": "Português (Brasil)",
+  "flag": "🇧🇷",
+  "version": "1.0.0",
+  "author": "XuYou",
+  "origin": "official",
+  "description": "Português brasileiro.",
+  "messages": {
+    "menu": {
+      "home": "Início",
+      "backHome": "Voltar ao Início",
+      "app": "Aplicativo",
+      "envScan": "Scan de Ambiente",
+      "envInstall": "Instalar Ambiente",
+      "themeCenter": "Centro de Temas",
+      "pluginCenter": "Centro de Plugins",
+      "settings": "Configurações",
+      "generalSettings": "Configurações Gerais",
+      "languageCenter": "Centro de Idiomas",
+      "help": "Ajuda",
+      "helpDoc": "Documentação de Ajuda",
+      "whatsNew": "Novidades",
+      "shortcuts": "Atalhos",
+      "feedback": "Feedback",
+      "openLogs": "Abrir Logs",
+      "collectLogs": "Coletar Logs",
+      "about": "Sobre",
+      "aboutApp": "Sobre o XuYou Env Moment",
+      "checkUpdates": "Verificar Atualizações",
+      "github": "GitHub"
+    },
+    "page": {
+      "home": {
+        "heroTitle": "XuYou Env Moment",
+        "heroSubtitle": "Gerenciamento de ambiente one-stop para desenvolvedores",
+        "startScan": "Iniciar Scan"
+      }
+    }
+  }
+}

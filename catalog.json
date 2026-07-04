@@ -1,0 +1,101 @@
+{
+  "plugins": [
+    {
+      "id": "ltd.xiaomizha.hello-plugin",
+      "name": "Hello 插件",
+      "description": "最小示例插件，在控制台打印问候。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "category": "ui",
+      "stars": 12,
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/plugins/hello-plugin/manifest.json",
+      "origin": "official"
+    },
+    {
+      "id": "ltd.xiaomizha.quick-notes",
+      "name": "快捷笔记",
+      "description": "侧边快速笔记面板，支持简单的文本记录与持久化。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "category": "ui",
+      "stars": 8,
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/plugins/quick-notes/manifest.json",
+      "origin": "official"
+    },
+    {
+      "id": "ltd.xiaomizha.window-manager",
+      "name": "窗口管理器",
+      "description": "窗口快捷操作工具，提供最小化/最大化/置顶等快捷入口。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "category": "system",
+      "stars": 5,
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/plugins/window-manager/manifest.json",
+      "origin": "official"
+    }
+  ],
+  "themes": [
+    {
+      "id": "meadow-light",
+      "name": "草甸浅色",
+      "description": "自然系浅色主题，灵感来自清晨草甸的柔和绿意与暖光，长时间使用不刺眼。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "family": "natural",
+      "mode": "light",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/meadow-light/manifest.json",
+      "origin": "official"
+    },
+    {
+      "id": "sunset-orchard",
+      "name": "日落果园",
+      "description": "暖色亮色主题，灵感来自日落时分果园的金橙与暖红，温润舒适。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "family": "warm",
+      "mode": "light",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/sunset-orchard/manifest.json",
+      "origin": "official"
+    },
+    {
+      "id": "midnight-iris",
+      "name": "午夜鸢尾",
+      "description": "冷色暗色主题，灵感来自午夜鸢尾花的深紫与靛蓝，沉静专注。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "family": "cool",
+      "mode": "dark",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/midnight-iris/manifest.json",
+      "origin": "official"
+    }
+  ],
+  "locales": [
+    {
+      "code": "zh-TW",
+      "nativeName": "繁體中文",
+      "flag": "🇹🇼",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/zh-TW/manifest.json",
+      "origin": "official"
+    },
+    {
+      "code": "pt-BR",
+      "nativeName": "Português (Brasil)",
+      "flag": "🇧🇷",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/pt-BR/manifest.json",
+      "origin": "official"
+    },
+    {
+      "code": "vi-VN",
+      "nativeName": "Tiếng Việt",
+      "flag": "🇻🇳",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/vi-VN/manifest.json",
+      "origin": "official"
+    }
+  ]
+}

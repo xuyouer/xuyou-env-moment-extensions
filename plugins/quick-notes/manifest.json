@@ -1,0 +1,12 @@
+{
+  "id": "ltd.xiaomizha.quick-notes",
+  "name": "快捷笔记",
+  "version": "1.0.0",
+  "description": "侧边快速笔记面板，支持简单的文本记录与持久化。",
+  "author": "XuYou",
+  "main": "main.js",
+  "category": "ui",
+  "minAppVersion": "1.0.0",
+  "permissions": [],
+  "origin": "official"
+}

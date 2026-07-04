@@ -1,0 +1,42 @@
+{
+  "id": "vi-VN",
+  "code": "vi-VN",
+  "nativeName": "Tiếng Việt",
+  "flag": "🇻🇳",
+  "version": "1.0.0",
+  "author": "XuYou",
+  "origin": "official",
+  "description": "Tiếng Việt.",
+  "messages": {
+    "menu": {
+      "home": "Trang chủ",
+      "backHome": "Về Trang chủ",
+      "app": "Ứng dụng",
+      "envScan": "Quét Môi trường",
+      "envInstall": "Cài đặt Môi trường",
+      "themeCenter": "Trung tâm Giao diện",
+      "pluginCenter": "Trung tâm Plugin",
+      "settings": "Cài đặt",
+      "generalSettings": "Cài đặt Chung",
+      "languageCenter": "Trung tâm Ngôn ngữ",
+      "help": "Trợ giúp",
+      "helpDoc": "Tài liệu Trợ giúp",
+      "whatsNew": "Có gì mới",
+      "shortcuts": "Phím tắt",
+      "feedback": "Phản hồi",
+      "openLogs": "Mở Logs",
+      "collectLogs": "Thu thập Logs",
+      "about": "Giới thiệu",
+      "aboutApp": "Giới thiệu XuYou Env Moment",
+      "checkUpdates": "Kiểm tra Cập nhật",
+      "github": "GitHub"
+    },
+    "page": {
+      "home": {
+        "heroTitle": "XuYou Env Moment",
+        "heroSubtitle": "Quản lý môi trường tất cả trong một cho nhà phát triển",
+        "startScan": "Bắt đầu Quét"
+      }
+    }
+  }
+}
