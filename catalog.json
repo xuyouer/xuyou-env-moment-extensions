@@ -44,7 +44,8 @@
       "family": "natural",
       "mode": "light",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/meadow-light/manifest.json",
-      "origin": "official"
+      "origin": "official",
+      "swatches": ["#f5f8f2", "#5a8f4e", "#2c3327", "#dde4d4"]
     },
     {
       "id": "sunset-orchard",
@@ -55,7 +56,8 @@
       "family": "warm",
       "mode": "light",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/sunset-orchard/manifest.json",
-      "origin": "official"
+      "origin": "official",
+      "swatches": ["#fdf6ed", "#d9742b", "#3d2a1a", "#ecd9bf"]
     },
     {
       "id": "midnight-iris",
@@ -66,7 +68,8 @@
       "family": "cool",
       "mode": "dark",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/midnight-iris/manifest.json",
-      "origin": "official"
+      "origin": "official",
+      "swatches": ["#0f0d1f", "#8b7ae8", "#e4e0f5", "#2d2750"]
     }
   ],
   "locales": [
