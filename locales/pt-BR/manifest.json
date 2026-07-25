@@ -14,15 +14,17 @@
       "app": "Aplicativo",
       "envScan": "Scan de Ambiente",
       "envInstall": "Instalar Ambiente",
+      "runtimeManager": "Gerenciador de Runtime",
       "themeCenter": "Centro de Temas",
       "pluginCenter": "Centro de Plugins",
+      "extensionMarket": "Marketplace de Extensões",
       "settings": "Configurações",
       "generalSettings": "Configurações Gerais",
       "languageCenter": "Centro de Idiomas",
       "help": "Ajuda",
       "helpDoc": "Documentação de Ajuda",
       "whatsNew": "Novidades",
-      "shortcuts": "Atalhos",
+      "shortcuts": "Atalhos de Teclado",
       "feedback": "Feedback",
       "openLogs": "Abrir Logs",
       "collectLogs": "Coletar Logs",
@@ -31,11 +33,148 @@
       "checkUpdates": "Verificar Atualizações",
       "github": "GitHub"
     },
+    "breadcrumb": {
+      "home": "Início",
+      "settings": "Configurações Gerais",
+      "themeCenter": "Centro de Temas",
+      "shortcuts": "Atalhos de Teclado",
+      "pluginCenter": "Centro de Plugins",
+      "extensionMarket": "Marketplace de Extensões",
+      "updates": "Verificar Atualizações",
+      "about": "Sobre o App",
+      "languageCenter": "Centro de Idiomas",
+      "envScan": "Scan de Ambiente",
+      "envInstall": "Instalação de Ambiente",
+      "help": "Documentação de Ajuda",
+      "whatsNew": "Novidades",
+      "license": "Licença",
+      "runtimeManager": "Gerenciador de Runtime",
+      "unknown": "Desconhecido"
+    },
+    "common": {
+      "breadcrumb": "Navegação por Breadcrumb",
+      "more": "Mais",
+      "close": "Fechar",
+      "search": "Buscar",
+      "refresh": "Atualizar",
+      "noData": "Sem dados",
+      "enableAll": "Ativar Tudo",
+      "disableAll": "Desativar Tudo",
+      "goToMarket": "Ir para o Marketplace",
+      "selectDirectory": "Selecionar Diretório",
+      "clearPath": "Limpar",
+      "openInFolder": "Abrir no Gerenciador de Arquivos",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar",
+      "favoriteHome": "Início",
+      "favoriteDocuments": "Documentos",
+      "favoriteDownloads": "Downloads",
+      "viewModeSingle": "Coluna Única",
+      "viewModeDouble": "Coluna Dupla",
+      "viewModeTriple": "Coluna Tripla",
+      "originAll": "Tudo",
+      "originOfficial": "Oficial",
+      "originCommunity": "Comunidade",
+      "cloudEmptyThemeTitle": "Nenhum tema da nuvem baixado",
+      "cloudEmptyThemeDesc": "Vá ao Marketplace para procurar e baixar temas; após baixar, você poderá alterná-los aqui.",
+      "cloudEmptyLocaleTitle": "Nenhum pacote de idiomas da nuvem baixado",
+      "cloudEmptyLocaleDesc": "Vá ao Marketplace para procurar e baixar pacotes de idiomas; após baixar, você poderá ativá-los aqui.",
+      "cloudEmptyPluginTitle": "Nenhum plugin da nuvem baixado",
+      "cloudEmptyPluginDesc": "Vá ao Marketplace para procurar e baixar plugins; após baixar, você poderá ativá-los/desativá-los aqui.",
+      "cloudEmptyRuntimeTitle": "Nenhum runtime detectado",
+      "cloudEmptyRuntimeDesc": "Faça um scan do sistema ou adicione um caminho de runtime personalizado.",
+      "cloudEmptyEnvTitle": "Nenhum ambiente detectado",
+      "cloudEmptyEnvDesc": "Confirme se os runtimes relevantes estão instalados corretamente e adicionados ao PATH.",
+      "cloudEmptyGenericTitle": "Sem dados",
+      "cloudEmptyGenericDesc": "A lista está vazia; tente novamente mais tarde ou atualize.",
+      "pathPickerPlaceholder": "Selecione um diretório ou arraste uma pasta...",
+      "pathPickerInvalid": "Caminho não existe",
+      "uninstallFailed": "Falha na desinstalação",
+      "uninstallSuccess": "Desinstalado"
+    },
     "page": {
       "home": {
         "heroTitle": "XuYou Env Moment",
         "heroSubtitle": "Gerenciamento de ambiente one-stop para desenvolvedores",
         "startScan": "Iniciar Scan"
+      },
+      "envScan": {
+        "eyebrow": "Scan de Ambiente",
+        "title": "Scan de Ambiente Local",
+        "subtitle": "Escanear runtimes e gerenciadores de pacotes no seu computador"
+      },
+      "envInstall": {
+        "eyebrow": "Instalar",
+        "title": "Instalação de Ambiente Local",
+        "subtitle": "Comandos de instalação e links de download para runtimes e ferramentas de desenvolvimento"
+      },
+      "runtimeManager": {
+        "eyebrow": "Gerenciador de Runtime",
+        "title": "Gerenciamento de Versões de Runtime",
+        "subtitle": "Gerencie instalações locais de JDK / Node.js / Python: definir padrão, adicionar caminho personalizado ou baixar online"
+      },
+      "themeCenter": {
+        "eyebrow": "Tema",
+        "title": "Centro de Temas",
+        "subtitle": "Escolha uma paleta de cores adequada para o seu workspace"
+      },
+      "plugin": {
+        "eyebrow": "Plugin",
+        "title": "Centro de Plugins",
+        "subtitle": "Gerencie módulos funcionais do aplicativo"
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "Marketplace de Extensões",
+        "subtitle": "Procure e baixe plugins, temas e pacotes de idiomas para ampliar o seu XuYou Env Moment."
+      },
+      "languageCenter": {
+        "eyebrow": "Idioma",
+        "title": "Centro de Idiomas",
+        "subtitle": "Selecione o idioma da interface do aplicativo",
+        "interfaceLanguage": "Idioma da Interface",
+        "localTab": "Local",
+        "cloudTab": "Nuvem",
+        "localPacks": "Pacotes de Idiomas Locais",
+        "enable": "Ativar",
+        "disable": "Desativar"
+      },
+      "settings": {
+        "eyebrow": "Configurações",
+        "title": "Configurações",
+        "subtitle": "Personalize sua experiência do aplicativo"
+      },
+      "updates": {
+        "eyebrow": "Atualizações",
+        "title": "Verificar Atualizações",
+        "subtitle": "Verifique e atualize para a versão mais recente"
+      },
+      "about": {
+        "version": "Versão",
+        "author": "Autor",
+        "license": "Licença",
+        "repository": "Repositório",
+        "homepage": "Página Inicial"
+      },
+      "help": {
+        "eyebrow": "Ajuda",
+        "title": "Documentação de Ajuda",
+        "subtitle": "Conheça os recursos do aplicativo e como usá-los"
+      },
+      "whatsNew": {
+        "eyebrow": "Atualizações",
+        "title": "Novidades",
+        "subtitle": "Veja o conteúdo das atualizações de versão"
+      },
+      "shortcuts": {
+        "eyebrow": "Atalhos",
+        "title": "Atalhos de Teclado",
+        "subtitle": "Personalize as teclas de atalho"
+      },
+      "license": {
+        "eyebrow": "Legal",
+        "title": "Licença Open Source MIT",
+        "subtitle": "Texto completo da licença open source inclusa neste aplicativo"
       }
     }
   }

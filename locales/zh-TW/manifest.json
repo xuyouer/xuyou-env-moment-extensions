@@ -14,15 +14,17 @@
       "app": "應用",
       "envScan": "環境掃描",
       "envInstall": "環境安裝",
+      "runtimeManager": "執行時管理",
       "themeCenter": "主題中心",
       "pluginCenter": "插件中心",
+      "extensionMarket": "擴充市場",
       "settings": "設置",
       "generalSettings": "通用設置",
       "languageCenter": "語言中心",
       "help": "幫助",
       "helpDoc": "幫助文檔",
       "whatsNew": "最新動態",
-      "shortcuts": "快捷鍵",
+      "shortcuts": "鍵盤快速鍵",
       "feedback": "反饋",
       "openLogs": "打開日誌",
       "collectLogs": "收集日誌",
@@ -31,11 +33,148 @@
       "checkUpdates": "檢查更新",
       "github": "GitHub"
     },
+    "breadcrumb": {
+      "home": "首頁",
+      "settings": "通用設置",
+      "themeCenter": "主題中心",
+      "shortcuts": "鍵盤快速鍵",
+      "pluginCenter": "插件中心",
+      "extensionMarket": "擴充市場",
+      "updates": "檢查更新",
+      "about": "關於應用",
+      "languageCenter": "語言中心",
+      "envScan": "環境掃描",
+      "envInstall": "環境安裝",
+      "help": "幫助文檔",
+      "whatsNew": "最新動態",
+      "license": "授權條款",
+      "runtimeManager": "執行時管理",
+      "unknown": "未知"
+    },
+    "common": {
+      "breadcrumb": "麵包屑導航",
+      "more": "更多",
+      "close": "關閉",
+      "search": "搜尋",
+      "refresh": "重新整理",
+      "noData": "暫無資料",
+      "enableAll": "全部啟用",
+      "disableAll": "全部停用",
+      "goToMarket": "前往擴充市場",
+      "selectDirectory": "選擇目錄",
+      "clearPath": "清空",
+      "openInFolder": "在檔案管理員中開啟",
+      "confirm": "確認",
+      "cancel": "取消",
+      "favoriteHome": "主目錄",
+      "favoriteDocuments": "文件",
+      "favoriteDownloads": "下載",
+      "viewModeSingle": "單欄",
+      "viewModeDouble": "雙欄",
+      "viewModeTriple": "三欄",
+      "originAll": "全部",
+      "originOfficial": "官方",
+      "originCommunity": "社群",
+      "cloudEmptyThemeTitle": "尚未下載任何雲端主題",
+      "cloudEmptyThemeDesc": "前往擴充市場瀏覽並下載主題，下載後可在此切換。",
+      "cloudEmptyLocaleTitle": "尚未下載任何雲端語言包",
+      "cloudEmptyLocaleDesc": "前往擴充市場瀏覽並下載語言包，下載後可在此啟用。",
+      "cloudEmptyPluginTitle": "尚未下載任何雲端插件",
+      "cloudEmptyPluginDesc": "前往擴充市場瀏覽並下載插件，下載後可在此啟用/停用。",
+      "cloudEmptyRuntimeTitle": "未偵測到執行時",
+      "cloudEmptyRuntimeDesc": "請掃描本機或新增自訂執行時路徑。",
+      "cloudEmptyEnvTitle": "未偵測到環境",
+      "cloudEmptyEnvDesc": "請確認相關執行時已正確安裝並加入 PATH。",
+      "cloudEmptyGenericTitle": "暫無資料",
+      "cloudEmptyGenericDesc": "目前列表為空，請稍後重試或重新整理。",
+      "pathPickerPlaceholder": "選擇目錄或拖入資料夾...",
+      "pathPickerInvalid": "路徑不存在",
+      "uninstallFailed": "解除安裝失敗",
+      "uninstallSuccess": "已解除安裝"
+    },
     "page": {
       "home": {
         "heroTitle": "許柚環境時刻",
         "heroSubtitle": "開發者的一站式環境管理",
         "startScan": "開始掃描"
+      },
+      "envScan": {
+        "eyebrow": "環境掃描",
+        "title": "本機環境掃描",
+        "subtitle": "掃描你電腦上的執行時環境與套件管理器"
+      },
+      "envInstall": {
+        "eyebrow": "安裝",
+        "title": "本機環境安裝",
+        "subtitle": "常用執行時與開發工具的安裝指令與下載入口"
+      },
+      "runtimeManager": {
+        "eyebrow": "執行時管理",
+        "title": "執行時版本管理",
+        "subtitle": "統一管理本機 JDK / Node.js / Python 安裝、設為預設、新增自訂路徑或線上下載"
+      },
+      "themeCenter": {
+        "eyebrow": "主題",
+        "title": "主題中心",
+        "subtitle": "為你的工作空間挑選一個合適的配色"
+      },
+      "plugin": {
+        "eyebrow": "插件",
+        "title": "插件中心",
+        "subtitle": "管理應用功能模組"
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "擴充市場",
+        "subtitle": "瀏覽並下載插件、主題與語言包，擴充你的許柚環境時刻。"
+      },
+      "languageCenter": {
+        "eyebrow": "語言",
+        "title": "語言中心",
+        "subtitle": "選擇應用介面語言",
+        "interfaceLanguage": "介面語言",
+        "localTab": "本機",
+        "cloudTab": "雲端",
+        "localPacks": "本機語言包",
+        "enable": "啟用",
+        "disable": "停用"
+      },
+      "settings": {
+        "eyebrow": "設置",
+        "title": "設置",
+        "subtitle": "個人化你的應用體驗"
+      },
+      "updates": {
+        "eyebrow": "更新",
+        "title": "檢查更新",
+        "subtitle": "查看並升級到最新版本"
+      },
+      "about": {
+        "version": "版本",
+        "author": "作者",
+        "license": "授權條款",
+        "repository": "儲存庫",
+        "homepage": "首頁"
+      },
+      "help": {
+        "eyebrow": "幫助",
+        "title": "幫助文檔",
+        "subtitle": "了解應用功能與使用方法"
+      },
+      "whatsNew": {
+        "eyebrow": "更新",
+        "title": "最新動態",
+        "subtitle": "查看版本更新內容"
+      },
+      "shortcuts": {
+        "eyebrow": "快速鍵",
+        "title": "鍵盤快速鍵",
+        "subtitle": "自訂快速鍵綁定"
+      },
+      "license": {
+        "eyebrow": "法律",
+        "title": "MIT 開源授權條款",
+        "subtitle": "本應用隨附的開源授權條款全文"
       }
     }
   }

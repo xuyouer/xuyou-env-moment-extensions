@@ -14,8 +14,10 @@
       "app": "Ứng dụng",
       "envScan": "Quét Môi trường",
       "envInstall": "Cài đặt Môi trường",
+      "runtimeManager": "Quản lý Runtime",
       "themeCenter": "Trung tâm Giao diện",
       "pluginCenter": "Trung tâm Plugin",
+      "extensionMarket": "Chợ tiện ích",
       "settings": "Cài đặt",
       "generalSettings": "Cài đặt Chung",
       "languageCenter": "Trung tâm Ngôn ngữ",
@@ -31,11 +33,148 @@
       "checkUpdates": "Kiểm tra Cập nhật",
       "github": "GitHub"
     },
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "settings": "Cài đặt Chung",
+      "themeCenter": "Trung tâm Giao diện",
+      "shortcuts": "Phím tắt",
+      "pluginCenter": "Trung tâm Plugin",
+      "extensionMarket": "Chợ tiện ích",
+      "updates": "Kiểm tra Cập nhật",
+      "about": "Giới thiệu Ứng dụng",
+      "languageCenter": "Trung tâm Ngôn ngữ",
+      "envScan": "Quét Môi trường",
+      "envInstall": "Cài đặt Môi trường",
+      "help": "Tài liệu Trợ giúp",
+      "whatsNew": "Có gì mới",
+      "license": "Giấy phép",
+      "runtimeManager": "Quản lý Runtime",
+      "unknown": "Không xác định"
+    },
+    "common": {
+      "breadcrumb": "Điều hướng Breadcrumb",
+      "more": "Thêm",
+      "close": "Đóng",
+      "search": "Tìm kiếm",
+      "refresh": "Làm mới",
+      "noData": "Không có dữ liệu",
+      "enableAll": "Bật tất cả",
+      "disableAll": "Tắt tất cả",
+      "goToMarket": "Đến Chợ tiện ích",
+      "selectDirectory": "Chọn thư mục",
+      "clearPath": "Xóa",
+      "openInFolder": "Mở trong Trình quản lý tệp",
+      "confirm": "Xác nhận",
+      "cancel": "Hủy",
+      "favoriteHome": "Trang chủ",
+      "favoriteDocuments": "Tài liệu",
+      "favoriteDownloads": "Tải xuống",
+      "viewModeSingle": "Một cột",
+      "viewModeDouble": "Hai cột",
+      "viewModeTriple": "Ba cột",
+      "originAll": "Tất cả",
+      "originOfficial": "Chính thức",
+      "originCommunity": "Cộng đồng",
+      "cloudEmptyThemeTitle": "Chưa tải xuống giao diện đám mây nào",
+      "cloudEmptyThemeDesc": "Vào Chợ tiện ích để duyệt và tải giao diện; sau khi tải có thể chuyển ở đây.",
+      "cloudEmptyLocaleTitle": "Chưa tải xuống gói ngôn ngữ đám mây nào",
+      "cloudEmptyLocaleDesc": "Vào Chợ tiện ích để duyệt và tải gói ngôn ngữ; sau khi tải có thể bật ở đây.",
+      "cloudEmptyPluginTitle": "Chưa tải xuống plugin đám mây nào",
+      "cloudEmptyPluginDesc": "Vào Chợ tiện ích để duyệt và tải plugin; sau khi tải có thể bật/tắt ở đây.",
+      "cloudEmptyRuntimeTitle": "Không phát hiện runtime",
+      "cloudEmptyRuntimeDesc": "Quét máy hoặc thêm đường dẫn runtime tùy chỉnh.",
+      "cloudEmptyEnvTitle": "Không phát hiện môi trường",
+      "cloudEmptyEnvDesc": "Xác nhận runtime liên quan đã cài đặt đúng và có trong PATH.",
+      "cloudEmptyGenericTitle": "Không có dữ liệu",
+      "cloudEmptyGenericDesc": "Danh sách trống; thử lại sau hoặc làm mới.",
+      "pathPickerPlaceholder": "Chọn thư mục hoặc kéo thư mục vào...",
+      "pathPickerInvalid": "Đường dẫn không tồn tại",
+      "uninstallFailed": "Gỡ cài đặt thất bại",
+      "uninstallSuccess": "Đã gỡ cài đặt"
+    },
     "page": {
       "home": {
         "heroTitle": "XuYou Env Moment",
         "heroSubtitle": "Quản lý môi trường tất cả trong một cho nhà phát triển",
         "startScan": "Bắt đầu Quét"
+      },
+      "envScan": {
+        "eyebrow": "Quét Môi trường",
+        "title": "Quét Môi trường Cục bộ",
+        "subtitle": "Quét runtime và trình quản lý gói trên máy của bạn"
+      },
+      "envInstall": {
+        "eyebrow": "Cài đặt",
+        "title": "Cài đặt Môi trường Cục bộ",
+        "subtitle": "Lệnh cài đặt và liên kết tải xuống cho runtime và công cụ phát triển"
+      },
+      "runtimeManager": {
+        "eyebrow": "Quản lý Runtime",
+        "title": "Quản lý Phiên bản Runtime",
+        "subtitle": "Quản lý cài đặt JDK / Node.js / Python cục bộ: đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến"
+      },
+      "themeCenter": {
+        "eyebrow": "Giao diện",
+        "title": "Trung tâm Giao diện",
+        "subtitle": "Chọn bảng màu phù hợp cho không gian làm việc của bạn"
+      },
+      "plugin": {
+        "eyebrow": "Plugin",
+        "title": "Trung tâm Plugin",
+        "subtitle": "Quản lý các module chức năng của ứng dụng"
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "Chợ tiện ích",
+        "subtitle": "Duyệt và tải plugin, giao diện và gói ngôn ngữ để mở rộng XuYou Env Moment của bạn."
+      },
+      "languageCenter": {
+        "eyebrow": "Ngôn ngữ",
+        "title": "Trung tâm Ngôn ngữ",
+        "subtitle": "Chọn ngôn ngữ giao diện ứng dụng",
+        "interfaceLanguage": "Ngôn ngữ Giao diện",
+        "localTab": "Cục bộ",
+        "cloudTab": "Đám mây",
+        "localPacks": "Gói Ngôn ngữ Cục bộ",
+        "enable": "Bật",
+        "disable": "Tắt"
+      },
+      "settings": {
+        "eyebrow": "Cài đặt",
+        "title": "Cài đặt",
+        "subtitle": "Cá nhân hóa trải nghiệm ứng dụng"
+      },
+      "updates": {
+        "eyebrow": "Cập nhật",
+        "title": "Kiểm tra Cập nhật",
+        "subtitle": "Kiểm tra và nâng cấp lên phiên bản mới nhất"
+      },
+      "about": {
+        "version": "Phiên bản",
+        "author": "Tác giả",
+        "license": "Giấy phép",
+        "repository": "Kho lưu trữ",
+        "homepage": "Trang chủ"
+      },
+      "help": {
+        "eyebrow": "Trợ giúp",
+        "title": "Tài liệu Trợ giúp",
+        "subtitle": "Tìm hiểu các tính năng của ứng dụng và cách sử dụng"
+      },
+      "whatsNew": {
+        "eyebrow": "Cập nhật",
+        "title": "Có gì mới",
+        "subtitle": "Xem nội dung cập nhật phiên bản"
+      },
+      "shortcuts": {
+        "eyebrow": "Phím tắt",
+        "title": "Phím tắt Bàn phím",
+        "subtitle": "Tùy chỉnh tổ hợp phím tắt"
+      },
+      "license": {
+        "eyebrow": "Pháp lý",
+        "title": "Giấy phép Nguồn mở MIT",
+        "subtitle": "Toàn văn giấy phép nguồn mở kèm theo ứng dụng"
       }
     }
   }
