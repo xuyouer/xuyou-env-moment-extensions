@@ -70,6 +70,18 @@
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/midnight-iris/manifest.json",
       "origin": "official",
       "swatches": ["#0f0d1f", "#8b7ae8", "#e4e0f5", "#2d2750"]
+    },
+    {
+      "id": "bamboo-ink-wash",
+      "name": "水墨竹韵",
+      "description": "自然系浅色主题，灵感来自传统水墨画的竹影与留白，素雅宁静。",
+      "version": "1.0.0",
+      "author": "XuYou",
+      "family": "natural",
+      "mode": "light",
+      "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/bamboo-ink-wash/manifest.json",
+      "origin": "official",
+      "swatches": ["#f5f3ee", "#5a6b5a", "#2c3327", "#d9d4cc"]
     }
   ],
   "locales": [
@@ -77,7 +89,7 @@
       "code": "zh-TW",
       "nativeName": "繁體中文",
       "flag": "🇹🇼",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/zh-TW/manifest.json",
       "origin": "official"
@@ -86,7 +98,7 @@
       "code": "pt-BR",
       "nativeName": "Português (Brasil)",
       "flag": "🇧🇷",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/pt-BR/manifest.json",
       "origin": "official"
@@ -95,7 +107,7 @@
       "code": "vi-VN",
       "nativeName": "Tiếng Việt",
       "flag": "🇻🇳",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/vi-VN/manifest.json",
       "origin": "official"

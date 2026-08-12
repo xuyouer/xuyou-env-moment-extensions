@@ -3,7 +3,7 @@
   "code": "pt-BR",
   "nativeName": "Português (Brasil)",
   "flag": "🇧🇷",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "XuYou",
   "origin": "official",
   "description": "Português brasileiro.",
@@ -18,6 +18,7 @@
       "themeCenter": "Centro de Temas",
       "pluginCenter": "Centro de Plugins",
       "extensionMarket": "Marketplace de Extensões",
+      "pluginStore": "Loja de Plugins",
       "settings": "Configurações",
       "generalSettings": "Configurações Gerais",
       "languageCenter": "Centro de Idiomas",
@@ -33,6 +34,567 @@
       "checkUpdates": "Verificar Atualizações",
       "github": "GitHub"
     },
+    "page": {
+      "home": {
+        "heroTitle": "XuYou Env Moment",
+        "heroSubtitle": "Gerenciamento de ambiente one-stop para desenvolvedores",
+        "startScan": "Iniciar Scan"
+      },
+      "envScan": {
+        "eyebrow": "Scan de Ambiente",
+        "title": "Scan de Ambiente Local",
+        "subtitle": "Escanear runtimes e gerenciadores de pacotes no seu computador",
+        "scanning": "Escaneando...",
+        "rescan": "Escanear Novamente",
+        "startScan": "Iniciar Scan",
+        "loading": "Escaneando...",
+        "readyEyebrow": "PRONTO",
+        "readyTitle": "Clique no botão acima para iniciar o scan",
+        "readyDesc": "Detectará automaticamente runtimes e gerenciadores de pacotes instalados",
+        "noResultsEyebrow": "SEM RESULTADOS",
+        "noResultsTitle": "Nenhum ambiente detectado",
+        "noResultsDesc": "Confirme se os runtimes relevantes estão instalados corretamente e adicionados ao PATH",
+        "runtimesTab": "Runtimes",
+        "noRuntimes": "Nenhum runtime detectado",
+        "packageManagersTab": "Gerenciadores de Pacotes",
+        "noPackageManagers": "Nenhum gerenciador de pacotes detectado",
+        "detail": "Detalhes",
+        "field": {
+          "name": "Nome",
+          "version": "Versão",
+          "path": "Caminho",
+          "source": "Origem",
+          "installSource": "Origem da Instalação"
+        },
+        "copyPath": "Copiar Caminho",
+        "openInExplorer": "Mostrar no Explorer",
+        "openInTerminal": "Abrir no Terminal",
+        "copyRegistry": "Copiar Registry",
+        "copied": "Copiado",
+        "copyFailed": "Falha ao copiar",
+        "tabRuntimes": "Runtimes",
+        "tabPackageManagers": "Gerenciadores de Pacotes",
+        "tabRepoCaches": "Repositórios Locais e Caches",
+        "tabGlobalPackages": "Pacotes Globais",
+        "tabProjectPackages": "Pacotes do Projeto",
+        "tabDashboard": "Painel",
+        "dashboard": {
+          "kpiRuntimes": "Runtimes",
+          "kpiPackageManagers": "Gerenciadores de Pacotes",
+          "kpiRepoCacheSize": "Tamanho do Cache",
+          "kpiUpdatable": "Atualizáveis",
+          "chartRuntimes": "Distribuição de Runtimes",
+          "chartPackageManagers": "Distribuição de Gerenciadores de Pacotes",
+          "chartRepoCaches": "Uso do Cache de Repositórios",
+          "chartGlobalPackages": "Atualizações de Pacotes Globais",
+          "emptyTitle": "Sem Dados de Scan",
+          "emptyDesc": "Clique no botão abaixo para iniciar o scan do ambiente",
+          "emptyCta": "Iniciar Scan",
+          "updatable": "Atualizável",
+          "upToDate": "Atualizado"
+        },
+        "searchPlaceholder": "Buscar por nome...",
+        "noRepoCaches": "Nenhum repositório local ou cache detectado",
+        "scanFailed": "Falha no scan",
+        "projectScanned": "Pacotes do projeto escaneados",
+        "refreshed": "Atualizado",
+        "repoCache": {
+          "tool": {
+            "android": "Android",
+            "gradle": "Gradle",
+            "maven": "Maven",
+            "eclipse": "Eclipse",
+            "pip": "pip",
+            "yarn": "Yarn",
+            "npm": "npm",
+            "pnpm": "pnpm",
+            "bun": "Bun"
+          },
+          "toolLabel": "Ferramenta",
+          "size": "Tamanho",
+          "items": "Itens",
+          "openInExplorer": "Abrir no Explorer"
+        },
+        "globalPackages": {
+          "tabNpm": "npm",
+          "tabYarn": "Yarn",
+          "tabPnpm": "pnpm",
+          "tabCnpm": "cnpm",
+          "tabBun": "Bun",
+          "scanProject": "Escanear Pacotes do Projeto",
+          "projectPath": "Caminho do Projeto",
+          "projectPathPlaceholder": "Digite o caminho do projeto, ex. /path/to/project",
+          "refreshLatest": "Atualizar Versões Mais Recentes",
+          "updateAvailable": "Atualização Disponível",
+          "copyUpdateCmd": "Copiar Comando de Atualização",
+          "copyReinstallCmd": "Copiar Comando de Reinstalação",
+          "copiedUpdateCmd": "Comando de atualização copiado",
+          "copiedReinstallCmd": "Comando de reinstalação copiado",
+          "copyUninstallCmd": "Copiar Comando de Desinstalação",
+          "copiedUninstallCmd": "Comando de desinstalação copiado",
+          "projectPackages": "Pacotes do Projeto",
+          "latestVersion": "Versão Mais Recente",
+          "localVersion": "Versão Local",
+          "latest": "Mais recente",
+          "installed": "Instalado",
+          "manager": "Gerenciador",
+          "dependencyType": "Tipo de Dependência",
+          "searchPlaceholder": "Buscar pacotes...",
+          "emptyTitle": "Sem pacotes globais",
+          "emptyDesc": "Clique em \"Atualizar Versões Mais Recentes\" para obter informações dos pacotes",
+          "cancel": "Cancelar",
+          "scan": "Escanear",
+          "selectDirectory": "Selecionar Diretório"
+        },
+        "projectPackages": {
+          "emptyTitle": "Sem dados de pacotes do projeto",
+          "emptyDesc": "Clique no botão acima para escanear o package.json do projeto"
+        },
+        "group": {
+          "count": "{count} itens"
+        }
+      },
+      "envInstall": {
+        "eyebrow": "Instalar",
+        "title": "Instalação de Ambiente Local",
+        "subtitle": "Comandos de instalação e links de download para runtimes e ferramentas de desenvolvimento",
+        "category": {
+          "runtimes": "Runtimes",
+          "packageManagers": "Gerenciadores de Pacotes",
+          "databases": "Bancos de Dados",
+          "tools": "Ferramentas"
+        },
+        "version": "Versão",
+        "versionPlaceholder": "Selecionar versão",
+        "installPath": "Caminho de Instalação",
+        "installPathPlaceholder": "Caminho padrão",
+        "mirror": "Mirror",
+        "mirrorOfficial": "Oficial",
+        "mirrorCustom": "Personalizado",
+        "mirrorConfig": "Configuração de Mirror",
+        "mirrorConfigDesc": "Configure URLs de mirror personalizadas para runtimes que suportam mirrors",
+        "saveMirror": "Salvar",
+        "defaultVersion": "Padrão",
+        "noVersion": "Sem dados de versão",
+        "fetchVersions": "Buscar Versões",
+        "fetching": "Buscando...",
+        "command": "Comando de Instalação",
+        "copyCommand": "Copiar Comando",
+        "copied": "Copiado",
+        "copyFailed": "Falha ao copiar",
+        "download": "Baixar",
+        "mirrorSaved": "Salvo",
+        "tabRuntimes": "Runtimes",
+        "tabPackageManagers": "Gerenciadores de Pacotes",
+        "tabDatabases": "Bancos de Dados",
+        "tabTools": "Ferramentas",
+        "tabMirrorConfig": "Configuração de Mirror",
+        "goJdkManager": "Gerenciador de JDK",
+        "goNodeManager": "Gerenciador de Node",
+        "goPythonManager": "Gerenciador de Python"
+      },
+      "jdkManager": {
+        "eyebrow": "GERENCIADOR DE JDK",
+        "title": "Gerenciador de Versões do JDK",
+        "subtitle": "Gerencie instalações locais do JDK, defina padrão, adicione caminhos personalizados ou baixe online",
+        "addCustom": "Adicionar Caminho Personalizado",
+        "scanLocal": "Escanear Local",
+        "default": "Padrão",
+        "custom": "Personalizado",
+        "scanned": "Escaneado",
+        "setDefault": "Definir como Padrão",
+        "openInExplorer": "Abrir no Explorer",
+        "delete": "Excluir",
+        "onlineVersions": "Versões Online",
+        "download": "Baixar",
+        "addCustomTitle": "Adicionar Caminho Personalizado de JDK",
+        "path": "Caminho",
+        "pathPlaceholder": "Digite o caminho de instalação do JDK",
+        "version": "Versão",
+        "versionPlaceholder": "Digite a versão, ex. 17.0.1",
+        "addCustomCancel": "Cancelar",
+        "addCustomConfirm": "Adicionar",
+        "latestBadge": "Mais recente"
+      },
+      "nodeManager": {
+        "eyebrow": "GERENCIADOR DE NODE",
+        "title": "Gerenciador de Versões do Node.js",
+        "subtitle": "Gerencie instalações locais do Node.js, defina padrão, adicione caminhos personalizados ou baixe online",
+        "scanLocal": "Escanear Local",
+        "addCustom": "Adicionar Caminho Personalizado",
+        "tabDetected": "Detectado",
+        "tabOnline": "Versões Online",
+        "searchPlaceholder": "Buscar versão ou caminho...",
+        "defaultBadge": "Padrão",
+        "customBadge": "Personalizado",
+        "setDefault": "Definir como Padrão",
+        "openInExplorer": "Abrir no Explorer",
+        "copyPath": "Copiar Caminho",
+        "delete": "Excluir",
+        "noDetected": "Nenhum Node.js detectado",
+        "noDetectedDesc": "Clique em \"Escanear Local\" para detectar novamente, ou adicione um caminho personalizado",
+        "onlineSearchPlaceholder": "Buscar versão ou LTS...",
+        "refreshOnline": "Atualizar Versões Online",
+        "security": "Segurança",
+        "openDownloadPage": "Abrir Página de Download",
+        "noOnline": "Sem versões online",
+        "noOnlineDesc": "Clique em \"Atualizar Versões Online\" para obter a lista",
+        "addCustomTitle": "Adicionar Caminho Personalizado de Node.js",
+        "pathLabel": "Caminho",
+        "pathPlaceholder": "Digite o caminho de instalação do Node.js",
+        "versionLabel": "Versão",
+        "versionPlaceholder": "Digite a versão, ex. 18.19.0",
+        "cancel": "Cancelar",
+        "confirm": "Adicionar",
+        "added": "Node.js personalizado adicionado",
+        "addFailed": "Falha ao adicionar",
+        "setDefaultDone": "Definido como padrão",
+        "deleted": "Excluído",
+        "copied": "Caminho copiado",
+        "copyFailed": "Falha ao copiar",
+        "scanFailed": "Falha no scan",
+        "scanned": "Scan concluído"
+      },
+      "pythonManager": {
+        "eyebrow": "GERENCIADOR DE PYTHON",
+        "title": "Gerenciador de Versões do Python",
+        "subtitle": "Gerencie instalações locais do Python, defina padrão, adicione caminhos personalizados ou baixe online",
+        "addCustom": "Adicionar Caminho Personalizado",
+        "scanLocal": "Escanear Local",
+        "default": "Padrão",
+        "custom": "Personalizado",
+        "scanned": "Escaneado",
+        "setDefault": "Definir como Padrão",
+        "openInExplorer": "Abrir no Explorer",
+        "delete": "Excluir",
+        "onlineVersions": "Versões Online",
+        "openDownloadPage": "Abrir Página de Download",
+        "addCustomTitle": "Adicionar Caminho Personalizado de Python",
+        "path": "Caminho",
+        "pathPlaceholder": "Digite o caminho de instalação do Python",
+        "version": "Versão",
+        "versionPlaceholder": "Digite a versão, ex. 3.11.0",
+        "addCustomCancel": "Cancelar",
+        "addCustomConfirm": "Adicionar"
+      },
+      "runtimeManager": {
+        "eyebrow": "Gerenciador de Runtime",
+        "title": "Gerenciamento de Versões de Runtime",
+        "subtitle": "Gerencie instalações locais de JDK / Node.js / Python: definir padrão, adicionar caminho personalizado ou baixar online",
+        "tabJdk": "JDK",
+        "tabNode": "Node",
+        "tabPython": "Python",
+        "detected": "Detectado",
+        "online": "Versões Online",
+        "addCustom": "Adicionar Caminho Personalizado",
+        "scanLocal": "Escanear Local",
+        "remark": "Observação",
+        "remarkPlaceholder": "Opcional, ex. \"Dev principal\"",
+        "selectDirectory": "Selecionar Diretório",
+        "openDownloadPage": "Abrir Página de Download",
+        "setDefault": "Definir como Padrão",
+        "openInExplorer": "Abrir no Explorer",
+        "copyPath": "Copiar Caminho",
+        "openInTerminal": "Abrir no Terminal",
+        "default": "Padrão",
+        "delete": "Excluir",
+        "detecting": "Detectando versão...",
+        "detectFailed": "Não foi possível detectar a versão, verifique se o caminho está correto",
+        "addCustomTitle": "Adicionar Caminho Personalizado",
+        "confirm": "Adicionar",
+        "cancel": "Cancelar",
+        "pathPlaceholder": "Digite ou selecione o caminho de instalação do runtime",
+        "scanned": "Escaneado",
+        "custom": "Personalizado",
+        "emptyDetected": "Nenhum runtime detectado. Clique em \"Escanear Local\" ou adicione um caminho personalizado.",
+        "emptyOnline": "Sem versões online",
+        "loading": "Carregando...",
+        "fetchFailed": "Falha ao buscar versões online, verifique a rede"
+      },
+      "settings": {
+        "eyebrow": "Configurações",
+        "title": "Configurações",
+        "subtitle": "Personalize sua experiência do aplicativo",
+        "general": "Geral",
+        "language": "Idioma da Interface",
+        "languageDesc": "Escolha o idioma do aplicativo",
+        "fontSize": "Tamanho da Fonte",
+        "fontSizeDesc": "Tamanho base global da fonte",
+        "theme": "Tema",
+        "themeDesc": "Claro / Escuro / Automático",
+        "plugins": "Plugins",
+        "pluginsDesc": "Gerenciar plugins instalados",
+        "pluginsCount": "{count} ativados",
+        "shortcuts": "Atalhos",
+        "shortcutsDesc": "Personalizar atalhos de teclado",
+        "more": "Mais",
+        "notifications": "Notificações",
+        "notificationsEnabled": "Ativar Notificações",
+        "notificationsEnabledDesc": "Exibir notificações do sistema",
+        "notificationsPosition": "Posição",
+        "notificationsPositionDesc": "Posição de exibição das notificações",
+        "notificationsDuration": "Duração",
+        "notificationsDurationDesc": "Duração padrão das notificações (ms)",
+        "notificationsDesc": "Gerenciar notificações do aplicativo",
+        "enableNotifications": "Ativar Notificações",
+        "enableNotificationsDesc": "Exibir notificações do sistema",
+        "position": "Posição",
+        "positionDesc": "Posição de exibição das notificações",
+        "duration": "Duração",
+        "durationDesc": "Duração padrão das notificações (ms)",
+        "enabledPlugins": "Plugins Ativados",
+        "enabledPluginsDesc": "Vá ao Centro de Plugins para gerenciar plugins instalados",
+        "tray": "Bandeja do Sistema",
+        "trayEnabled": "Ativar Bandeja do Sistema",
+        "trayEnabledDesc": "Manter o aplicativo na bandeja do sistema quando a janela é fechada",
+        "closeToTray": "Fechar para a Bandeja",
+        "closeToTrayDesc": "Ocultar para a bandeja em vez de sair ao clicar em fechar",
+        "minimizeToTray": "Minimizar para a Bandeja",
+        "minimizeToTrayDesc": "Ocultar para a bandeja em vez da barra de tarefas ao minimizar"
+      },
+      "themeCenter": {
+        "eyebrow": "Tema",
+        "title": "Centro de Temas",
+        "subtitle": "Escolha uma paleta de cores adequada para o seu workspace",
+        "current": "Tema Atual",
+        "random": "Aleatório",
+        "localTab": "Local",
+        "cloudTab": "Nuvem",
+        "download": "Baixar",
+        "installed": "Instalado",
+        "downloadFailed": "Falha no download",
+        "fetchFailed": "Falha ao carregar temas da nuvem",
+        "filterOrigin": "Origem",
+        "cloudEmpty": "Nenhum tema da nuvem baixado ainda",
+        "confirmDelete": "Excluir este tema?",
+        "switchTheme": "Alternar",
+        "delete": "Excluir"
+      },
+      "languageCenter": {
+        "title": "Centro de Idiomas",
+        "subtitle": "Selecione o idioma da interface do aplicativo",
+        "eyebrow": "Idioma",
+        "interfaceLanguage": "Idioma da Interface",
+        "localTab": "Local",
+        "cloudTab": "Nuvem",
+        "localPacks": "Pacotes de Idiomas Locais",
+        "enable": "Ativar",
+        "disable": "Desativar",
+        "enableAll": "Ativar Tudo",
+        "disableAll": "Desativar Tudo",
+        "baseLanguage": "Idioma Base",
+        "cloudSection": "Pacotes de Idiomas da Nuvem",
+        "download": "Baixar",
+        "downloading": "Baixando...",
+        "installed": "Instalado",
+        "downloadFailed": "Falha no download",
+        "fetchFailed": "Falha ao carregar pacotes de idiomas da nuvem. Verifique a rede.",
+        "downloadSuccess": "Pacote de idiomas baixado com sucesso",
+        "author": "Autor",
+        "version": "Versão",
+        "filterOrigin": "Origem",
+        "cloudEmpty": "Nenhum pacote de idiomas da nuvem baixado ainda"
+      },
+      "about": {
+        "version": "Versão",
+        "author": "Autor",
+        "license": "Licença",
+        "repository": "Repositório",
+        "homepage": "Página Inicial"
+      },
+      "updates": {
+        "eyebrow": "Atualizações",
+        "title": "Verificar Atualizações",
+        "subtitle": "Verifique e atualize para a versão mais recente",
+        "currentVersion": "Versão Atual",
+        "checkButton": "Verificar Atualizações",
+        "checkNow": "Verificar Atualizações",
+        "checking": "Verificando...",
+        "retry": "Tentar Novamente",
+        "checkFailed": "Falha na verificação, tente novamente mais tarde",
+        "later": "Lembrar Mais Tarde",
+        "newVersionAvailable": "Nova Versão Disponível",
+        "releaseNotes": "Notas de Versão",
+        "upToDate": "Atualizado",
+        "upToDateDesc": "A versão atual {version} é a versão mais recente",
+        "available": "Atualização Disponível",
+        "availableDesc": "Visite o GitHub Releases para baixar",
+        "download": "Baixar",
+        "idleHint": "Clique em \"Verificar Atualizações\" para iniciar",
+        "currentVersionSection": "Versão Atual",
+        "checkStatusSection": "Status da Verificação",
+        "releaseNotesSection": "Notas de Versão",
+        "updateChannelSection": "Canal de Atualização",
+        "appName": "XuYou Env Moment",
+        "releaseNotesEmpty": "Sem notas de versão disponíveis. Clique em \"Verificar Agora\" para ver o status mais recente.",
+        "viewFullRelease": "Ver Notas de Versão Completas",
+        "channelDesc": "As atualizações são publicadas via GitHub Releases. O aplicativo não verifica automaticamente na inicialização; clique em \"Verificar Agora\" manualmente.",
+        "comparisonRule": "As versões seguem versionamento semântico (SemVer): principal.secundário.correção. Um aviso de atualização aparece apenas quando a tag remota é maior que a versão atual.",
+        "lastChecked": "Última verificação",
+        "publishedAt": "Publicado"
+      },
+      "plugins": {
+        "title": "Centro de Plugins",
+        "subtitle": "Gerencie módulos do aplicativo",
+        "enabled": "{count} / {total} plugins ativados"
+      },
+      "plugin": {
+        "eyebrow": "Plugin",
+        "title": "Centro de Plugins",
+        "subtitle": "Gerencie módulos funcionais do aplicativo",
+        "enabled": "{count} / {total} plugins ativados",
+        "builtinPlugins": "Plugins Integrados",
+        "cloudPlugins": "Plugins da Nuvem",
+        "core": "Núcleo",
+        "ui": "Interface",
+        "system": "Sistema",
+        "experimental": "Experimental",
+        "comingSoon": "Em Breve",
+        "experimentalBadge": "Experimental",
+        "comingSoonBadge": "Em Breve",
+        "download": "Baixar",
+        "stars": "{count} estrelas",
+        "enabledLabel": "Ativado",
+        "disabledLabel": "Desativado",
+        "enableRecommended": "Recomendado",
+        "enableDefaults": "Padrões",
+        "enableAll": "Ativar Tudo",
+        "disableAll": "Desativar Tudo",
+        "browseStore": "Procurar Plugins da Nuvem",
+        "recommendedBadge": "Recomendado",
+        "localTab": "Local",
+        "cloudTab": "Nuvem",
+        "downloadInstall": "Baixar e Instalar",
+        "installed": "Instalado",
+        "downloadFailed": "Falha no download",
+        "fetchFailed": "Falha ao carregar plugins da nuvem",
+        "searchPlaceholder": "Buscar plugins da nuvem...",
+        "allCategories": "Todas as Categorias",
+        "cloudEmpty": "Nenhum plugin da nuvem baixado ainda"
+      },
+      "pluginStore": {
+        "title": "Loja de Plugins",
+        "subtitle": "Procurar plugins da nuvem da comunidade",
+        "eyebrow": "Loja",
+        "searchPlaceholder": "Buscar plugins...",
+        "stars": "{count} estrelas",
+        "download": "Baixar",
+        "noResults": "Nenhum plugin correspondente encontrado",
+        "downloadInstall": "Baixar e Instalar",
+        "installed": "Instalado",
+        "downloadFailed": "Falha no download",
+        "fetchFailed": "Falha ao carregar plugins da nuvem. Verifique a rede.",
+        "loading": "Carregando...",
+        "filterOrigin": "Origem",
+        "category": {
+          "dev": "Ferramentas de Dev",
+          "ai": "Assistente de IA",
+          "db": "Banco de Dados"
+        },
+        "plugin": {
+          "cloud-terminal": {
+            "name": "Terminal na Nuvem",
+            "desc": "Ambiente de terminal na nuvem integrado, com suporte a execução remota de comandos"
+          },
+          "docker-manager": {
+            "name": "Gerenciador Docker",
+            "desc": "Gerencie visualmente contêineres e imagens Docker do sistema"
+          },
+          "ai-assistant": {
+            "name": "Assistente de IA",
+            "desc": "Assistente de codificação por IA integrado, com sugestões de código e geração de documentação"
+          },
+          "k8s-dashboard": {
+            "name": "Painel K8s",
+            "desc": "Gerencie recursos e status de implantação do cluster Kubernetes"
+          },
+          "redis-explorer": {
+            "name": "Redis Explorer",
+            "desc": "Navegue e gerencie pares chave-valor do banco de dados Redis"
+          },
+          "sql-client": {
+            "name": "Cliente SQL",
+            "desc": "Conecte-se a MySQL/PostgreSQL para executar consultas e gerenciar bancos de dados"
+          }
+        }
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "Marketplace de Extensões",
+        "subtitle": "Procure e baixe plugins, temas e pacotes de idiomas para ampliar o seu XuYou Env Moment.",
+        "searchPlaceholder": "Buscar extensões...",
+        "filterOrigin": "Origem",
+        "loading": "Carregando...",
+        "fetchFailed": "Falha ao carregar o catálogo da nuvem, verifique a rede",
+        "installed": "Instalado",
+        "downloadFailed": "Falha no download",
+        "downloadInstall": "Baixar e Instalar",
+        "installing": "Instalando...",
+        "stars": "{count} estrelas",
+        "noResults": "Nenhuma extensão correspondente",
+        "pluginsSection": "Plugins",
+        "themesSection": "Temas",
+        "localesSection": "Pacotes de Idiomas",
+        "tabPlugins": "Plugins",
+        "tabThemes": "Temas",
+        "tabLocales": "Pacotes de Idiomas",
+        "category": {
+          "all": "Todos",
+          "installed": "Instalados",
+          "updates": "Atualizações Disponíveis",
+          "enabled": "Ativados",
+          "disabled": "Desativados",
+          "invalid": "Inválidos",
+          "bundled": "Integrados",
+          "bundledUpdated": "Integrados Atualizados"
+        },
+        "action": {
+          "autoUpdate": "Atualizar Plugins Automaticamente",
+          "manageRepos": "Gerenciar Repositórios",
+          "manageCerts": "Gerenciar Certificados",
+          "installFromDisk": "Instalar do Disco",
+          "disableAll": "Desativar Todos os Baixados",
+          "enableAll": "Ativar Todos os Baixados"
+        },
+        "noUpdates": "Sem atualizações disponíveis",
+        "updatedCount": "{count} extensões atualizadas",
+        "installSuccess": "Instalado com sucesso",
+        "installFailed": "Falha na instalação",
+        "allDisabled": "Todas as extensões baixadas desativadas",
+        "allEnabled": "Todas as extensões baixadas ativadas",
+        "noRepos": "Nenhum repositório de extensões personalizado",
+        "noCerts": "Nenhum certificado de extensões"
+      },
+      "shortcuts": {
+        "title": "Atalhos de Teclado",
+        "subtitle": "Personalize as teclas de atalho",
+        "eyebrow": "Atalhos",
+        "clickToSet": "Clique para definir",
+        "pressKeys": "Pressione as teclas...",
+        "clear": "Limpar",
+        "resetAll": "Restaurar Tudo para o Padrão",
+        "modified": "Modificado"
+      },
+      "help": {
+        "eyebrow": "Ajuda",
+        "title": "Documentação de Ajuda",
+        "subtitle": "Conheça os recursos do aplicativo e como usá-los"
+      },
+      "whatsNew": {
+        "eyebrow": "Atualizações",
+        "title": "Novidades",
+        "subtitle": "Veja o conteúdo das atualizações de versão"
+      },
+      "license": {
+        "eyebrow": "Legal",
+        "title": "Licença Open Source MIT",
+        "subtitle": "Texto completo da licença open source inclusa neste aplicativo",
+        "back": "Voltar para Sobre",
+        "copy": "Copiar Texto Completo",
+        "copied": "Copiado",
+        "viewSource": "Ver Fonte no GitHub"
+      }
+    },
     "breadcrumb": {
       "home": "Início",
       "settings": "Configurações Gerais",
@@ -40,6 +602,7 @@
       "shortcuts": "Atalhos de Teclado",
       "pluginCenter": "Centro de Plugins",
       "extensionMarket": "Marketplace de Extensões",
+      "pluginStore": "Loja de Plugins",
       "updates": "Verificar Atualizações",
       "about": "Sobre o App",
       "languageCenter": "Centro de Idiomas",
@@ -51,30 +614,66 @@
       "runtimeManager": "Gerenciador de Runtime",
       "unknown": "Desconhecido"
     },
+    "anchor": {
+      "pageNav": "Nesta Página",
+      "scrollTo": "Rolar até",
+      "lightThemes": "Temas Claros",
+      "darkThemes": "Temas Escuros",
+      "autoMode": "Modo Automático",
+      "naturalThemes": "Temas Naturais",
+      "warmThemes": "Temas Quentes",
+      "coolThemes": "Temas Frios",
+      "neutralThemes": "Temas Neutros",
+      "cloudThemes": "Temas da Nuvem",
+      "groupLocal": "Local",
+      "groupCloud": "Nuvem",
+      "cloudPlugins": "Plugins da Nuvem",
+      "cloudPacks": "Pacotes de Idiomas da Nuvem",
+      "localThemes": "Temas Locais",
+      "localPlugins": "Plugins Locais",
+      "localPacks": "Pacotes de Idiomas Locais",
+      "interfaceLanguage": "Idioma da Interface",
+      "globalOps": "Operações Globais",
+      "windowOps": "Operações de Janela",
+      "navigation": "Navegação de Página",
+      "viewZoom": "Zoom de Visualização",
+      "tabsOps": "Operações de Abas",
+      "pageJump": "Navegação de Página",
+      "currentVersion": "Versão Atual",
+      "checkStatus": "Status da Verificação",
+      "releaseNotes": "Notas de Versão",
+      "updateChannel": "Canal de Atualização",
+      "marketPlugins": "Plugins",
+      "marketThemes": "Temas",
+      "marketLocales": "Pacotes de Idiomas",
+      "mainCategories": "Categorias Principais"
+    },
+    "markdownToc": {
+      "title": "Nesta Página",
+      "empty": "Sem títulos"
+    },
     "common": {
+      "comingSoon": "Em Breve",
+      "notImplemented": "Este módulo ainda não foi implementado. Aguarde.",
+      "experimental": "Experimental",
+      "coreFunction": "Núcleo",
+      "interfaceEnhancement": "Interface",
+      "systemFunction": "Sistema",
+      "onThisPage": "Nesta página",
       "breadcrumb": "Navegação por Breadcrumb",
-      "more": "Mais",
       "close": "Fechar",
-      "search": "Buscar",
-      "refresh": "Atualizar",
-      "noData": "Sem dados",
-      "enableAll": "Ativar Tudo",
-      "disableAll": "Desativar Tudo",
-      "goToMarket": "Ir para o Marketplace",
-      "selectDirectory": "Selecionar Diretório",
-      "clearPath": "Limpar",
-      "openInFolder": "Abrir no Gerenciador de Arquivos",
-      "confirm": "Confirmar",
-      "cancel": "Cancelar",
-      "favoriteHome": "Início",
-      "favoriteDocuments": "Documentos",
-      "favoriteDownloads": "Downloads",
-      "viewModeSingle": "Coluna Única",
-      "viewModeDouble": "Coluna Dupla",
-      "viewModeTriple": "Coluna Tripla",
+      "more": "Mais",
+      "back": "Voltar",
       "originAll": "Tudo",
       "originOfficial": "Oficial",
       "originCommunity": "Comunidade",
+      "goToMarket": "Ir para o Marketplace",
+      "filterTitle": "Filtro",
+      "enableAll": "Ativar Tudo",
+      "disableAll": "Desativar Tudo",
+      "viewModeSingle": "Coluna Única",
+      "viewModeDouble": "Coluna Dupla",
+      "viewModeTriple": "Coluna Tripla",
       "cloudEmptyThemeTitle": "Nenhum tema da nuvem baixado",
       "cloudEmptyThemeDesc": "Vá ao Marketplace para procurar e baixar temas; após baixar, você poderá alterná-los aqui.",
       "cloudEmptyLocaleTitle": "Nenhum pacote de idiomas da nuvem baixado",
@@ -87,94 +686,416 @@
       "cloudEmptyEnvDesc": "Confirme se os runtimes relevantes estão instalados corretamente e adicionados ao PATH.",
       "cloudEmptyGenericTitle": "Sem dados",
       "cloudEmptyGenericDesc": "A lista está vazia; tente novamente mais tarde ou atualize.",
+      "updateAvailable": "Atualização Disponível",
+      "latestVersion": "Versão Mais Recente",
+      "localVersion": "Versão Local",
+      "search": "Buscar",
+      "noData": "Sem dados",
+      "selectDirectory": "Selecionar Diretório",
+      "remark": "Observação",
+      "version": "Versão",
+      "path": "Caminho",
+      "copyPath": "Copiar Caminho",
+      "openInExplorer": "Mostrar no Explorer",
+      "openInTerminal": "Abrir no Terminal",
+      "copied": "Copiado",
+      "copyFailed": "Falha ao copiar",
+      "delete": "Excluir",
+      "deleteConfirm": "Confirmar exclusão?",
+      "deleteSuccess": "Excluído com sucesso",
+      "deleteFailed": "Falha ao excluir",
+      "uninstall": "Desinstalar",
+      "uninstallConfirm": "Desinstalar este pacote de idiomas?",
+      "uninstallSuccess": "Desinstalado",
+      "uninstallFailed": "Falha na desinstalação",
       "pathPickerPlaceholder": "Selecione um diretório ou arraste uma pasta...",
       "pathPickerInvalid": "Caminho não existe",
-      "uninstallFailed": "Falha na desinstalação",
-      "uninstallSuccess": "Desinstalado"
+      "pathPickerInvalidNotDir": "O caminho não existe ou não é um diretório",
+      "pathPickerValidating": "Validando",
+      "pathPickerValid": "Válido",
+      "systemPicker": "Seletor do Sistema",
+      "refreshTree": "Atualizar",
+      "goUp": "Subir",
+      "openInFolder": "Abrir no Gerenciador de Arquivos",
+      "clearPath": "Limpar",
+      "refresh": "Atualizar",
+      "favoriteHome": "Início",
+      "favoriteDocuments": "Documentos",
+      "favoriteDownloads": "Downloads",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar",
+      "updateNotice": {
+        "plugin": "Plugin",
+        "theme": "Tema",
+        "locale": "Pacote de Idiomas",
+        "cta": "Ir ao Centro de Extensões para Atualizar",
+        "message": "{count} {type}(s) podem ser atualizados"
+      }
     },
-    "page": {
-      "home": {
-        "heroTitle": "XuYou Env Moment",
-        "heroSubtitle": "Gerenciamento de ambiente one-stop para desenvolvedores",
-        "startScan": "Iniciar Scan"
+    "shortcut": {
+      "action": {
+        "scan-all": {
+          "label": "Escanear Tudo",
+          "description": "Disparar scan de ambiente local"
+        },
+        "minimize-window": {
+          "label": "Minimizar Janela",
+          "description": "Minimizar a janela principal"
+        },
+        "close-window": {
+          "label": "Fechar Janela",
+          "description": "Fechar a janela principal"
+        },
+        "toggle-fullscreen": {
+          "label": "Alternar Tela Cheia",
+          "description": "Entrar/sair do modo tela cheia"
+        },
+        "open-settings": {
+          "label": "Abrir Configurações",
+          "description": "Ir para a página de configurações gerais"
+        },
+        "open-theme-center": {
+          "label": "Abrir Centro de Temas",
+          "description": "Ir para a página do centro de temas"
+        },
+        "open-language": {
+          "label": "Abrir Centro de Idiomas",
+          "description": "Ir para a página do centro de idiomas"
+        },
+        "open-about": {
+          "label": "Abrir Sobre",
+          "description": "Ir para a página sobre o aplicativo"
+        },
+        "open-help": {
+          "label": "Abrir Ajuda",
+          "description": "Ir para a documentação de ajuda"
+        },
+        "reload-page": {
+          "label": "Recarregar Página",
+          "description": "Recarregar a página atual"
+        },
+        "zoom-in": {
+          "label": "Ampliar",
+          "description": "Aumentar o zoom da interface"
+        },
+        "zoom-out": {
+          "label": "Reduzir",
+          "description": "Diminuir o zoom da interface"
+        },
+        "reset-zoom": {
+          "label": "Redefinir Zoom",
+          "description": "Restaurar o zoom padrão"
+        },
+        "new-tab": {
+          "label": "Nova Aba",
+          "description": "Abrir a página inicial como uma nova aba"
+        },
+        "close-tab": {
+          "label": "Fechar Aba",
+          "description": "Fechar a aba atual"
+        },
+        "next-tab": {
+          "label": "Próxima Aba",
+          "description": "Alternar para a próxima aba"
+        },
+        "prev-tab": {
+          "label": "Aba Anterior",
+          "description": "Alternar para a aba anterior"
+        },
+        "open-updates": {
+          "label": "Abrir Atualizações",
+          "description": "Ir para a página de atualizações"
+        },
+        "open-plugin-store": {
+          "label": "Abrir Loja de Plugins",
+          "description": "Ir para a página da loja de plugins"
+        },
+        "open-whats-new": {
+          "label": "Abrir Novidades",
+          "description": "Ir para a página de novidades"
+        },
+        "open-env-install": {
+          "label": "Abrir Instalação de Ambiente",
+          "description": "Ir para a página de instalação de ambiente"
+        }
+      }
+    },
+    "titlebar": {
+      "logPluginDisabled": "Plugin de coleta de logs não está ativado",
+      "logsOpened": "Pasta de logs aberta",
+      "diagnosticSaved": "Relatório de diagnóstico salvo: {path}",
+      "collectFailed": "Falha ao coletar dados de diagnóstico",
+      "menu": "Menu"
+    },
+    "settings": {
+      "position": {
+        "topLeft": "Superior Esquerdo",
+        "topRight": "Superior Direito",
+        "bottomLeft": "Inferior Esquerdo",
+        "bottomRight": "Inferior Direito"
+      }
+    },
+    "theme": {
+      "sakuraPink": "Rosa Sakura",
+      "lavenderMist": "Lavanda",
+      "matchaFog": "Névoa Matcha",
+      "crimsonNight": "Noite Carmim",
+      "arcticFrost": "Gelo Ártico",
+      "volcanicAsh": "Cinza Vulcânico",
+      "default": "Padrão",
+      "unavailableFallback": "O tema {id} não está disponível, revertido para o tema padrão",
+      "mode": {
+        "dark": "Escuro",
+        "light": "Claro"
       },
-      "envScan": {
-        "eyebrow": "Scan de Ambiente",
-        "title": "Scan de Ambiente Local",
-        "subtitle": "Escanear runtimes e gerenciadores de pacotes no seu computador"
+      "def": {
+        "morning-minimal": {
+          "name": "Morning Minimal",
+          "description": "Base branca quente com destaque verde bambu, fresco como a luz da manhã"
+        },
+        "bamboo-green": {
+          "name": "Bamboo Green",
+          "description": "Tom verde bambu profundo, calmo e focado"
+        },
+        "amber-warm": {
+          "name": "Amber Warm",
+          "description": "Tons âmbar quentes, aconchegante e suave"
+        },
+        "rose-mist": {
+          "name": "Rose Mist",
+          "description": "Névoa rosada, suave e elegante"
+        },
+        "ocean-blue": {
+          "name": "Ocean Blue",
+          "description": "Tons azul oceano, calmo e amplo"
+        },
+        "sand-dune": {
+          "name": "Sand Dune",
+          "description": "Marrom quente de duna, natural e rústico"
+        },
+        "light": {
+          "name": "Light",
+          "description": "Tema claro padrão"
+        },
+        "sakura-pink": {
+          "name": "Rosa Sakura",
+          "description": "Rosa sakura suave e quente"
+        },
+        "lavender-mist": {
+          "name": "Lavanda",
+          "description": "Roxo lavanda sereno e elegante"
+        },
+        "matcha-fog": {
+          "name": "Névoa Matcha",
+          "description": "Cinza névoa matcha sóbrio e contido"
+        },
+        "arctic-frost": {
+          "name": "Gelo Ártico",
+          "description": "Gelo ártico azul claro e nítido"
+        },
+        "dark": {
+          "name": "Dark",
+          "description": "Tema escuro padrão, confortável para os olhos"
+        },
+        "slate-dark": {
+          "name": "Slate Dark",
+          "description": "Cinza-azulado ardósia escuro, calmo e focado"
+        },
+        "midnight-forest": {
+          "name": "Midnight Forest",
+          "description": "Verde profundo de floresta à meia-noite, sereno e misterioso"
+        },
+        "crimson-night": {
+          "name": "Noite Carmim",
+          "description": "Carmim na noite profunda"
+        },
+        "volcanic-ash": {
+          "name": "Cinza Vulcânico",
+          "description": "Âmbar em cinza vulcânico quente"
+        },
+        "mint-breeze": {
+          "name": "Brisa de Menta",
+          "description": "Verde menta fresco, brilhante e arejado"
+        },
+        "sunset-glow": {
+          "name": "Brilho do Pôr do Sol",
+          "description": "Laranja-vermelho do pôr do sol quente, aconchegante e suave"
+        },
+        "olive-grove": {
+          "name": "Olival",
+          "description": "Olival, natural e rústico"
+        },
+        "coral-sunset": {
+          "name": "Pôr do Sol Coral",
+          "description": "Pôr do sol coral, vibrante e brilhante"
+        },
+        "cyber-cyan": {
+          "name": "Ciano Cyber",
+          "description": "Ciano-azul cyber, tecnologia futurista"
+        },
+        "deep-purple": {
+          "name": "Roxo Profundo",
+          "description": "Roxo profundo onírico, misterioso e elegante"
+        },
+        "graphite-dark": {
+          "name": "Grafite Escuro",
+          "description": "Cinza grafite escuro, neutro e focado"
+        },
+        "forest-canopy": {
+          "name": "Copas da Floresta",
+          "description": "No fundo das copas da floresta, sereno e natural"
+        },
+        "ember-glow": {
+          "name": "Brilho de Brasas",
+          "description": "Brasas brilhando suavemente na noite escura, quente e profundo"
+        },
+        "terracotta-night": {
+          "name": "Noite Terracota",
+          "description": "Calor terracota misturado à noite, rústico e suave"
+        },
+        "mocha-dusk": {
+          "name": "Crepúsculo Mocha",
+          "description": "Tons de café mocha ao crepúsculo, encorpado e sereno"
+        },
+        "paper-white": {
+          "name": "Branco Papel",
+          "description": "Branco papel limpo, minimalista e neutro"
+        },
+        "fog-gray": {
+          "name": "Cinza Névoa",
+          "description": "Tons de cinza névoa, calmo e contido"
+        },
+        "cerulean-sky": {
+          "name": "Céu Cerúleo",
+          "description": "Azul cerúleo claro, nítido e amplo"
+        },
+        "glacier-blue": {
+          "name": "Azul Geleira",
+          "description": "Azul geleira pálido, nítido e puro"
+        },
+        "deep-moss": {
+          "name": "Musgo Profundo",
+          "description": "Verde musgo profundo, escuro e natural"
+        },
+        "sage-mist": {
+          "name": "Névoa de Sálvia",
+          "description": "Névoa verde sálvia, suave e herbal"
+        },
+        "steel-blue-dark": {
+          "name": "Azul Aço Escuro",
+          "description": "Azul aço escuro, calmo e racional"
+        },
+        "peach-cream": {
+          "name": "Creme de Pêssego",
+          "description": "Tons creme de pêssego, doce e suave"
+        },
+        "misty-mountain": {
+          "name": "Montanhas Envoadas",
+          "description": "Cenário de montanhas na névoa, luz dourada quente, sereno e distante"
+        },
+        "starry-night": {
+          "name": "Noite Estrelada",
+          "description": "Cenário de noite estrelada profunda, cosmos onírico, calmo e misterioso"
+        },
+        "ink-wash": {
+          "name": "Tinta Nanquim",
+          "description": "Cenário de tinta nanquim, sombras de bambu e névoa, espaços em branco elegantes"
+        },
+        "auto": {
+          "name": "Auto",
+          "description": "Seguir tema do sistema (claro/escuro automático)"
+        },
+        "meadow-light": {
+          "name": "Prado Claro",
+          "description": "Tema claro natural inspirado nos verdes suaves e luz quente de um prado pela manhã; suave para os olhos em sessões longas."
+        },
+        "sunset-orchard": {
+          "name": "Pomar ao Pôr do Sol",
+          "description": "Tema claro e quente inspirado nos laranjas dourados e vermelhos quentes de um pomar ao pôr do sol; suave e aconchegante."
+        },
+        "midnight-iris": {
+          "name": "Íris Meia-noite",
+          "description": "Tema escuro e frio inspirado no roxo profundo e índigo de uma íris à meia-noite; calmo e focado."
+        }
+      }
+    },
+    "notification": {
+      "upToDateTitle": "Atualizado",
+      "upToDateContent": "A versão atual v{version} é a versão mais recente",
+      "checkFailedTitle": "Falha na Verificação de Atualização",
+      "checkFailedContent": "Verifique a conexão de rede e tente novamente"
+    },
+    "plugin": {
+      "notEnabledTitle": "Plugin Não Ativado",
+      "notEnabledDesc": "O plugin exigido por este recurso não está ativado. Ative-o no Centro de Plugins.",
+      "goToPluginCenter": "Ir ao Centro de Plugins",
+      "categoryCore": "Núcleo",
+      "categoryUi": "Interface",
+      "categorySystem": "Sistema",
+      "categoryExperimental": "Experimental",
+      "restoreRecommended": "Restaurar Recomendado",
+      "banner": {
+        "title": "Plugin Não Ativado",
+        "desc": "O plugin exigido por este recurso não está ativado. Ative-o no Centro de Plugins.",
+        "goToPluginCenter": "Ir ao Centro de Plugins",
+        "disabled": "Desativado"
       },
-      "envInstall": {
-        "eyebrow": "Instalar",
-        "title": "Instalação de Ambiente Local",
-        "subtitle": "Comandos de instalação e links de download para runtimes e ferramentas de desenvolvimento"
-      },
-      "runtimeManager": {
-        "eyebrow": "Gerenciador de Runtime",
-        "title": "Gerenciamento de Versões de Runtime",
-        "subtitle": "Gerencie instalações locais de JDK / Node.js / Python: definir padrão, adicionar caminho personalizado ou baixar online"
-      },
-      "themeCenter": {
-        "eyebrow": "Tema",
-        "title": "Centro de Temas",
-        "subtitle": "Escolha uma paleta de cores adequada para o seu workspace"
-      },
-      "plugin": {
-        "eyebrow": "Plugin",
-        "title": "Centro de Plugins",
-        "subtitle": "Gerencie módulos funcionais do aplicativo"
-      },
-      "extensionMarket": {
-        "eyebrow": "Marketplace",
-        "title": "Marketplace de Extensões",
-        "subtitle": "Procure e baixe plugins, temas e pacotes de idiomas para ampliar o seu XuYou Env Moment."
-      },
-      "languageCenter": {
-        "eyebrow": "Idioma",
-        "title": "Centro de Idiomas",
-        "subtitle": "Selecione o idioma da interface do aplicativo",
-        "interfaceLanguage": "Idioma da Interface",
-        "localTab": "Local",
-        "cloudTab": "Nuvem",
-        "localPacks": "Pacotes de Idiomas Locais",
-        "enable": "Ativar",
-        "disable": "Desativar"
-      },
-      "settings": {
-        "eyebrow": "Configurações",
-        "title": "Configurações",
-        "subtitle": "Personalize sua experiência do aplicativo"
-      },
-      "updates": {
-        "eyebrow": "Atualizações",
-        "title": "Verificar Atualizações",
-        "subtitle": "Verifique e atualize para a versão mais recente"
-      },
-      "about": {
-        "version": "Versão",
-        "author": "Autor",
-        "license": "Licença",
-        "repository": "Repositório",
-        "homepage": "Página Inicial"
-      },
-      "help": {
-        "eyebrow": "Ajuda",
-        "title": "Documentação de Ajuda",
-        "subtitle": "Conheça os recursos do aplicativo e como usá-los"
-      },
-      "whatsNew": {
-        "eyebrow": "Atualizações",
-        "title": "Novidades",
-        "subtitle": "Veja o conteúdo das atualizações de versão"
-      },
-      "shortcuts": {
-        "eyebrow": "Atalhos",
-        "title": "Atalhos de Teclado",
-        "subtitle": "Personalize as teclas de atalho"
-      },
-      "license": {
-        "eyebrow": "Legal",
-        "title": "Licença Open Source MIT",
-        "subtitle": "Texto completo da licença open source inclusa neste aplicativo"
+      "def": {
+        "envScanner": {
+          "name": "Scanner de Ambiente",
+          "description": "Detecta ambientes de runtime instalados no sistema (Node.js, Python, Java, etc.)"
+        },
+        "packageManagerDetector": {
+          "name": "Detector de Gerenciador de Pacotes",
+          "description": "Detecta gerenciadores de pacotes como npm, pnpm, yarn, pip, cargo, etc."
+        },
+        "themeSwitcher": {
+          "name": "Alternador de Temas",
+          "description": "Oferece vários esquemas de cores e suporte ao modo escuro"
+        },
+        "shortcutManager": {
+          "name": "Gerenciador de Atalhos",
+          "description": "Personalize atalhos de teclado globais e do aplicativo"
+        },
+        "notificationSystem": {
+          "name": "Sistema de Notificações",
+          "description": "Integra notificações no aplicativo e do sistema"
+        },
+        "logCollector": {
+          "name": "Coletor de Logs",
+          "description": "Coleta dados de diagnóstico e exporta logs do aplicativo"
+        },
+        "autoUpdater": {
+          "name": "Atualizador Automático",
+          "description": "Baixa e instala atualizações do aplicativo automaticamente (experimental)"
+        },
+        "cloudSync": {
+          "name": "Sincronização na Nuvem",
+          "description": "Sincroniza configurações e resultados de scan para a nuvem (em breve)"
+        },
+        "envInstaller": {
+          "name": "Instalador de Ambiente",
+          "description": "Instalação e upgrade online de ambientes de runtime (Node.js, Python, etc.)"
+        },
+        "repoCacheScanner": {
+          "name": "Repositórios Locais e Cache",
+          "description": "Escaneia repositórios e caches locais para android/gradle/maven/pip/yarn/npm/pnpm/bun"
+        },
+        "globalPackagesScanner": {
+          "name": "Pacotes Globais",
+          "description": "Visualiza pacotes instalados globalmente para npm/yarn/pnpm/cnpm/bun e verifica atualizações"
+        },
+        "projectPackagesScanner": {
+          "name": "Pacotes do Projeto",
+          "description": "Escaneia dependências do package.json de um projeto específico e verifica atualizações"
+        }
+      }
+    },
+    "tray": {
+      "tooltip": "XuYou Env Moment",
+      "menu": {
+        "show": "Mostrar Janela Principal",
+        "quit": "Sair"
       }
     }
   }

@@ -3,7 +3,7 @@
   "code": "vi-VN",
   "nativeName": "Tiếng Việt",
   "flag": "🇻🇳",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "XuYou",
   "origin": "official",
   "description": "Tiếng Việt.",
@@ -18,6 +18,7 @@
       "themeCenter": "Trung tâm Giao diện",
       "pluginCenter": "Trung tâm Plugin",
       "extensionMarket": "Chợ tiện ích",
+      "pluginStore": "Cửa hàng Plugin",
       "settings": "Cài đặt",
       "generalSettings": "Cài đặt Chung",
       "languageCenter": "Trung tâm Ngôn ngữ",
@@ -33,6 +34,567 @@
       "checkUpdates": "Kiểm tra Cập nhật",
       "github": "GitHub"
     },
+    "page": {
+      "home": {
+        "heroTitle": "XuYou Env Moment",
+        "heroSubtitle": "Quản lý môi trường tất cả trong một cho nhà phát triển",
+        "startScan": "Bắt đầu Quét"
+      },
+      "envScan": {
+        "eyebrow": "Quét Môi trường",
+        "title": "Quét Môi trường Cục bộ",
+        "subtitle": "Quét runtime và trình quản lý gói trên máy của bạn",
+        "scanning": "Đang quét...",
+        "rescan": "Quét lại",
+        "startScan": "Bắt đầu Quét",
+        "loading": "Đang quét...",
+        "readyEyebrow": "SẴN SÀNG",
+        "readyTitle": "Nhấn nút phía trên để bắt đầu quét",
+        "readyDesc": "Sẽ tự động phát hiện runtime và trình quản lý gói đã cài đặt",
+        "noResultsEyebrow": "KHÔNG CÓ KẾT QUẢ",
+        "noResultsTitle": "Không phát hiện môi trường nào",
+        "noResultsDesc": "Xác nhận runtime liên quan đã cài đặt đúng và có trong PATH",
+        "runtimesTab": "Runtime",
+        "noRuntimes": "Không phát hiện runtime nào",
+        "packageManagersTab": "Trình quản lý gói",
+        "noPackageManagers": "Không phát hiện trình quản lý gói nào",
+        "detail": "Chi tiết",
+        "field": {
+          "name": "Tên",
+          "version": "Phiên bản",
+          "path": "Đường dẫn",
+          "source": "Nguồn",
+          "installSource": "Nguồn cài đặt"
+        },
+        "copyPath": "Sao chép đường dẫn",
+        "openInExplorer": "Hiển thị trong Explorer",
+        "openInTerminal": "Mở trong Terminal",
+        "copyRegistry": "Sao chép registry",
+        "copied": "Đã sao chép",
+        "copyFailed": "Sao chép thất bại",
+        "tabRuntimes": "Runtime",
+        "tabPackageManagers": "Trình quản lý gói",
+        "tabRepoCaches": "Kho cục bộ & Bộ nhớ đệm",
+        "tabGlobalPackages": "Gói toàn cục",
+        "tabProjectPackages": "Gói dự án",
+        "tabDashboard": "Bảng điều khiển",
+        "dashboard": {
+          "kpiRuntimes": "Runtime",
+          "kpiPackageManagers": "Trình quản lý gói",
+          "kpiRepoCacheSize": "Dung lượng bộ nhớ đệm",
+          "kpiUpdatable": "Có thể cập nhật",
+          "chartRuntimes": "Phân bổ runtime",
+          "chartPackageManagers": "Phân bổ trình quản lý gói",
+          "chartRepoCaches": "Mức sử dụng bộ nhớ đệm kho",
+          "chartGlobalPackages": "Cập nhật gói toàn cục",
+          "emptyTitle": "Không có dữ liệu quét",
+          "emptyDesc": "Nhấn nút phía dưới để bắt đầu quét môi trường máy",
+          "emptyCta": "Bắt đầu Quét",
+          "updatable": "Có thể cập nhật",
+          "upToDate": "Đã mới nhất"
+        },
+        "searchPlaceholder": "Tìm kiếm theo tên...",
+        "noRepoCaches": "Không phát hiện kho cục bộ hoặc bộ nhớ đệm nào",
+        "scanFailed": "Quét thất bại",
+        "projectScanned": "Đã quét gói dự án",
+        "refreshed": "Đã làm mới",
+        "repoCache": {
+          "tool": {
+            "android": "Android",
+            "gradle": "Gradle",
+            "maven": "Maven",
+            "eclipse": "Eclipse",
+            "pip": "pip",
+            "yarn": "Yarn",
+            "npm": "npm",
+            "pnpm": "pnpm",
+            "bun": "Bun"
+          },
+          "toolLabel": "Công cụ",
+          "size": "Dung lượng",
+          "items": "Mục",
+          "openInExplorer": "Mở trong Explorer"
+        },
+        "globalPackages": {
+          "tabNpm": "npm",
+          "tabYarn": "Yarn",
+          "tabPnpm": "pnpm",
+          "tabCnpm": "cnpm",
+          "tabBun": "Bun",
+          "scanProject": "Quét gói dự án",
+          "projectPath": "Đường dẫn dự án",
+          "projectPathPlaceholder": "Nhập đường dẫn dự án, ví dụ /path/to/project",
+          "refreshLatest": "Làm mới phiên bản mới nhất",
+          "updateAvailable": "Có bản cập nhật",
+          "copyUpdateCmd": "Sao chép lệnh cập nhật",
+          "copyReinstallCmd": "Sao chép lệnh cài lại",
+          "copiedUpdateCmd": "Đã sao chép lệnh cập nhật",
+          "copiedReinstallCmd": "Đã sao chép lệnh cài lại",
+          "copyUninstallCmd": "Sao chép lệnh gỡ cài đặt",
+          "copiedUninstallCmd": "Đã sao chép lệnh gỡ cài đặt",
+          "projectPackages": "Gói dự án",
+          "latestVersion": "Phiên bản mới nhất",
+          "localVersion": "Phiên bản cục bộ",
+          "latest": "Mới nhất",
+          "installed": "Đã cài đặt",
+          "manager": "Trình quản lý",
+          "dependencyType": "Loại dependency",
+          "searchPlaceholder": "Tìm kiếm gói...",
+          "emptyTitle": "Không có gói toàn cục",
+          "emptyDesc": "Nhấn \"Làm mới phiên bản mới nhất\" để lấy thông tin gói",
+          "cancel": "Hủy",
+          "scan": "Quét",
+          "selectDirectory": "Chọn thư mục"
+        },
+        "projectPackages": {
+          "emptyTitle": "Không có dữ liệu gói dự án",
+          "emptyDesc": "Nhấn nút phía trên để quét package.json của dự án"
+        },
+        "group": {
+          "count": "{count} mục"
+        }
+      },
+      "envInstall": {
+        "eyebrow": "Cài đặt",
+        "title": "Cài đặt Môi trường Cục bộ",
+        "subtitle": "Lệnh cài đặt và liên kết tải xuống cho runtime và công cụ phát triển",
+        "category": {
+          "runtimes": "Runtime",
+          "packageManagers": "Trình quản lý gói",
+          "databases": "Cơ sở dữ liệu",
+          "tools": "Công cụ"
+        },
+        "version": "Phiên bản",
+        "versionPlaceholder": "Chọn phiên bản",
+        "installPath": "Đường dẫn cài đặt",
+        "installPathPlaceholder": "Đường dẫn mặc định",
+        "mirror": "Mirror",
+        "mirrorOfficial": "Chính thức",
+        "mirrorCustom": "Tùy chỉnh",
+        "mirrorConfig": "Cấu hình Mirror",
+        "mirrorConfigDesc": "Cấu hình URL mirror tùy chỉnh cho runtime hỗ trợ mirror",
+        "saveMirror": "Lưu",
+        "defaultVersion": "Mặc định",
+        "noVersion": "Không có dữ liệu phiên bản",
+        "fetchVersions": "Lấy phiên bản",
+        "fetching": "Đang lấy...",
+        "command": "Lệnh cài đặt",
+        "copyCommand": "Sao chép lệnh",
+        "copied": "Đã sao chép",
+        "copyFailed": "Sao chép thất bại",
+        "download": "Tải xuống",
+        "mirrorSaved": "Đã lưu",
+        "tabRuntimes": "Runtime",
+        "tabPackageManagers": "Trình quản lý gói",
+        "tabDatabases": "Cơ sở dữ liệu",
+        "tabTools": "Công cụ",
+        "tabMirrorConfig": "Cấu hình Mirror",
+        "goJdkManager": "Quản lý JDK",
+        "goNodeManager": "Quản lý Node",
+        "goPythonManager": "Quản lý Python"
+      },
+      "jdkManager": {
+        "eyebrow": "QUẢN LÝ JDK",
+        "title": "Quản lý phiên bản JDK",
+        "subtitle": "Quản lý cài đặt JDK cục bộ, đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến",
+        "addCustom": "Thêm đường dẫn tùy chỉnh",
+        "scanLocal": "Quét máy",
+        "default": "Mặc định",
+        "custom": "Tùy chỉnh",
+        "scanned": "Đã quét",
+        "setDefault": "Đặt làm mặc định",
+        "openInExplorer": "Mở trong Explorer",
+        "delete": "Xóa",
+        "onlineVersions": "Phiên bản trực tuyến",
+        "download": "Tải xuống",
+        "addCustomTitle": "Thêm đường dẫn JDK tùy chỉnh",
+        "path": "Đường dẫn",
+        "pathPlaceholder": "Nhập đường dẫn cài đặt JDK",
+        "version": "Phiên bản",
+        "versionPlaceholder": "Nhập phiên bản, ví dụ 17.0.1",
+        "addCustomCancel": "Hủy",
+        "addCustomConfirm": "Thêm",
+        "latestBadge": "Mới nhất"
+      },
+      "nodeManager": {
+        "eyebrow": "QUẢN LÝ NODE",
+        "title": "Quản lý phiên bản Node.js",
+        "subtitle": "Quản lý cài đặt Node.js cục bộ, đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến",
+        "scanLocal": "Quét máy",
+        "addCustom": "Thêm đường dẫn tùy chỉnh",
+        "tabDetected": "Đã phát hiện",
+        "tabOnline": "Phiên bản trực tuyến",
+        "searchPlaceholder": "Tìm kiếm phiên bản hoặc đường dẫn...",
+        "defaultBadge": "Mặc định",
+        "customBadge": "Tùy chỉnh",
+        "setDefault": "Đặt làm mặc định",
+        "openInExplorer": "Mở trong Explorer",
+        "copyPath": "Sao chép đường dẫn",
+        "delete": "Xóa",
+        "noDetected": "Không phát hiện Node.js",
+        "noDetectedDesc": "Nhấn \"Quét máy\" để phát hiện lại, hoặc thêm đường dẫn tùy chỉnh",
+        "onlineSearchPlaceholder": "Tìm kiếm phiên bản hoặc LTS...",
+        "refreshOnline": "Làm mới phiên bản trực tuyến",
+        "security": "Bản cập nhật bảo mật",
+        "openDownloadPage": "Mở trang tải xuống",
+        "noOnline": "Không có phiên bản trực tuyến",
+        "noOnlineDesc": "Nhấn \"Làm mới phiên bản trực tuyến\" để lấy danh sách",
+        "addCustomTitle": "Thêm đường dẫn Node.js tùy chỉnh",
+        "pathLabel": "Đường dẫn",
+        "pathPlaceholder": "Nhập đường dẫn cài đặt Node.js",
+        "versionLabel": "Phiên bản",
+        "versionPlaceholder": "Nhập phiên bản, ví dụ 18.19.0",
+        "cancel": "Hủy",
+        "confirm": "Thêm",
+        "added": "Đã thêm Node.js tùy chỉnh",
+        "addFailed": "Thêm thất bại",
+        "setDefaultDone": "Đã đặt làm mặc định",
+        "deleted": "Đã xóa",
+        "copied": "Đã sao chép đường dẫn",
+        "copyFailed": "Sao chép thất bại",
+        "scanFailed": "Quét thất bại",
+        "scanned": "Quét hoàn tất"
+      },
+      "pythonManager": {
+        "eyebrow": "QUẢN LÝ PYTHON",
+        "title": "Quản lý phiên bản Python",
+        "subtitle": "Quản lý cài đặt Python cục bộ, đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến",
+        "addCustom": "Thêm đường dẫn tùy chỉnh",
+        "scanLocal": "Quét máy",
+        "default": "Mặc định",
+        "custom": "Tùy chỉnh",
+        "scanned": "Đã quét",
+        "setDefault": "Đặt làm mặc định",
+        "openInExplorer": "Mở trong Explorer",
+        "delete": "Xóa",
+        "onlineVersions": "Phiên bản trực tuyến",
+        "openDownloadPage": "Mở trang tải xuống",
+        "addCustomTitle": "Thêm đường dẫn Python tùy chỉnh",
+        "path": "Đường dẫn",
+        "pathPlaceholder": "Nhập đường dẫn cài đặt Python",
+        "version": "Phiên bản",
+        "versionPlaceholder": "Nhập phiên bản, ví dụ 3.11.0",
+        "addCustomCancel": "Hủy",
+        "addCustomConfirm": "Thêm"
+      },
+      "runtimeManager": {
+        "eyebrow": "Quản lý Runtime",
+        "title": "Quản lý Phiên bản Runtime",
+        "subtitle": "Quản lý cài đặt JDK / Node.js / Python cục bộ: đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến",
+        "tabJdk": "JDK",
+        "tabNode": "Node",
+        "tabPython": "Python",
+        "detected": "Đã phát hiện",
+        "online": "Phiên bản trực tuyến",
+        "addCustom": "Thêm đường dẫn tùy chỉnh",
+        "scanLocal": "Quét máy",
+        "remark": "Tên ghi chú",
+        "remarkPlaceholder": "Tùy chọn, ví dụ \"Phát triển chính\"",
+        "selectDirectory": "Chọn thư mục",
+        "openDownloadPage": "Mở trang tải xuống",
+        "setDefault": "Đặt làm mặc định",
+        "openInExplorer": "Mở trong Explorer",
+        "copyPath": "Sao chép đường dẫn",
+        "openInTerminal": "Mở trong Terminal",
+        "default": "Mặc định",
+        "delete": "Xóa",
+        "detecting": "Đang nhận diện phiên bản...",
+        "detectFailed": "Không thể nhận diện phiên bản, vui lòng kiểm tra đường dẫn",
+        "addCustomTitle": "Thêm đường dẫn tùy chỉnh",
+        "confirm": "Thêm",
+        "cancel": "Hủy",
+        "pathPlaceholder": "Nhập hoặc chọn đường dẫn cài đặt runtime",
+        "scanned": "Đã quét",
+        "custom": "Tùy chỉnh",
+        "emptyDetected": "Không phát hiện runtime nào. Nhấn \"Quét máy\" hoặc thêm đường dẫn tùy chỉnh.",
+        "emptyOnline": "Không có phiên bản trực tuyến",
+        "loading": "Đang tải...",
+        "fetchFailed": "Không thể lấy phiên bản trực tuyến, vui lòng kiểm tra mạng"
+      },
+      "settings": {
+        "eyebrow": "Cài đặt",
+        "title": "Cài đặt",
+        "subtitle": "Cá nhân hóa trải nghiệm ứng dụng",
+        "general": "Chung",
+        "language": "Ngôn ngữ giao diện",
+        "languageDesc": "Chọn ngôn ngữ giao diện ứng dụng",
+        "fontSize": "Cỡ chữ",
+        "fontSizeDesc": "Cỡ chữ cơ sở toàn cục",
+        "theme": "Giao diện",
+        "themeDesc": "Sáng / Tối / Theo hệ thống",
+        "plugins": "Plugin",
+        "pluginsDesc": "Quản lý plugin đã cài đặt",
+        "pluginsCount": "Đã bật {count} plugin",
+        "shortcuts": "Phím tắt",
+        "shortcutsDesc": "Tùy chỉnh tổ hợp phím tắt",
+        "more": "Thêm",
+        "notifications": "Thông báo",
+        "notificationsEnabled": "Bật thông báo",
+        "notificationsEnabledDesc": "Hiển thị thông báo hệ thống",
+        "notificationsPosition": "Vị trí thông báo",
+        "notificationsPositionDesc": "Vị trí hiển thị thông báo",
+        "notificationsDuration": "Thời lượng",
+        "notificationsDurationDesc": "Thời lượng thông báo mặc định (ms)",
+        "notificationsDesc": "Quản lý thông báo ứng dụng",
+        "enableNotifications": "Bật thông báo",
+        "enableNotificationsDesc": "Hiển thị thông báo hệ thống",
+        "position": "Vị trí thông báo",
+        "positionDesc": "Vị trí hiển thị thông báo",
+        "duration": "Thời lượng",
+        "durationDesc": "Thời lượng thông báo mặc định (ms)",
+        "enabledPlugins": "Plugin đã bật",
+        "enabledPluginsDesc": "Đến Trung tâm Plugin để quản lý plugin đã cài đặt",
+        "tray": "Khay hệ thống",
+        "trayEnabled": "Bật khay hệ thống",
+        "trayEnabledDesc": "Giữ ứng dụng trong khay hệ thống khi đóng cửa sổ",
+        "closeToTray": "Đóng vào khay",
+        "closeToTrayDesc": "Ẩn vào khay thay vì thoát khi nhấn đóng",
+        "minimizeToTray": "Thu nhỏ vào khay",
+        "minimizeToTrayDesc": "Ẩn vào khay thay vì thanh tác vụ khi thu nhỏ"
+      },
+      "themeCenter": {
+        "eyebrow": "Giao diện",
+        "title": "Trung tâm Giao diện",
+        "subtitle": "Chọn bảng màu phù hợp cho không gian làm việc của bạn",
+        "current": "Giao diện hiện tại",
+        "random": "Ngẫu nhiên",
+        "localTab": "Cục bộ",
+        "cloudTab": "Đám mây",
+        "download": "Tải xuống",
+        "installed": "Đã cài đặt",
+        "downloadFailed": "Tải xuống thất bại",
+        "fetchFailed": "Không thể tải giao diện đám mây",
+        "filterOrigin": "Nguồn",
+        "cloudEmpty": "Chưa tải xuống giao diện đám mây nào",
+        "confirmDelete": "Xóa giao diện này?",
+        "switchTheme": "Chuyển",
+        "delete": "Xóa"
+      },
+      "languageCenter": {
+        "title": "Trung tâm Ngôn ngữ",
+        "subtitle": "Chọn ngôn ngữ giao diện ứng dụng",
+        "eyebrow": "Ngôn ngữ",
+        "interfaceLanguage": "Ngôn ngữ Giao diện",
+        "localTab": "Cục bộ",
+        "cloudTab": "Đám mây",
+        "localPacks": "Gói Ngôn ngữ Cục bộ",
+        "enable": "Bật",
+        "disable": "Tắt",
+        "enableAll": "Bật tất cả",
+        "disableAll": "Tắt tất cả",
+        "baseLanguage": "Ngôn ngữ cơ sở",
+        "cloudSection": "Gói ngôn ngữ đám mây",
+        "download": "Tải xuống",
+        "downloading": "Đang tải xuống...",
+        "installed": "Đã cài đặt",
+        "downloadFailed": "Tải xuống thất bại",
+        "fetchFailed": "Không thể tải gói ngôn ngữ đám mây. Kiểm tra mạng.",
+        "downloadSuccess": "Tải gói ngôn ngữ thành công",
+        "author": "Tác giả",
+        "version": "Phiên bản",
+        "filterOrigin": "Nguồn",
+        "cloudEmpty": "Chưa tải xuống gói ngôn ngữ đám mây nào"
+      },
+      "about": {
+        "version": "Phiên bản",
+        "author": "Tác giả",
+        "license": "Giấy phép",
+        "repository": "Kho lưu trữ",
+        "homepage": "Trang chủ"
+      },
+      "updates": {
+        "eyebrow": "Cập nhật",
+        "title": "Kiểm tra Cập nhật",
+        "subtitle": "Kiểm tra và nâng cấp lên phiên bản mới nhất",
+        "currentVersion": "Phiên bản hiện tại",
+        "checkButton": "Kiểm tra Cập nhật",
+        "checkNow": "Kiểm tra Cập nhật",
+        "checking": "Đang kiểm tra...",
+        "retry": "Thử lại",
+        "checkFailed": "Kiểm tra thất bại, vui lòng thử lại sau",
+        "later": "Nhắc sau",
+        "newVersionAvailable": "Có phiên bản mới",
+        "releaseNotes": "Ghi chú phát hành",
+        "upToDate": "Đã mới nhất",
+        "upToDateDesc": "Phiên bản hiện tại {version} là phiên bản phát hành mới nhất",
+        "available": "Có bản cập nhật",
+        "availableDesc": "Vui lòng truy cập GitHub Releases để tải xuống",
+        "download": "Tải xuống",
+        "idleHint": "Nhấn \"Kiểm tra Cập nhật\" để bắt đầu",
+        "currentVersionSection": "Phiên bản hiện tại",
+        "checkStatusSection": "Trạng thái kiểm tra",
+        "releaseNotesSection": "Ghi chú phát hành",
+        "updateChannelSection": "Kênh cập nhật",
+        "appName": "XuYou Env Moment",
+        "releaseNotesEmpty": "Không có ghi chú phát hành. Nhấn \"Kiểm tra ngay\" để xem trạng thái mới nhất.",
+        "viewFullRelease": "Xem toàn bộ ghi chú phát hành",
+        "channelDesc": "Cập nhật được phát hành qua GitHub Releases. Ứng dụng không tự kiểm tra khi khởi động; nhấn \"Kiểm tra ngay\" thủ công.",
+        "comparisonRule": "Phiên bản tuân theo SemVer: major.minor.patch. Chỉ nhắc cập nhật khi tag remote lớn hơn phiên bản hiện tại.",
+        "lastChecked": "Kiểm tra lần cuối",
+        "publishedAt": "Ngày phát hành"
+      },
+      "plugins": {
+        "title": "Trung tâm Plugin",
+        "subtitle": "Quản lý module ứng dụng",
+        "enabled": "Đã bật {count} / {total} plugin"
+      },
+      "plugin": {
+        "eyebrow": "Plugin",
+        "title": "Trung tâm Plugin",
+        "subtitle": "Quản lý các module chức năng của ứng dụng",
+        "enabled": "Đã bật {count} / {total} plugin",
+        "builtinPlugins": "Plugin tích hợp",
+        "cloudPlugins": "Plugin đám mây",
+        "core": "Lõi",
+        "ui": "Giao diện",
+        "system": "Hệ thống",
+        "experimental": "Thử nghiệm",
+        "comingSoon": "Sắp ra mắt",
+        "experimentalBadge": "Thử nghiệm",
+        "comingSoonBadge": "Sắp ra mắt",
+        "download": "Tải xuống",
+        "stars": "{count} sao",
+        "enabledLabel": "Đã bật",
+        "disabledLabel": "Đã tắt",
+        "enableRecommended": "Khuyên dùng",
+        "enableDefaults": "Mặc định",
+        "enableAll": "Bật tất cả",
+        "disableAll": "Tắt tất cả",
+        "browseStore": "Duyệt plugin đám mây",
+        "recommendedBadge": "Khuyên dùng",
+        "localTab": "Cục bộ",
+        "cloudTab": "Đám mây",
+        "downloadInstall": "Tải xuống và cài đặt",
+        "installed": "Đã cài đặt",
+        "downloadFailed": "Tải xuống thất bại",
+        "fetchFailed": "Không thể tải plugin đám mây",
+        "searchPlaceholder": "Tìm kiếm plugin đám mây...",
+        "allCategories": "Tất cả danh mục",
+        "cloudEmpty": "Chưa tải xuống plugin đám mây nào"
+      },
+      "pluginStore": {
+        "title": "Cửa hàng Plugin",
+        "subtitle": "Duyệt plugin đám mây cộng đồng",
+        "eyebrow": "Cửa hàng",
+        "searchPlaceholder": "Tìm kiếm plugin...",
+        "stars": "{count} sao",
+        "download": "Tải xuống",
+        "noResults": "Không tìm thấy plugin phù hợp",
+        "downloadInstall": "Tải xuống và cài đặt",
+        "installed": "Đã cài đặt",
+        "downloadFailed": "Tải xuống thất bại",
+        "fetchFailed": "Không thể tải plugin đám mây. Kiểm tra mạng.",
+        "loading": "Đang tải...",
+        "filterOrigin": "Nguồn",
+        "category": {
+          "dev": "Công cụ phát triển",
+          "ai": "Trợ lý AI",
+          "db": "Cơ sở dữ liệu"
+        },
+        "plugin": {
+          "cloud-terminal": {
+            "name": "Cloud Terminal",
+            "desc": "Môi trường terminal đám mây tích hợp, hỗ trợ thực thi lệnh từ xa"
+          },
+          "docker-manager": {
+            "name": "Docker Manager",
+            "desc": "Quản lý trực quan container và image Docker hệ thống"
+          },
+          "ai-assistant": {
+            "name": "AI Assistant",
+            "desc": "Trợ lý lập trình AI tích hợp, gợi ý mã và tạo tài liệu"
+          },
+          "k8s-dashboard": {
+            "name": "K8s Dashboard",
+            "desc": "Quản lý tài nguyên và trạng thái triển khai cụm Kubernetes"
+          },
+          "redis-explorer": {
+            "name": "Redis Explorer",
+            "desc": "Duyệt và quản lý cặp key-value cơ sở dữ liệu Redis"
+          },
+          "sql-client": {
+            "name": "SQL Client",
+            "desc": "Kết nối MySQL/PostgreSQL để thực thi truy vấn và quản lý cơ sở dữ liệu"
+          }
+        }
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "Chợ tiện ích",
+        "subtitle": "Duyệt và tải plugin, giao diện và gói ngôn ngữ để mở rộng XuYou Env Moment của bạn.",
+        "searchPlaceholder": "Tìm kiếm tiện ích...",
+        "filterOrigin": "Nguồn",
+        "loading": "Đang tải...",
+        "fetchFailed": "Không thể tải danh mục đám mây, vui lòng kiểm tra mạng",
+        "installed": "Đã cài đặt",
+        "downloadFailed": "Tải xuống thất bại",
+        "downloadInstall": "Tải xuống và cài đặt",
+        "installing": "Đang cài đặt...",
+        "stars": "{count} sao",
+        "noResults": "Không có tiện ích phù hợp",
+        "pluginsSection": "Plugin",
+        "themesSection": "Giao diện",
+        "localesSection": "Gói ngôn ngữ",
+        "tabPlugins": "Plugin",
+        "tabThemes": "Giao diện",
+        "tabLocales": "Gói ngôn ngữ",
+        "category": {
+          "all": "Tất cả",
+          "installed": "Đã cài đặt",
+          "updates": "Bản cập nhật khả dụng",
+          "enabled": "Đã bật",
+          "disabled": "Đã tắt",
+          "invalid": "Không hợp lệ",
+          "bundled": "Đã đóng gói",
+          "bundledUpdated": "Đã cập nhật nội dung đóng gói"
+        },
+        "action": {
+          "autoUpdate": "Tự động cập nhật plugin",
+          "manageRepos": "Quản lý kho tiện ích",
+          "manageCerts": "Quản lý chứng chỉ tiện ích",
+          "installFromDisk": "Cài đặt tiện ích từ đĩa",
+          "disableAll": "Tắt tất cả tiện ích đã tải",
+          "enableAll": "Bật tất cả tiện ích đã tải"
+        },
+        "noUpdates": "Không có bản cập nhật nào",
+        "updatedCount": "Đã cập nhật {count} tiện ích",
+        "installSuccess": "Cài đặt thành công",
+        "installFailed": "Cài đặt thất bại",
+        "allDisabled": "Đã tắt tất cả tiện ích đã tải xuống",
+        "allEnabled": "Đã bật tất cả tiện ích đã tải xuống",
+        "noRepos": "Chưa có kho tiện ích tùy chỉnh",
+        "noCerts": "Chưa có chứng chỉ tiện ích"
+      },
+      "shortcuts": {
+        "title": "Phím tắt Bàn phím",
+        "subtitle": "Tùy chỉnh tổ hợp phím tắt",
+        "eyebrow": "Phím tắt",
+        "clickToSet": "Nhấn để thiết lập",
+        "pressKeys": "Nhấn phím tắt...",
+        "clear": "Xóa",
+        "resetAll": "Khôi phục tất cả mặc định",
+        "modified": "Đã sửa đổi"
+      },
+      "help": {
+        "eyebrow": "Trợ giúp",
+        "title": "Tài liệu Trợ giúp",
+        "subtitle": "Tìm hiểu các tính năng của ứng dụng và cách sử dụng"
+      },
+      "whatsNew": {
+        "eyebrow": "Cập nhật",
+        "title": "Có gì mới",
+        "subtitle": "Xem nội dung cập nhật phiên bản"
+      },
+      "license": {
+        "eyebrow": "Pháp lý",
+        "title": "Giấy phép Nguồn mở MIT",
+        "subtitle": "Toàn văn giấy phép nguồn mở kèm theo ứng dụng",
+        "back": "Quay lại Giới thiệu",
+        "copy": "Sao chép toàn bộ",
+        "copied": "Đã sao chép",
+        "viewSource": "Xem nguồn trên GitHub"
+      }
+    },
     "breadcrumb": {
       "home": "Trang chủ",
       "settings": "Cài đặt Chung",
@@ -40,6 +602,7 @@
       "shortcuts": "Phím tắt",
       "pluginCenter": "Trung tâm Plugin",
       "extensionMarket": "Chợ tiện ích",
+      "pluginStore": "Cửa hàng Plugin",
       "updates": "Kiểm tra Cập nhật",
       "about": "Giới thiệu Ứng dụng",
       "languageCenter": "Trung tâm Ngôn ngữ",
@@ -51,30 +614,66 @@
       "runtimeManager": "Quản lý Runtime",
       "unknown": "Không xác định"
     },
+    "anchor": {
+      "pageNav": "Trên trang này",
+      "scrollTo": "Cuộn đến",
+      "lightThemes": "Giao diện sáng",
+      "darkThemes": "Giao diện tối",
+      "autoMode": "Chế độ tự động",
+      "naturalThemes": "Giao diện tự nhiên",
+      "warmThemes": "Giao diện ấm",
+      "coolThemes": "Giao diện mát",
+      "neutralThemes": "Giao diện trung tính",
+      "cloudThemes": "Giao diện đám mây",
+      "groupLocal": "Cục bộ",
+      "groupCloud": "Đám mây",
+      "cloudPlugins": "Plugin đám mây",
+      "cloudPacks": "Gói ngôn ngữ đám mây",
+      "localThemes": "Giao diện cục bộ",
+      "localPlugins": "Plugin cục bộ",
+      "localPacks": "Gói ngôn ngữ cục bộ",
+      "interfaceLanguage": "Ngôn ngữ giao diện",
+      "globalOps": "Thao tác toàn cục",
+      "windowOps": "Thao tác cửa sổ",
+      "navigation": "Điều hướng trang",
+      "viewZoom": "Thu phóng xem",
+      "tabsOps": "Thao tác tab",
+      "pageJump": "Chuyển trang",
+      "currentVersion": "Phiên bản hiện tại",
+      "checkStatus": "Trạng thái kiểm tra",
+      "releaseNotes": "Ghi chú phát hành",
+      "updateChannel": "Kênh cập nhật",
+      "marketPlugins": "Plugin",
+      "marketThemes": "Giao diện",
+      "marketLocales": "Gói ngôn ngữ",
+      "mainCategories": "Danh mục chính"
+    },
+    "markdownToc": {
+      "title": "Trên trang này",
+      "empty": "Không có tiêu đề"
+    },
     "common": {
+      "comingSoon": "Sắp ra mắt",
+      "notImplemented": "Module này chưa được triển khai. Vui lòng chờ.",
+      "experimental": "Thử nghiệm",
+      "coreFunction": "Lõi",
+      "interfaceEnhancement": "Giao diện",
+      "systemFunction": "Hệ thống",
+      "onThisPage": "Trên trang này",
       "breadcrumb": "Điều hướng Breadcrumb",
-      "more": "Thêm",
       "close": "Đóng",
-      "search": "Tìm kiếm",
-      "refresh": "Làm mới",
-      "noData": "Không có dữ liệu",
-      "enableAll": "Bật tất cả",
-      "disableAll": "Tắt tất cả",
-      "goToMarket": "Đến Chợ tiện ích",
-      "selectDirectory": "Chọn thư mục",
-      "clearPath": "Xóa",
-      "openInFolder": "Mở trong Trình quản lý tệp",
-      "confirm": "Xác nhận",
-      "cancel": "Hủy",
-      "favoriteHome": "Trang chủ",
-      "favoriteDocuments": "Tài liệu",
-      "favoriteDownloads": "Tải xuống",
-      "viewModeSingle": "Một cột",
-      "viewModeDouble": "Hai cột",
-      "viewModeTriple": "Ba cột",
+      "more": "Thêm",
+      "back": "Quay lại",
       "originAll": "Tất cả",
       "originOfficial": "Chính thức",
       "originCommunity": "Cộng đồng",
+      "goToMarket": "Đến Chợ tiện ích",
+      "filterTitle": "Lọc",
+      "enableAll": "Bật tất cả",
+      "disableAll": "Tắt tất cả",
+      "viewModeSingle": "Một cột",
+      "viewModeDouble": "Hai cột",
+      "viewModeTriple": "Ba cột",
       "cloudEmptyThemeTitle": "Chưa tải xuống giao diện đám mây nào",
       "cloudEmptyThemeDesc": "Vào Chợ tiện ích để duyệt và tải giao diện; sau khi tải có thể chuyển ở đây.",
       "cloudEmptyLocaleTitle": "Chưa tải xuống gói ngôn ngữ đám mây nào",
@@ -87,94 +686,416 @@
       "cloudEmptyEnvDesc": "Xác nhận runtime liên quan đã cài đặt đúng và có trong PATH.",
       "cloudEmptyGenericTitle": "Không có dữ liệu",
       "cloudEmptyGenericDesc": "Danh sách trống; thử lại sau hoặc làm mới.",
+      "updateAvailable": "Có bản cập nhật",
+      "latestVersion": "Phiên bản mới nhất",
+      "localVersion": "Phiên bản cục bộ",
+      "search": "Tìm kiếm",
+      "noData": "Không có dữ liệu",
+      "selectDirectory": "Chọn thư mục",
+      "remark": "Ghi chú",
+      "version": "Phiên bản",
+      "path": "Đường dẫn",
+      "copyPath": "Sao chép đường dẫn",
+      "openInExplorer": "Hiển thị trong Explorer",
+      "openInTerminal": "Mở trong Terminal",
+      "copied": "Đã sao chép",
+      "copyFailed": "Sao chép thất bại",
+      "delete": "Xóa",
+      "deleteConfirm": "Xác nhận xóa?",
+      "deleteSuccess": "Đã xóa thành công",
+      "deleteFailed": "Xóa thất bại",
+      "uninstall": "Gỡ cài đặt",
+      "uninstallConfirm": "Gỡ cài đặt gói ngôn ngữ này?",
+      "uninstallSuccess": "Đã gỡ cài đặt",
+      "uninstallFailed": "Gỡ cài đặt thất bại",
       "pathPickerPlaceholder": "Chọn thư mục hoặc kéo thư mục vào...",
       "pathPickerInvalid": "Đường dẫn không tồn tại",
-      "uninstallFailed": "Gỡ cài đặt thất bại",
-      "uninstallSuccess": "Đã gỡ cài đặt"
+      "pathPickerInvalidNotDir": "Đường dẫn không tồn tại hoặc không phải thư mục",
+      "pathPickerValidating": "Đang xác thực",
+      "pathPickerValid": "Hợp lệ",
+      "systemPicker": "Bộ chọn hệ thống",
+      "refreshTree": "Làm mới",
+      "goUp": "Lên cấp trên",
+      "openInFolder": "Mở trong Trình quản lý tệp",
+      "clearPath": "Xóa",
+      "refresh": "Làm mới",
+      "favoriteHome": "Trang chủ",
+      "favoriteDocuments": "Tài liệu",
+      "favoriteDownloads": "Tải xuống",
+      "confirm": "Xác nhận",
+      "cancel": "Hủy",
+      "updateNotice": {
+        "plugin": "Plugin",
+        "theme": "Giao diện",
+        "locale": "Gói ngôn ngữ",
+        "cta": "Đến Trung tâm tiện ích để cập nhật",
+        "message": "Có {count} {type} có thể cập nhật"
+      }
     },
-    "page": {
-      "home": {
-        "heroTitle": "XuYou Env Moment",
-        "heroSubtitle": "Quản lý môi trường tất cả trong một cho nhà phát triển",
-        "startScan": "Bắt đầu Quét"
+    "shortcut": {
+      "action": {
+        "scan-all": {
+          "label": "Quét tất cả",
+          "description": "Kích hoạt quét môi trường cục bộ"
+        },
+        "minimize-window": {
+          "label": "Thu nhỏ cửa sổ",
+          "description": "Thu nhỏ cửa sổ chính"
+        },
+        "close-window": {
+          "label": "Đóng cửa sổ",
+          "description": "Đóng cửa sổ chính"
+        },
+        "toggle-fullscreen": {
+          "label": "Bật/tắt toàn màn hình",
+          "description": "Vào/thoát chế độ toàn màn hình"
+        },
+        "open-settings": {
+          "label": "Mở Cài đặt",
+          "description": "Đi đến trang cài đặt chung"
+        },
+        "open-theme-center": {
+          "label": "Mở Trung tâm Giao diện",
+          "description": "Đi đến trang trung tâm giao diện"
+        },
+        "open-language": {
+          "label": "Mở Trung tâm Ngôn ngữ",
+          "description": "Đi đến trang trung tâm ngôn ngữ"
+        },
+        "open-about": {
+          "label": "Mở Giới thiệu",
+          "description": "Đi đến trang giới thiệu ứng dụng"
+        },
+        "open-help": {
+          "label": "Mở Trợ giúp",
+          "description": "Đi đến tài liệu trợ giúp"
+        },
+        "reload-page": {
+          "label": "Tải lại trang",
+          "description": "Tải lại trang hiện tại"
+        },
+        "zoom-in": {
+          "label": "Phóng to",
+          "description": "Tăng mức thu phóng giao diện"
+        },
+        "zoom-out": {
+          "label": "Thu nhỏ",
+          "description": "Giảm mức thu phóng giao diện"
+        },
+        "reset-zoom": {
+          "label": "Đặt lại thu phóng",
+          "description": "Khôi phục thu phóng mặc định"
+        },
+        "new-tab": {
+          "label": "Tab mới",
+          "description": "Mở trang chủ làm tab mới"
+        },
+        "close-tab": {
+          "label": "Đóng tab",
+          "description": "Đóng tab hiện tại"
+        },
+        "next-tab": {
+          "label": "Tab tiếp theo",
+          "description": "Chuyển sang tab tiếp theo"
+        },
+        "prev-tab": {
+          "label": "Tab trước",
+          "description": "Chuyển sang tab trước"
+        },
+        "open-updates": {
+          "label": "Mở Kiểm tra Cập nhật",
+          "description": "Đi đến trang kiểm tra cập nhật"
+        },
+        "open-plugin-store": {
+          "label": "Mở Cửa hàng Plugin",
+          "description": "Đi đến trang cửa hàng plugin"
+        },
+        "open-whats-new": {
+          "label": "Mở Có gì mới",
+          "description": "Đi đến trang có gì mới"
+        },
+        "open-env-install": {
+          "label": "Mở Cài đặt Môi trường",
+          "description": "Đi đến trang cài đặt môi trường"
+        }
+      }
+    },
+    "titlebar": {
+      "logPluginDisabled": "Plugin thu thập log chưa được bật",
+      "logsOpened": "Đã mở thư mục log",
+      "diagnosticSaved": "Đã lưu báo cáo chẩn đoán: {path}",
+      "collectFailed": "Thu thập dữ liệu chẩn đoán thất bại",
+      "menu": "Menu"
+    },
+    "settings": {
+      "position": {
+        "topLeft": "Trên cùng bên trái",
+        "topRight": "Trên cùng bên phải",
+        "bottomLeft": "Dưới cùng bên trái",
+        "bottomRight": "Dưới cùng bên phải"
+      }
+    },
+    "theme": {
+      "sakuraPink": "Hồng Sakura",
+      "lavenderMist": "Oải Hương",
+      "matchaFog": "Xanh Trà Mù Sương",
+      "crimsonNight": "Đêm Đỏ Thẫm",
+      "arcticFrost": "Sương Bạc Cực Địa",
+      "volcanicAsh": "Tro Núi Lửa",
+      "default": "Mặc định",
+      "unavailableFallback": "Giao diện {id} không khả dụng, đã chuyển về giao diện mặc định",
+      "mode": {
+        "dark": "Tối",
+        "light": "Sáng"
       },
-      "envScan": {
-        "eyebrow": "Quét Môi trường",
-        "title": "Quét Môi trường Cục bộ",
-        "subtitle": "Quét runtime và trình quản lý gói trên máy của bạn"
+      "def": {
+        "morning-minimal": {
+          "name": "Morning Minimal",
+          "description": "Nền trắng ngả ấm với điểm nhấn xanh tre, tươi mát như ánh sáng ban mai"
+        },
+        "bamboo-green": {
+          "name": "Bamboo Green",
+          "description": "Tông xanh tre đậm, điềm tĩnh và tập trung"
+        },
+        "amber-warm": {
+          "name": "Amber Warm",
+          "description": "Tông hổ phách ấm, ấm áp và dịu mềm"
+        },
+        "rose-mist": {
+          "name": "Rose Mist",
+          "description": "Sương hồng, nhẹ nhàng và thanh lịch"
+        },
+        "ocean-blue": {
+          "name": "Ocean Blue",
+          "description": "Tông xanh đại dương, điềm tĩnh và rộng lớn"
+        },
+        "sand-dune": {
+          "name": "Sand Dune",
+          "description": "Nâu ấm cồn cát, tự nhiên và mộc mạc"
+        },
+        "light": {
+          "name": "Light",
+          "description": "Giao diện sáng tiêu chuẩn"
+        },
+        "sakura-pink": {
+          "name": "Hồng Sakura",
+          "description": "Hồng sakura mềm mại và ấm áp"
+        },
+        "lavender-mist": {
+          "name": "Oải Hương",
+          "description": "Tím oải hương thanh nhã và yên tĩnh"
+        },
+        "matcha-fog": {
+          "name": "Xanh Trà Mù Sương",
+          "description": "Xanh trà mù sương điềm tĩnh và kìm nén"
+        },
+        "arctic-frost": {
+          "name": "Sương Bạc Cực Địa",
+          "description": "Sương lạnh xanh băng của cực địa"
+        },
+        "dark": {
+          "name": "Dark",
+          "description": "Giao diện tối tiêu chuẩn, dễ chịu cho mắt"
+        },
+        "slate-dark": {
+          "name": "Slate Dark",
+          "description": "Xám xanh đá phiến tối, điềm tĩnh và tập trung"
+        },
+        "midnight-forest": {
+          "name": "Midnight Forest",
+          "description": "Xanh lục rừng đêm, yên tĩnh và huyền bí"
+        },
+        "crimson-night": {
+          "name": "Đêm Đỏ Thẫm",
+          "description": "Đỏ thẫm trong đêm sâu"
+        },
+        "volcanic-ash": {
+          "name": "Tro Núi Lửa",
+          "description": "Hổ phách trong tro núi lửa ấm áp"
+        },
+        "mint-breeze": {
+          "name": "Gió Bạc Hà",
+          "description": "Xanh bạc hà tươi mát, sáng sủa và thoáng đãng"
+        },
+        "sunset-glow": {
+          "name": "Ánh Hoàng Hôn",
+          "description": "Cam đỏ hoàng hôn ấm, ấm áp và dịu mềm"
+        },
+        "olive-grove": {
+          "name": "Vườn Olive",
+          "description": "Vườn olive, tự nhiên và mộc mạc"
+        },
+        "coral-sunset": {
+          "name": "Hoàng Hôn San Hô",
+          "description": "Hoàng hôn san hô, rực rỡ và sáng sủa"
+        },
+        "cyber-cyan": {
+          "name": "Cyber Cyan",
+          "description": "Xanh lam cyber, công nghệ tương lai"
+        },
+        "deep-purple": {
+          "name": "Tím Ảo Mộng",
+          "description": "Tím đậm ảo mộng, huyền bí và thanh lịch"
+        },
+        "graphite-dark": {
+          "name": "Graphite Dark",
+          "description": "Xám than chì đậm, trung tính và tập trung"
+        },
+        "forest-canopy": {
+          "name": "Tán Rừng Sâu",
+          "description": "Sâu trong tán rừng, yên tĩnh và tự nhiên"
+        },
+        "ember-glow": {
+          "name": "Hào Quang Than Hồng",
+          "description": "Than hồng lập lòe trong đêm tối, ấm áp và sâu lắng"
+        },
+        "terracotta-night": {
+          "name": "Đêm Đất Đỏ",
+          "description": "Đất đỏ ấm hòa vào đêm, mộc mạc và ấm áp"
+        },
+        "mocha-dusk": {
+          "name": "Hoàng Hôn Mocha",
+          "description": "Tông mocha lúc hoàng hôn, đậm đà và yên tĩnh"
+        },
+        "paper-white": {
+          "name": "Trắng Giấy",
+          "description": "Trắng giấy tinh khiết, tối giản và trung tính"
+        },
+        "fog-gray": {
+          "name": "Xám Sương Mù",
+          "description": "Tông xám sương mù, điềm tĩnh và kìm nén"
+        },
+        "cerulean-sky": {
+          "name": "Xanh Bầu Trời",
+          "description": "Xanh bầu trời quang đãng, trong trẻo và rộng mở"
+        },
+        "glacier-blue": {
+          "name": "Xanh Sông Băng",
+          "description": "Xanh sông băng nhạt, trong trẻo và thuần khiết"
+        },
+        "deep-moss": {
+          "name": "Rêu Xanh Đậm",
+          "description": "Xanh rêu đậm, tối và tự nhiên"
+        },
+        "sage-mist": {
+          "name": "Sương Xanh Ngải",
+          "description": "Sương xanh ngải, mềm mại và thảo mộc"
+        },
+        "steel-blue-dark": {
+          "name": "Steel Blue Dark",
+          "description": "Xanh thép đậm, điềm tĩnh và lý trí"
+        },
+        "peach-cream": {
+          "name": "Kem Đào",
+          "description": "Tông kem đào, ngọt ngào và dịu mềm"
+        },
+        "misty-mountain": {
+          "name": "Núi Sương Mù",
+          "description": "Nền núi sương mù, ánh vàng ấm, yên tĩnh và xa xăm"
+        },
+        "starry-night": {
+          "name": "Đêm Sao",
+          "description": "Nền đêm sao sâu thẳm, vũ trụ mộng mơ, yên tĩnh và huyền bí"
+        },
+        "ink-wash": {
+          "name": "Sơn Thủy",
+          "description": "Nền sơn thủy, bóng tre và sương mù, khoảng trắng thanh nhã"
+        },
+        "auto": {
+          "name": "Auto",
+          "description": "Theo giao diện hệ thống (tự động sáng/tối)"
+        },
+        "meadow-light": {
+          "name": "Đồng Cỏ Sáng",
+          "description": "Giao diện sáng tự nhiên, lấy cảm hứng từ xanh mềm và ánh sáng ấm của đồng cỏ ban mai; dịu mắt khi sử dụng lâu."
+        },
+        "sunset-orchard": {
+          "name": "Vườn Cây Hoàng Hôn",
+          "description": "Giao diện sáng ấm, lấy cảm hứng từ cam vàng và đỏ ấm của vườn cây lúc hoàng hôn; êm dịu và thoải mái."
+        },
+        "midnight-iris": {
+          "name": "Iris Nửa Đêm",
+          "description": "Giao diện tối mát, lấy cảm hứng từ tím đậm và chàm của hoa iris nửa đêm; điềm tĩnh và tập trung."
+        }
+      }
+    },
+    "notification": {
+      "upToDateTitle": "Đã mới nhất",
+      "upToDateContent": "Phiên bản hiện tại v{version} là phiên bản phát hành mới nhất",
+      "checkFailedTitle": "Kiểm tra cập nhật thất bại",
+      "checkFailedContent": "Vui lòng kiểm tra kết nối mạng và thử lại"
+    },
+    "plugin": {
+      "notEnabledTitle": "Plugin chưa được bật",
+      "notEnabledDesc": "Plugin mà tính năng này phụ thuộc chưa được bật. Vui lòng bật trong Trung tâm Plugin.",
+      "goToPluginCenter": "Đến Trung tâm Plugin",
+      "categoryCore": "Lõi",
+      "categoryUi": "Giao diện",
+      "categorySystem": "Hệ thống",
+      "categoryExperimental": "Thử nghiệm",
+      "restoreRecommended": "Khôi phục khuyên dùng",
+      "banner": {
+        "title": "Plugin chưa được bật",
+        "desc": "Plugin mà tính năng này phụ thuộc chưa được bật. Vui lòng bật trong Trung tâm Plugin.",
+        "goToPluginCenter": "Đến Trung tâm Plugin",
+        "disabled": "Đã tắt"
       },
-      "envInstall": {
-        "eyebrow": "Cài đặt",
-        "title": "Cài đặt Môi trường Cục bộ",
-        "subtitle": "Lệnh cài đặt và liên kết tải xuống cho runtime và công cụ phát triển"
-      },
-      "runtimeManager": {
-        "eyebrow": "Quản lý Runtime",
-        "title": "Quản lý Phiên bản Runtime",
-        "subtitle": "Quản lý cài đặt JDK / Node.js / Python cục bộ: đặt mặc định, thêm đường dẫn tùy chỉnh hoặc tải trực tuyến"
-      },
-      "themeCenter": {
-        "eyebrow": "Giao diện",
-        "title": "Trung tâm Giao diện",
-        "subtitle": "Chọn bảng màu phù hợp cho không gian làm việc của bạn"
-      },
-      "plugin": {
-        "eyebrow": "Plugin",
-        "title": "Trung tâm Plugin",
-        "subtitle": "Quản lý các module chức năng của ứng dụng"
-      },
-      "extensionMarket": {
-        "eyebrow": "Marketplace",
-        "title": "Chợ tiện ích",
-        "subtitle": "Duyệt và tải plugin, giao diện và gói ngôn ngữ để mở rộng XuYou Env Moment của bạn."
-      },
-      "languageCenter": {
-        "eyebrow": "Ngôn ngữ",
-        "title": "Trung tâm Ngôn ngữ",
-        "subtitle": "Chọn ngôn ngữ giao diện ứng dụng",
-        "interfaceLanguage": "Ngôn ngữ Giao diện",
-        "localTab": "Cục bộ",
-        "cloudTab": "Đám mây",
-        "localPacks": "Gói Ngôn ngữ Cục bộ",
-        "enable": "Bật",
-        "disable": "Tắt"
-      },
-      "settings": {
-        "eyebrow": "Cài đặt",
-        "title": "Cài đặt",
-        "subtitle": "Cá nhân hóa trải nghiệm ứng dụng"
-      },
-      "updates": {
-        "eyebrow": "Cập nhật",
-        "title": "Kiểm tra Cập nhật",
-        "subtitle": "Kiểm tra và nâng cấp lên phiên bản mới nhất"
-      },
-      "about": {
-        "version": "Phiên bản",
-        "author": "Tác giả",
-        "license": "Giấy phép",
-        "repository": "Kho lưu trữ",
-        "homepage": "Trang chủ"
-      },
-      "help": {
-        "eyebrow": "Trợ giúp",
-        "title": "Tài liệu Trợ giúp",
-        "subtitle": "Tìm hiểu các tính năng của ứng dụng và cách sử dụng"
-      },
-      "whatsNew": {
-        "eyebrow": "Cập nhật",
-        "title": "Có gì mới",
-        "subtitle": "Xem nội dung cập nhật phiên bản"
-      },
-      "shortcuts": {
-        "eyebrow": "Phím tắt",
-        "title": "Phím tắt Bàn phím",
-        "subtitle": "Tùy chỉnh tổ hợp phím tắt"
-      },
-      "license": {
-        "eyebrow": "Pháp lý",
-        "title": "Giấy phép Nguồn mở MIT",
-        "subtitle": "Toàn văn giấy phép nguồn mở kèm theo ứng dụng"
+      "def": {
+        "envScanner": {
+          "name": "Trình quét môi trường",
+          "description": "Phát hiện runtime đã cài đặt trên hệ thống (Node.js, Python, Java, v.v.)"
+        },
+        "packageManagerDetector": {
+          "name": "Trình phát hiện trình quản lý gói",
+          "description": "Phát hiện trình quản lý gói như npm, pnpm, yarn, pip, cargo, v.v."
+        },
+        "themeSwitcher": {
+          "name": "Trình chuyển giao diện",
+          "description": "Cung cấp nhiều bảng màu và hỗ trợ chế độ tối"
+        },
+        "shortcutManager": {
+          "name": "Trình quản lý phím tắt",
+          "description": "Tùy chỉnh phím tắt toàn cục và ứng dụng"
+        },
+        "notificationSystem": {
+          "name": "Hệ thống thông báo",
+          "description": "Tích hợp thông báo trong ứng dụng và hệ thống"
+        },
+        "logCollector": {
+          "name": "Trình thu thập log",
+          "description": "Thu thập dữ liệu chẩn đoán và xuất log ứng dụng"
+        },
+        "autoUpdater": {
+          "name": "Trình cập nhật tự động",
+          "description": "Tự động tải xuống và cài đặt cập nhật ứng dụng (thử nghiệm)"
+        },
+        "cloudSync": {
+          "name": "Đồng bộ đám mây",
+          "description": "Đồng bộ cấu hình và kết quả quét lên đám mây (sắp ra mắt)"
+        },
+        "envInstaller": {
+          "name": "Trình cài đặt môi trường",
+          "description": "Cài đặt và nâng cấp runtime trực tuyến (Node.js, Python, v.v.)"
+        },
+        "repoCacheScanner": {
+          "name": "Kho cục bộ & Bộ nhớ đệm",
+          "description": "Quét kho và bộ nhớ đệm cục bộ cho android/gradle/maven/pip/yarn/npm/pnpm/bun"
+        },
+        "globalPackagesScanner": {
+          "name": "Gói toàn cục",
+          "description": "Xem gói cài đặt toàn cục của npm/yarn/pnpm/cnpm/bun và kiểm tra cập nhật"
+        },
+        "projectPackagesScanner": {
+          "name": "Gói dự án",
+          "description": "Quét dependency package.json của dự án chỉ định và kiểm tra cập nhật"
+        }
+      }
+    },
+    "tray": {
+      "tooltip": "XuYou Env Moment",
+      "menu": {
+        "show": "Hiển thị Cửa sổ chính",
+        "quit": "Thoát"
       }
     }
   }

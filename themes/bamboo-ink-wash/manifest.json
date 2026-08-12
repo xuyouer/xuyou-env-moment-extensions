@@ -1,0 +1,51 @@
+{
+  "id": "bamboo-ink-wash",
+  "name": "水墨竹韵",
+  "version": "1.0.0",
+  "description": "自然系浅色主题，灵感来自传统水墨画的竹影与留白，素雅宁静。",
+  "author": "XuYou",
+  "origin": "official",
+  "family": "natural",
+  "mode": "light",
+  "colors": {
+    "bg": "#f5f3ee",
+    "surface": "#ffffff",
+    "surfaceRaised": "#ffffff",
+    "surfaceSunken": "#eeeae0",
+    "text": "#2c3327",
+    "textSecondary": "#5a6b5a",
+    "textMuted": "#8a9580",
+    "border": "#d9d4cc",
+    "borderSubtle": "#e4dfd6",
+    "accent": "#5a6b5a",
+    "accentHover": "#4a5a4a",
+    "accentText": "#3f4f3f",
+    "accentSoft": "#e0ded5",
+    "warning": "#c98a2b",
+    "warningSoft": "#f6e8cf",
+    "warningText": "#8a5e1a",
+    "success": "#4d8a3f",
+    "successSoft": "#dceadc",
+    "error": "#c0493b",
+    "errorSoft": "#f3dad5",
+    "hoverBg": "#eeeae0",
+    "hoverBgActive": "#e3dfd4"
+  },
+  "swatches": [
+    "#f5f3ee",
+    "#5a6b5a",
+    "#2c3327",
+    "#d9d4cc"
+  ],
+  "background": {
+    "image": "background.png",
+    "overlay": "rgba(245,243,238,0.78)",
+    "blendMode": "soft-light",
+    "scope": "app",
+    "size": "cover",
+    "position": "center center",
+    "attachment": "fixed",
+    "opacity": 1
+  },
+  "baseFont": "\"PingFang SC\", \"Microsoft YaHei\", \"Segoe UI\", Roboto, sans-serif"
+}

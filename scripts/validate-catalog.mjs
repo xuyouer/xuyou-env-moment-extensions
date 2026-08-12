@@ -4,7 +4,7 @@
 // 仅依赖 Node.js 内置模块（fs / path / url），无需安装任何第三方包
 // 用法：node scripts/validate-catalog.mjs
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
@@ -112,6 +112,31 @@ function validateThemes(themes) {
   })
 }
 
+// 校验主题背景图片：读取主题目录下的 manifest.json，若含 background.image，
+// 则对应主题目录下该图片文件必须存在；不存在则记为错误
+function validateThemeBackgrounds(themes) {
+  themes.forEach((t, i) => {
+    if (!t.id) return
+    const where = `themes[${i}] (${t.id})`
+    const themeDir = join(repoRoot, 'themes', t.id)
+    const manifestPath = join(themeDir, 'manifest.json')
+    let manifest
+    try {
+      manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'))
+    } catch (err) {
+      // manifest 读取失败时跳过背景图片检查（manifest 存在性不在本脚本职责内）
+      return
+    }
+    const bg = manifest.background
+    if (bg && typeof bg.image === 'string' && bg.image !== '') {
+      const imagePath = join(themeDir, bg.image)
+      if (!existsSync(imagePath)) {
+        fail(`${where} 背景图片缺失：themes/${t.id}/${bg.image} 不存在`)
+      }
+    }
+  })
+}
+
 // 校验语言包条目：必填字段 + code 唯一 + downloadUrl 合法
 function validateLocales(locales) {
   const seenCodes = new Set()
@@ -133,7 +158,10 @@ function validateLocales(locales) {
 }
 
 if (Array.isArray(catalog.plugins)) validatePlugins(catalog.plugins)
-if (Array.isArray(catalog.themes)) validateThemes(catalog.themes)
+if (Array.isArray(catalog.themes)) {
+  validateThemes(catalog.themes)
+  validateThemeBackgrounds(catalog.themes)
+}
 if (Array.isArray(catalog.locales)) validateLocales(catalog.locales)
 
 // 输出结果：失败列出全部问题并退出码 1，通过则打印绿色对勾与统计

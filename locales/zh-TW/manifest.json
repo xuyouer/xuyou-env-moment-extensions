@@ -3,7 +3,7 @@
   "code": "zh-TW",
   "nativeName": "繁體中文",
   "flag": "🇹🇼",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "XuYou",
   "origin": "official",
   "description": "繁體中文（台灣）語言包。",
@@ -12,69 +12,668 @@
       "home": "首頁",
       "backHome": "返回首頁",
       "app": "應用",
-      "envScan": "環境掃描",
-      "envInstall": "環境安裝",
+      "envScan": "本機環境掃描",
+      "envInstall": "本機環境安裝",
       "runtimeManager": "執行時管理",
       "themeCenter": "主題中心",
       "pluginCenter": "插件中心",
       "extensionMarket": "擴充市場",
-      "settings": "設置",
-      "generalSettings": "通用設置",
+      "pluginStore": "插件商店",
+      "settings": "設定",
+      "generalSettings": "通用設定",
       "languageCenter": "語言中心",
       "help": "幫助",
-      "helpDoc": "幫助文檔",
-      "whatsNew": "最新動態",
+      "helpDoc": "幫助文件",
+      "whatsNew": "最新變化",
       "shortcuts": "鍵盤快速鍵",
-      "feedback": "反饋",
-      "openLogs": "打開日誌",
-      "collectLogs": "收集日誌",
+      "feedback": "回饋",
+      "openLogs": "在檔案總管中顯示日誌",
+      "collectLogs": "收集日誌與診斷資料",
       "about": "關於",
-      "aboutApp": "關於許柚環境時刻",
+      "aboutApp": "關於應用",
       "checkUpdates": "檢查更新",
-      "github": "GitHub"
+      "github": "GitHub 儲存庫"
+    },
+    "page": {
+      "home": {
+        "heroTitle": "發現你本機的所有執行時",
+        "heroSubtitle": "掃描並管理你電腦上的 Node.js、Python、Go 等執行時環境與套件管理器，一目了然。",
+        "startScan": "開始掃描"
+      },
+      "envScan": {
+        "eyebrow": "本機環境掃描",
+        "title": "本機環境掃描",
+        "subtitle": "掃描你電腦上的執行時環境與套件管理器",
+        "scanning": "掃描中...",
+        "rescan": "重新掃描",
+        "startScan": "開始掃描",
+        "loading": "正在掃描...",
+        "readyEyebrow": "就緒",
+        "readyTitle": "點擊上方按鈕開始掃描",
+        "readyDesc": "將自動偵測你電腦上安裝的執行時環境與套件管理器",
+        "noResultsEyebrow": "無結果",
+        "noResultsTitle": "未偵測到任何環境",
+        "noResultsDesc": "請確認相關執行時已正確安裝並加入 PATH",
+        "runtimesTab": "執行時環境",
+        "noRuntimes": "未偵測到執行時環境",
+        "packageManagersTab": "軟體套件管理器",
+        "noPackageManagers": "未偵測到軟體套件管理器",
+        "detail": "詳情",
+        "field": {
+          "name": "名稱",
+          "version": "版本",
+          "path": "路徑",
+          "source": "來源",
+          "installSource": "安裝來源"
+        },
+        "copyPath": "複製路徑",
+        "openInExplorer": "在檔案總管中顯示",
+        "openInTerminal": "在終端機中開啟",
+        "copyRegistry": "複製 registry",
+        "copied": "已複製",
+        "copyFailed": "複製失敗",
+        "tabRuntimes": "執行時環境",
+        "tabPackageManagers": "軟體套件管理器",
+        "tabRepoCaches": "本機儲存庫與快取",
+        "tabGlobalPackages": "全域套件管理",
+        "tabProjectPackages": "專案套件管理",
+        "tabDashboard": "資料看板",
+        "dashboard": {
+          "kpiRuntimes": "執行時",
+          "kpiPackageManagers": "套件管理器",
+          "kpiRepoCacheSize": "快取佔用",
+          "kpiUpdatable": "可更新",
+          "chartRuntimes": "執行時分布",
+          "chartPackageManagers": "套件管理器分布",
+          "chartRepoCaches": "儲存庫快取佔用",
+          "chartGlobalPackages": "全域套件更新狀態",
+          "emptyTitle": "暫無掃描資料",
+          "emptyDesc": "點擊下方按鈕開始掃描本機環境",
+          "emptyCta": "開始掃描",
+          "updatable": "可更新",
+          "upToDate": "已是最新"
+        },
+        "searchPlaceholder": "搜尋名稱...",
+        "noRepoCaches": "未偵測到本機儲存庫與快取",
+        "scanFailed": "掃描失敗",
+        "projectScanned": "專案套件掃描完成",
+        "refreshed": "已重新整理",
+        "repoCache": {
+          "tool": {
+            "android": "Android",
+            "gradle": "Gradle",
+            "maven": "Maven",
+            "eclipse": "Eclipse",
+            "pip": "pip",
+            "yarn": "Yarn",
+            "npm": "npm",
+            "pnpm": "pnpm",
+            "bun": "Bun"
+          },
+          "toolLabel": "工具",
+          "size": "大小",
+          "items": "條目",
+          "openInExplorer": "在檔案總管中開啟"
+        },
+        "globalPackages": {
+          "tabNpm": "npm",
+          "tabYarn": "Yarn",
+          "tabPnpm": "pnpm",
+          "tabCnpm": "cnpm",
+          "tabBun": "Bun",
+          "scanProject": "掃描專案套件",
+          "projectPath": "專案路徑",
+          "projectPathPlaceholder": "輸入專案路徑，如 /path/to/project",
+          "refreshLatest": "重新整理最新版本",
+          "updateAvailable": "可更新",
+          "copyUpdateCmd": "複製更新指令",
+          "copyReinstallCmd": "複製重裝指令",
+          "copiedUpdateCmd": "已複製更新指令",
+          "copiedReinstallCmd": "已複製重裝指令",
+          "copyUninstallCmd": "複製解除安裝指令",
+          "copiedUninstallCmd": "已複製解除安裝指令",
+          "projectPackages": "專案套件",
+          "latestVersion": "最新版本",
+          "localVersion": "本機版本",
+          "latest": "最新",
+          "installed": "已安裝",
+          "manager": "管理器",
+          "dependencyType": "依賴類型",
+          "searchPlaceholder": "搜尋套件名...",
+          "emptyTitle": "暫無全域套件",
+          "emptyDesc": "點擊「重新整理最新版本」取得套件資訊",
+          "cancel": "取消",
+          "scan": "掃描",
+          "selectDirectory": "選擇目錄"
+        },
+        "projectPackages": {
+          "emptyTitle": "暫無專案套件資料",
+          "emptyDesc": "點擊上方按鈕掃描專案 package.json"
+        },
+        "group": {
+          "count": "{count} 個"
+        }
+      },
+      "envInstall": {
+        "eyebrow": "安裝",
+        "title": "本機環境安裝",
+        "subtitle": "常用執行時與開發工具的安裝指令與下載入口",
+        "category": {
+          "runtimes": "執行時",
+          "packageManagers": "套件管理器",
+          "databases": "資料庫",
+          "tools": "工具"
+        },
+        "version": "版本",
+        "versionPlaceholder": "選擇版本",
+        "installPath": "安裝路徑",
+        "installPathPlaceholder": "預設路徑",
+        "mirror": "鏡像源",
+        "mirrorOfficial": "官方",
+        "mirrorCustom": "自訂",
+        "mirrorConfig": "鏡像源設定",
+        "mirrorConfigDesc": "為支援鏡像源的執行時設定自訂 URL",
+        "saveMirror": "儲存",
+        "defaultVersion": "預設",
+        "noVersion": "暫無版本資料",
+        "fetchVersions": "取得版本",
+        "fetching": "取得中...",
+        "command": "安裝指令",
+        "copyCommand": "複製指令",
+        "copied": "已複製",
+        "copyFailed": "複製失敗",
+        "download": "下載",
+        "mirrorSaved": "已儲存",
+        "tabRuntimes": "執行時",
+        "tabPackageManagers": "套件管理器",
+        "tabDatabases": "資料庫",
+        "tabTools": "工具",
+        "tabMirrorConfig": "鏡像源設定",
+        "goJdkManager": "JDK 管理",
+        "goNodeManager": "Node 管理",
+        "goPythonManager": "Python 管理"
+      },
+      "jdkManager": {
+        "eyebrow": "JDK 管理",
+        "title": "JDK 版本管理",
+        "subtitle": "管理本機 JDK 安裝、設為預設、新增自訂路徑或線上下載",
+        "addCustom": "新增自訂路徑",
+        "scanLocal": "掃描本機",
+        "default": "預設",
+        "custom": "自訂",
+        "scanned": "已掃描",
+        "setDefault": "設為預設",
+        "openInExplorer": "在檔案總管中開啟",
+        "delete": "刪除",
+        "onlineVersions": "線上版本",
+        "download": "下載",
+        "addCustomTitle": "新增自訂 JDK 路徑",
+        "path": "路徑",
+        "pathPlaceholder": "輸入 JDK 安裝路徑",
+        "version": "版本",
+        "versionPlaceholder": "輸入版本號，如 17.0.1",
+        "addCustomCancel": "取消",
+        "addCustomConfirm": "新增",
+        "latestBadge": "最新"
+      },
+      "nodeManager": {
+        "eyebrow": "NODE 管理",
+        "title": "Node.js 版本管理",
+        "subtitle": "管理本機 Node.js 安裝、設為預設、新增自訂路徑或線上下載",
+        "scanLocal": "掃描本機",
+        "addCustom": "新增自訂路徑",
+        "tabDetected": "已偵測",
+        "tabOnline": "線上版本",
+        "searchPlaceholder": "搜尋版本或路徑...",
+        "defaultBadge": "預設",
+        "customBadge": "自訂",
+        "setDefault": "設為預設",
+        "openInExplorer": "在檔案總管中開啟",
+        "copyPath": "複製路徑",
+        "delete": "刪除",
+        "noDetected": "未偵測到 Node.js",
+        "noDetectedDesc": "點擊「掃描本機」重新偵測，或新增自訂路徑",
+        "onlineSearchPlaceholder": "搜尋版本或 LTS...",
+        "refreshOnline": "重新整理線上版本",
+        "security": "安全更新",
+        "openDownloadPage": "開啟下載頁",
+        "noOnline": "暫無線上版本",
+        "noOnlineDesc": "點擊「重新整理線上版本」取得版本列表",
+        "addCustomTitle": "新增自訂 Node.js 路徑",
+        "pathLabel": "路徑",
+        "pathPlaceholder": "輸入 Node.js 安裝路徑",
+        "versionLabel": "版本",
+        "versionPlaceholder": "輸入版本號，如 18.19.0",
+        "cancel": "取消",
+        "confirm": "新增",
+        "added": "已新增自訂 Node.js",
+        "addFailed": "新增失敗",
+        "setDefaultDone": "已設為預設",
+        "deleted": "已刪除",
+        "copied": "已複製路徑",
+        "copyFailed": "複製失敗",
+        "scanFailed": "掃描失敗",
+        "scanned": "掃描完成"
+      },
+      "pythonManager": {
+        "eyebrow": "PYTHON 管理",
+        "title": "Python 版本管理",
+        "subtitle": "管理本機 Python 安裝、設為預設、新增自訂路徑或線上下載",
+        "addCustom": "新增自訂路徑",
+        "scanLocal": "掃描本機",
+        "default": "預設",
+        "custom": "自訂",
+        "scanned": "已掃描",
+        "setDefault": "設為預設",
+        "openInExplorer": "在檔案總管中開啟",
+        "delete": "刪除",
+        "onlineVersions": "線上版本",
+        "openDownloadPage": "開啟下載頁",
+        "addCustomTitle": "新增自訂 Python 路徑",
+        "path": "路徑",
+        "pathPlaceholder": "輸入 Python 安裝路徑",
+        "version": "版本",
+        "versionPlaceholder": "輸入版本號，如 3.11.0",
+        "addCustomCancel": "取消",
+        "addCustomConfirm": "新增"
+      },
+      "runtimeManager": {
+        "eyebrow": "執行時管理",
+        "title": "執行時版本管理",
+        "subtitle": "統一管理本機 JDK / Node.js / Python 安裝、設為預設、新增自訂路徑或線上下載",
+        "tabJdk": "JDK",
+        "tabNode": "Node",
+        "tabPython": "Python",
+        "detected": "已偵測",
+        "online": "線上版本",
+        "addCustom": "新增自訂路徑",
+        "scanLocal": "掃描本機",
+        "remark": "備註名稱",
+        "remarkPlaceholder": "可選，如「主力開發」",
+        "selectDirectory": "選擇目錄",
+        "openDownloadPage": "開啟下載頁",
+        "setDefault": "設為預設",
+        "openInExplorer": "在檔案總管中開啟",
+        "copyPath": "複製路徑",
+        "openInTerminal": "在終端機開啟",
+        "default": "預設",
+        "delete": "刪除",
+        "detecting": "正在識別版本...",
+        "detectFailed": "無法識別版本，請檢查路徑是否正確",
+        "addCustomTitle": "新增自訂路徑",
+        "confirm": "新增",
+        "cancel": "取消",
+        "pathPlaceholder": "輸入或選擇執行時安裝路徑",
+        "scanned": "已掃描",
+        "custom": "自訂",
+        "emptyDetected": "未偵測到該執行時，點擊「掃描本機」或新增自訂路徑",
+        "emptyOnline": "暫無線上版本",
+        "loading": "載入中...",
+        "fetchFailed": "取得線上版本失敗，請檢查網路"
+      },
+      "settings": {
+        "eyebrow": "設定",
+        "title": "設定",
+        "subtitle": "個人化你的應用體驗",
+        "general": "通用",
+        "language": "介面語言",
+        "languageDesc": "選擇應用介面語言",
+        "fontSize": "字型大小",
+        "fontSizeDesc": "全域基礎字級",
+        "theme": "主題",
+        "themeDesc": "淺色 / 深色 / 跟隨系統",
+        "plugins": "插件",
+        "pluginsDesc": "管理已安裝的插件",
+        "pluginsCount": "已啟用 {count} 個",
+        "shortcuts": "快速鍵",
+        "shortcutsDesc": "自訂快速鍵綁定",
+        "more": "更多",
+        "notifications": "通知",
+        "notificationsEnabled": "啟用通知",
+        "notificationsEnabledDesc": "是否顯示系統通知",
+        "notificationsPosition": "通知位置",
+        "notificationsPositionDesc": "通知顯示位置",
+        "notificationsDuration": "持續時間",
+        "notificationsDurationDesc": "預設通知持續時間（毫秒）",
+        "notificationsDesc": "管理應用通知",
+        "enableNotifications": "啟用通知",
+        "enableNotificationsDesc": "是否顯示系統通知",
+        "position": "通知位置",
+        "positionDesc": "通知顯示位置",
+        "duration": "持續時間",
+        "durationDesc": "預設通知持續時間（毫秒）",
+        "enabledPlugins": "已啟用插件",
+        "enabledPluginsDesc": "前往插件中心管理已安裝插件",
+        "tray": "系統匣",
+        "trayEnabled": "啟用系統匣",
+        "trayEnabledDesc": "關閉視窗時在系統匣保留應用",
+        "closeToTray": "關閉時最小化到系統匣",
+        "closeToTrayDesc": "點擊關閉按鈕時隱藏到系統匣而非退出",
+        "minimizeToTray": "最小化時隱藏到系統匣",
+        "minimizeToTrayDesc": "點擊最小化按鈕時隱藏到系統匣而非工作列"
+      },
+      "themeCenter": {
+        "eyebrow": "主題",
+        "title": "主題中心",
+        "subtitle": "為你的工作空間挑選一個合適的配色",
+        "current": "當前主題",
+        "random": "隨機",
+        "localTab": "本機",
+        "cloudTab": "雲端",
+        "download": "下載",
+        "installed": "已安裝",
+        "downloadFailed": "下載失敗",
+        "fetchFailed": "無法載入雲端主題",
+        "filterOrigin": "來源",
+        "cloudEmpty": "尚未下載任何雲端主題",
+        "confirmDelete": "確定刪除此主題？",
+        "switchTheme": "切換",
+        "delete": "刪除"
+      },
+      "languageCenter": {
+        "title": "語言中心",
+        "subtitle": "選擇應用介面語言",
+        "eyebrow": "語言",
+        "interfaceLanguage": "介面語言",
+        "localTab": "本機",
+        "cloudTab": "雲端",
+        "localPacks": "本機語言包",
+        "enable": "啟用",
+        "disable": "停用",
+        "enableAll": "全部啟用",
+        "disableAll": "全部停用",
+        "baseLanguage": "基礎語言",
+        "cloudSection": "雲端語言包",
+        "download": "下載",
+        "downloading": "下載中...",
+        "installed": "已下載",
+        "downloadFailed": "下載失敗",
+        "fetchFailed": "無法載入雲端語言包，請檢查網路",
+        "downloadSuccess": "語言包下載成功",
+        "author": "作者",
+        "version": "版本",
+        "filterOrigin": "來源",
+        "cloudEmpty": "尚未下載任何雲端語言包"
+      },
+      "about": {
+        "version": "版本",
+        "author": "作者",
+        "license": "授權條款",
+        "repository": "儲存庫",
+        "homepage": "首頁"
+      },
+      "updates": {
+        "eyebrow": "更新",
+        "title": "檢查更新",
+        "subtitle": "查看並升級到最新版本",
+        "currentVersion": "當前版本",
+        "checkButton": "檢查更新",
+        "checkNow": "檢查更新",
+        "checking": "檢查中...",
+        "retry": "重試",
+        "checkFailed": "檢查失敗，請稍後重試",
+        "later": "稍後提醒",
+        "newVersionAvailable": "發現新版本",
+        "releaseNotes": "更新日誌",
+        "upToDate": "已是最新版本",
+        "upToDateDesc": "當前 {version} 是最新發布版本",
+        "available": "發現新版本",
+        "availableDesc": "請前往 GitHub Releases 下載最新版本",
+        "download": "前往下載",
+        "idleHint": "點擊「檢查更新」開始檢查",
+        "currentVersionSection": "當前版本",
+        "checkStatusSection": "檢查狀態",
+        "releaseNotesSection": "發布說明",
+        "updateChannelSection": "更新通道",
+        "appName": "許柚環境時刻",
+        "releaseNotesEmpty": "暫無新版本發布說明。點擊「立即檢查」查看最新狀態。",
+        "viewFullRelease": "查看完整發布說明",
+        "channelDesc": "更新通過 GitHub Releases 發布，應用啟動時不自動檢查，需手動點擊「立即檢查」。",
+        "comparisonRule": "版本比較採用語意化版本號（SemVer）規則：主版本.次版本.修訂號。僅當遠端 tag 大於當前版本時提示更新。",
+        "lastChecked": "上次檢查",
+        "publishedAt": "發布時間"
+      },
+      "plugins": {
+        "title": "插件中心",
+        "subtitle": "管理應用功能模組",
+        "enabled": "已啟用 {count} / {total} 個插件"
+      },
+      "plugin": {
+        "eyebrow": "插件",
+        "title": "插件中心",
+        "subtitle": "管理應用功能模組",
+        "enabled": "已啟用 {count} / {total} 個插件",
+        "builtinPlugins": "內建插件",
+        "cloudPlugins": "雲端插件",
+        "core": "核心功能",
+        "ui": "介面增強",
+        "system": "系統功能",
+        "experimental": "實驗性",
+        "comingSoon": "即將推出",
+        "experimentalBadge": "實驗性",
+        "comingSoonBadge": "即將推出",
+        "download": "下載",
+        "stars": "{count} stars",
+        "enabledLabel": "已啟用",
+        "disabledLabel": "已停用",
+        "enableRecommended": "推薦開啟",
+        "enableDefaults": "預設開啟",
+        "enableAll": "全部開啟",
+        "disableAll": "全部停用",
+        "browseStore": "瀏覽雲端插件",
+        "recommendedBadge": "推薦",
+        "localTab": "本機",
+        "cloudTab": "雲端",
+        "downloadInstall": "下載並安裝",
+        "installed": "已安裝",
+        "downloadFailed": "下載失敗",
+        "fetchFailed": "無法載入雲端插件",
+        "searchPlaceholder": "搜尋雲端插件...",
+        "allCategories": "全部分類",
+        "cloudEmpty": "尚未下載任何雲端插件"
+      },
+      "pluginStore": {
+        "title": "插件商店",
+        "subtitle": "瀏覽社群雲端插件",
+        "eyebrow": "商店",
+        "searchPlaceholder": "搜尋插件...",
+        "stars": "{count} stars",
+        "download": "下載",
+        "noResults": "未找到匹配的插件",
+        "downloadInstall": "下載並安裝",
+        "installed": "已安裝",
+        "downloadFailed": "下載失敗",
+        "fetchFailed": "無法載入雲端插件，請檢查網路",
+        "loading": "載入中...",
+        "filterOrigin": "來源",
+        "category": {
+          "dev": "開發工具",
+          "ai": "AI 助手",
+          "db": "資料庫"
+        },
+        "plugin": {
+          "cloud-terminal": {
+            "name": "雲端終端",
+            "desc": "整合雲端終端環境，支援遠端指令執行"
+          },
+          "docker-manager": {
+            "name": "Docker 管理器",
+            "desc": "視覺化管理系統 Docker 容器與映像檔"
+          },
+          "ai-assistant": {
+            "name": "AI 助手",
+            "desc": "整合 AI 編程助手，提供程式碼建議與文件生成"
+          },
+          "k8s-dashboard": {
+            "name": "K8s 儀表板",
+            "desc": "管理 Kubernetes 叢集資源與部署狀態"
+          },
+          "redis-explorer": {
+            "name": "Redis Explorer",
+            "desc": "瀏覽與管理 Redis 資料庫鍵值對"
+          },
+          "sql-client": {
+            "name": "SQL 用戶端",
+            "desc": "連接 MySQL/PostgreSQL 執行查詢與管理"
+          }
+        }
+      },
+      "extensionMarket": {
+        "eyebrow": "Marketplace",
+        "title": "擴充市場",
+        "subtitle": "瀏覽並下載插件、主題與語言包，擴充你的許柚環境時刻。",
+        "searchPlaceholder": "搜尋擴充...",
+        "filterOrigin": "來源",
+        "loading": "載入中...",
+        "fetchFailed": "無法載入雲端目錄，請檢查網路",
+        "installed": "已安裝",
+        "downloadFailed": "下載失敗",
+        "downloadInstall": "下載並安裝",
+        "installing": "正在安裝...",
+        "stars": "{count} 星",
+        "noResults": "沒有匹配的擴充",
+        "pluginsSection": "插件",
+        "themesSection": "主題",
+        "localesSection": "語言包",
+        "tabPlugins": "插件",
+        "tabThemes": "主題",
+        "tabLocales": "語言包",
+        "category": {
+          "all": "全部",
+          "installed": "使用者安裝",
+          "updates": "可用的更新",
+          "enabled": "啟用",
+          "disabled": "停用",
+          "invalid": "無效",
+          "bundled": "已綁定",
+          "bundledUpdated": "已更新綁定內容"
+        },
+        "action": {
+          "autoUpdate": "自動更新插件",
+          "manageRepos": "管理擴充儲存庫",
+          "manageCerts": "管理擴充憑證",
+          "installFromDisk": "從磁碟安裝擴充",
+          "disableAll": "停用所有下載的擴充",
+          "enableAll": "啟用所有下載的擴充"
+        },
+        "noUpdates": "沒有可用的更新",
+        "updatedCount": "已更新 {count} 個擴充",
+        "installSuccess": "安裝成功",
+        "installFailed": "安裝失敗",
+        "allDisabled": "已停用所有下載的擴充",
+        "allEnabled": "已啟用所有下載的擴充",
+        "noRepos": "暫無自訂擴充儲存庫",
+        "noCerts": "暫無擴充憑證"
+      },
+      "shortcuts": {
+        "title": "鍵盤快速鍵",
+        "subtitle": "自訂快速鍵綁定",
+        "eyebrow": "快速鍵",
+        "clickToSet": "點擊設定",
+        "pressKeys": "按下快速鍵…",
+        "clear": "清除",
+        "resetAll": "恢復全部預設",
+        "modified": "已修改"
+      },
+      "help": {
+        "eyebrow": "幫助",
+        "title": "幫助文件",
+        "subtitle": "了解應用功能與使用方法"
+      },
+      "whatsNew": {
+        "eyebrow": "更新",
+        "title": "最新變化",
+        "subtitle": "查看版本更新內容"
+      },
+      "license": {
+        "eyebrow": "法律",
+        "title": "MIT 開源授權條款",
+        "subtitle": "本應用隨附的開源授權條款全文",
+        "back": "返回關於",
+        "copy": "複製全文",
+        "copied": "已複製",
+        "viewSource": "在 GitHub 查看原始檔"
+      }
     },
     "breadcrumb": {
       "home": "首頁",
-      "settings": "通用設置",
+      "settings": "通用設定",
       "themeCenter": "主題中心",
       "shortcuts": "鍵盤快速鍵",
       "pluginCenter": "插件中心",
       "extensionMarket": "擴充市場",
+      "pluginStore": "插件商店",
       "updates": "檢查更新",
       "about": "關於應用",
       "languageCenter": "語言中心",
-      "envScan": "環境掃描",
-      "envInstall": "環境安裝",
-      "help": "幫助文檔",
-      "whatsNew": "最新動態",
+      "envScan": "本機環境掃描",
+      "envInstall": "本機環境安裝",
+      "help": "幫助文件",
+      "whatsNew": "最新變化",
       "license": "授權條款",
       "runtimeManager": "執行時管理",
       "unknown": "未知"
     },
+    "anchor": {
+      "pageNav": "本頁導覽",
+      "scrollTo": "捲動到",
+      "lightThemes": "亮色主題",
+      "darkThemes": "暗色主題",
+      "autoMode": "自動模式",
+      "naturalThemes": "自然主題",
+      "warmThemes": "暖色主題",
+      "coolThemes": "冷色主題",
+      "neutralThemes": "中性主題",
+      "cloudThemes": "雲端主題",
+      "groupLocal": "本機",
+      "groupCloud": "雲端",
+      "cloudPlugins": "雲端插件",
+      "cloudPacks": "雲端語言包",
+      "localThemes": "本機主題",
+      "localPlugins": "本機插件",
+      "localPacks": "本機語言包",
+      "interfaceLanguage": "介面語言",
+      "globalOps": "全域操作",
+      "windowOps": "視窗操作",
+      "navigation": "頁面導覽",
+      "viewZoom": "檢視縮放",
+      "tabsOps": "分頁操作",
+      "pageJump": "頁面跳轉",
+      "currentVersion": "當前版本",
+      "checkStatus": "檢查狀態",
+      "releaseNotes": "發布說明",
+      "updateChannel": "更新通道",
+      "marketPlugins": "插件",
+      "marketThemes": "主題",
+      "marketLocales": "語言包",
+      "mainCategories": "主分類"
+    },
+    "markdownToc": {
+      "title": "目錄",
+      "empty": "暫無標題"
+    },
     "common": {
-      "breadcrumb": "麵包屑導航",
-      "more": "更多",
+      "comingSoon": "即將推出",
+      "notImplemented": "該模組尚未實作，敬請期待。",
+      "experimental": "實驗性",
+      "coreFunction": "核心功能",
+      "interfaceEnhancement": "介面增強",
+      "systemFunction": "系統功能",
+      "onThisPage": "本頁導覽",
+      "breadcrumb": "麵包屑導覽",
       "close": "關閉",
-      "search": "搜尋",
-      "refresh": "重新整理",
-      "noData": "暫無資料",
-      "enableAll": "全部啟用",
-      "disableAll": "全部停用",
-      "goToMarket": "前往擴充市場",
-      "selectDirectory": "選擇目錄",
-      "clearPath": "清空",
-      "openInFolder": "在檔案管理員中開啟",
-      "confirm": "確認",
-      "cancel": "取消",
-      "favoriteHome": "主目錄",
-      "favoriteDocuments": "文件",
-      "favoriteDownloads": "下載",
-      "viewModeSingle": "單欄",
-      "viewModeDouble": "雙欄",
-      "viewModeTriple": "三欄",
+      "more": "更多",
+      "back": "返回",
       "originAll": "全部",
       "originOfficial": "官方",
       "originCommunity": "社群",
+      "goToMarket": "前往擴充市場",
+      "filterTitle": "篩選",
+      "enableAll": "全部啟用",
+      "disableAll": "全部停用",
+      "viewModeSingle": "單欄",
+      "viewModeDouble": "雙欄",
+      "viewModeTriple": "三欄",
       "cloudEmptyThemeTitle": "尚未下載任何雲端主題",
       "cloudEmptyThemeDesc": "前往擴充市場瀏覽並下載主題，下載後可在此切換。",
       "cloudEmptyLocaleTitle": "尚未下載任何雲端語言包",
@@ -86,95 +685,417 @@
       "cloudEmptyEnvTitle": "未偵測到環境",
       "cloudEmptyEnvDesc": "請確認相關執行時已正確安裝並加入 PATH。",
       "cloudEmptyGenericTitle": "暫無資料",
-      "cloudEmptyGenericDesc": "目前列表為空，請稍後重試或重新整理。",
+      "cloudEmptyGenericDesc": "當前列表為空，請稍後重試或重新整理。",
+      "updateAvailable": "可更新",
+      "latestVersion": "最新版本",
+      "localVersion": "本機版本",
+      "search": "搜尋",
+      "noData": "暫無資料",
+      "selectDirectory": "選擇目錄",
+      "remark": "備註",
+      "version": "版本",
+      "path": "路徑",
+      "copyPath": "複製路徑",
+      "openInExplorer": "在檔案總管中顯示",
+      "openInTerminal": "在終端機中開啟",
+      "copied": "已複製",
+      "copyFailed": "複製失敗",
+      "delete": "刪除",
+      "deleteConfirm": "確認刪除？",
+      "deleteSuccess": "刪除成功",
+      "deleteFailed": "刪除失敗",
+      "uninstall": "解除安裝",
+      "uninstallConfirm": "確認解除安裝此語言包？",
+      "uninstallSuccess": "已解除安裝",
+      "uninstallFailed": "解除安裝失敗",
       "pathPickerPlaceholder": "選擇目錄或拖入資料夾...",
       "pathPickerInvalid": "路徑不存在",
-      "uninstallFailed": "解除安裝失敗",
-      "uninstallSuccess": "已解除安裝"
+      "pathPickerInvalidNotDir": "路徑不存在或不是目錄",
+      "pathPickerValidating": "校驗中",
+      "pathPickerValid": "有效",
+      "systemPicker": "系統選擇器",
+      "refreshTree": "重新整理",
+      "goUp": "上層目錄",
+      "openInFolder": "在檔案管理員中開啟",
+      "clearPath": "清空",
+      "refresh": "重新整理",
+      "favoriteHome": "主目錄",
+      "favoriteDocuments": "文件",
+      "favoriteDownloads": "下載",
+      "confirm": "確定",
+      "cancel": "取消",
+      "updateNotice": {
+        "plugin": "插件",
+        "theme": "主題",
+        "locale": "語言包",
+        "cta": "前往擴充中心更新",
+        "message": "有 {count} 個{type}可更新"
+      }
     },
-    "page": {
-      "home": {
-        "heroTitle": "許柚環境時刻",
-        "heroSubtitle": "開發者的一站式環境管理",
-        "startScan": "開始掃描"
+    "shortcut": {
+      "action": {
+        "scan-all": {
+          "label": "掃描全部",
+          "description": "觸發本機環境掃描"
+        },
+        "minimize-window": {
+          "label": "最小化視窗",
+          "description": "最小化主視窗"
+        },
+        "close-window": {
+          "label": "關閉視窗",
+          "description": "關閉主視窗"
+        },
+        "toggle-fullscreen": {
+          "label": "切換全螢幕",
+          "description": "進入/退出全螢幕模式"
+        },
+        "open-settings": {
+          "label": "開啟設定",
+          "description": "跳轉到通用設定頁面"
+        },
+        "open-theme-center": {
+          "label": "開啟主題中心",
+          "description": "跳轉到主題中心頁面"
+        },
+        "open-language": {
+          "label": "開啟語言中心",
+          "description": "跳轉到語言中心頁面"
+        },
+        "open-about": {
+          "label": "開啟關於",
+          "description": "跳轉到關於應用頁面"
+        },
+        "open-help": {
+          "label": "開啟幫助",
+          "description": "跳轉到幫助文件"
+        },
+        "reload-page": {
+          "label": "重新整理頁面",
+          "description": "重新載入當前頁面"
+        },
+        "zoom-in": {
+          "label": "放大",
+          "description": "增大介面縮放"
+        },
+        "zoom-out": {
+          "label": "縮小",
+          "description": "減小介面縮放"
+        },
+        "reset-zoom": {
+          "label": "重設縮放",
+          "description": "恢復預設縮放"
+        },
+        "new-tab": {
+          "label": "新建分頁",
+          "description": "開啟首頁作為新分頁"
+        },
+        "close-tab": {
+          "label": "關閉分頁",
+          "description": "關閉當前分頁"
+        },
+        "next-tab": {
+          "label": "下一個分頁",
+          "description": "切換到下一個分頁"
+        },
+        "prev-tab": {
+          "label": "上一個分頁",
+          "description": "切換到上一個分頁"
+        },
+        "open-updates": {
+          "label": "開啟檢查更新",
+          "description": "跳轉到檢查更新頁面"
+        },
+        "open-plugin-store": {
+          "label": "開啟插件商店",
+          "description": "跳轉到插件商店頁面"
+        },
+        "open-whats-new": {
+          "label": "開啟最新變化",
+          "description": "跳轉到最新變化頁面"
+        },
+        "open-env-install": {
+          "label": "開啟環境安裝",
+          "description": "跳轉到環境安裝頁面"
+        }
+      }
+    },
+    "titlebar": {
+      "logPluginDisabled": "日誌收集插件未啟用",
+      "logsOpened": "已開啟日誌目錄",
+      "diagnosticSaved": "診斷報告已儲存：{path}",
+      "collectFailed": "收集診斷資料失敗",
+      "menu": "選單"
+    },
+    "settings": {
+      "position": {
+        "topLeft": "左上角",
+        "topRight": "右上角",
+        "bottomLeft": "左下角",
+        "bottomRight": "右下角"
+      }
+    },
+    "theme": {
+      "sakuraPink": "櫻花粉",
+      "lavenderMist": "薰衣草",
+      "matchaFog": "抹茶霧灰",
+      "crimsonNight": "緋紅夜",
+      "arcticFrost": "極地霜白",
+      "volcanicAsh": "火山灰",
+      "default": "預設",
+      "unavailableFallback": "主題 {id} 不可用，已回退到預設主題",
+      "mode": {
+        "dark": "暗色",
+        "light": "亮色"
       },
-      "envScan": {
-        "eyebrow": "環境掃描",
-        "title": "本機環境掃描",
-        "subtitle": "掃描你電腦上的執行時環境與套件管理器"
+      "def": {
+        "morning-minimal": {
+          "name": "Morning Minimal",
+          "description": "暖米白底色 + 竹綠強調色，晨光般清新"
+        },
+        "bamboo-green": {
+          "name": "Bamboo Green",
+          "description": "深竹綠基調，沉穩專注"
+        },
+        "amber-warm": {
+          "name": "Amber Warm",
+          "description": "暖琥珀色調，溫馨柔和"
+        },
+        "rose-mist": {
+          "name": "Rose Mist",
+          "description": "玫瑰薄霧，溫柔雅緻"
+        },
+        "ocean-blue": {
+          "name": "Ocean Blue",
+          "description": "海洋藍調，沉靜廣闊"
+        },
+        "sand-dune": {
+          "name": "Sand Dune",
+          "description": "沙丘暖棕，自然質樸"
+        },
+        "light": {
+          "name": "Light",
+          "description": "標準淺色主題"
+        },
+        "sakura-pink": {
+          "name": "櫻花粉",
+          "description": "柔和溫暖的櫻花粉色"
+        },
+        "lavender-mist": {
+          "name": "薰衣草",
+          "description": "寧靜淡雅的薰衣草紫"
+        },
+        "matcha-fog": {
+          "name": "抹茶霧灰",
+          "description": "沉穩克制的抹茶霧灰"
+        },
+        "arctic-frost": {
+          "name": "極地霜白",
+          "description": "清冽冰藍的極地霜色"
+        },
+        "dark": {
+          "name": "Dark",
+          "description": "標準深色護眼主題"
+        },
+        "slate-dark": {
+          "name": "Slate Dark",
+          "description": "石板藍灰深色，冷靜專注"
+        },
+        "midnight-forest": {
+          "name": "Midnight Forest",
+          "description": "午夜森林深綠，沉靜神秘"
+        },
+        "crimson-night": {
+          "name": "緋紅夜",
+          "description": "深邃夜色中的緋紅"
+        },
+        "volcanic-ash": {
+          "name": "火山灰",
+          "description": "溫暖火山灰中的琥珀"
+        },
+        "mint-breeze": {
+          "name": "薄荷微風",
+          "description": "清新薄荷綠，明亮通透"
+        },
+        "sunset-glow": {
+          "name": "夕陽餘暉",
+          "description": "暖夕陽橙紅，溫馨柔和"
+        },
+        "olive-grove": {
+          "name": "橄欖園",
+          "description": "橄欖園自然質樸"
+        },
+        "coral-sunset": {
+          "name": "珊瑚日落",
+          "description": "珊瑚日落，熱情明朗"
+        },
+        "cyber-cyan": {
+          "name": "賽博青",
+          "description": "賽博青藍，未來科技"
+        },
+        "deep-purple": {
+          "name": "深紫夢幻",
+          "description": "深紫夢幻，神秘優雅"
+        },
+        "graphite-dark": {
+          "name": "石墨深灰",
+          "description": "石墨深灰，中性專注"
+        },
+        "forest-canopy": {
+          "name": "林冠深處",
+          "description": "林冠深處，沉靜自然"
+        },
+        "ember-glow": {
+          "name": "餘燼輝光",
+          "description": "餘燼在暗夜中微微輝光，溫暖深沉"
+        },
+        "terracotta-night": {
+          "name": "赤陶夜",
+          "description": "赤陶暖橙融入夜色，質樸溫潤"
+        },
+        "mocha-dusk": {
+          "name": "摩卡暮色",
+          "description": "摩卡咖啡般的暮色，醇厚寧靜"
+        },
+        "paper-white": {
+          "name": "紙張白",
+          "description": "素淨紙白，極簡中性"
+        },
+        "fog-gray": {
+          "name": "霧灰",
+          "description": "迷霧般的灰調，沉靜克制"
+        },
+        "cerulean-sky": {
+          "name": "天青",
+          "description": "晴朗天青色，澄澈開闊"
+        },
+        "glacier-blue": {
+          "name": "冰川藍",
+          "description": "冰川淡藍，清冽純粹"
+        },
+        "deep-moss": {
+          "name": "深苔蘚",
+          "description": "深苔蘚綠，幽暗自然"
+        },
+        "sage-mist": {
+          "name": "鼠尾草霧",
+          "description": "鼠尾草綠霧，柔和草本"
+        },
+        "steel-blue-dark": {
+          "name": "鋼藍深色",
+          "description": "鋼藍深色，冷靜理性"
+        },
+        "peach-cream": {
+          "name": "蜜桃米",
+          "description": "蜜桃奶油色，甜美柔和"
+        },
+        "misty-mountain": {
+          "name": "雲霧山巒",
+          "description": "晨霧山巒背景，溫暖金光，寧靜悠遠"
+        },
+        "starry-night": {
+          "name": "星夜",
+          "description": "深邃星夜背景，夢幻宇宙，沉靜神秘"
+        },
+        "ink-wash": {
+          "name": "水墨",
+          "description": "水墨意境背景，竹影薄霧，素雅留白"
+        },
+        "auto": {
+          "name": "Auto",
+          "description": "跟隨系統主題（亮/暗自動切換）"
+        },
+        "meadow-light": {
+          "name": "草甸淺色",
+          "description": "自然系淺色主題，靈感來自清晨草甸的柔和綠意與暖光，長時間使用不刺眼。"
+        },
+        "sunset-orchard": {
+          "name": "日落果園",
+          "description": "暖色亮色主題，靈感來自日落時分果園的金橙與暖紅，溫潤舒適。"
+        },
+        "midnight-iris": {
+          "name": "午夜鳶尾",
+          "description": "冷色暗色主題，靈感來自午夜鳶尾花的深紫與靛藍，沉靜專注。"
+        }
+      }
+    },
+    "notification": {
+      "upToDateTitle": "已是最新版本",
+      "upToDateContent": "當前 v{version} 是最新發布版本",
+      "checkFailedTitle": "檢查更新失敗",
+      "checkFailedContent": "請檢查網路連線後重試"
+    },
+    "plugin": {
+      "notEnabledTitle": "插件未啟用",
+      "notEnabledDesc": "此功能依賴的插件未啟用，請前往插件中心開啟",
+      "goToPluginCenter": "前往插件中心",
+      "categoryCore": "核心功能",
+      "categoryUi": "介面增強",
+      "categorySystem": "系統功能",
+      "categoryExperimental": "實驗性",
+      "restoreRecommended": "恢復推薦",
+      "banner": {
+        "title": "插件未啟用",
+        "desc": "此功能依賴的插件未啟用，請前往插件中心開啟",
+        "goToPluginCenter": "前往插件中心",
+        "disabled": "已停用"
       },
-      "envInstall": {
-        "eyebrow": "安裝",
-        "title": "本機環境安裝",
-        "subtitle": "常用執行時與開發工具的安裝指令與下載入口"
-      },
-      "runtimeManager": {
-        "eyebrow": "執行時管理",
-        "title": "執行時版本管理",
-        "subtitle": "統一管理本機 JDK / Node.js / Python 安裝、設為預設、新增自訂路徑或線上下載"
-      },
-      "themeCenter": {
-        "eyebrow": "主題",
-        "title": "主題中心",
-        "subtitle": "為你的工作空間挑選一個合適的配色"
-      },
-      "plugin": {
-        "eyebrow": "插件",
-        "title": "插件中心",
-        "subtitle": "管理應用功能模組"
-      },
-      "extensionMarket": {
-        "eyebrow": "Marketplace",
-        "title": "擴充市場",
-        "subtitle": "瀏覽並下載插件、主題與語言包，擴充你的許柚環境時刻。"
-      },
-      "languageCenter": {
-        "eyebrow": "語言",
-        "title": "語言中心",
-        "subtitle": "選擇應用介面語言",
-        "interfaceLanguage": "介面語言",
-        "localTab": "本機",
-        "cloudTab": "雲端",
-        "localPacks": "本機語言包",
-        "enable": "啟用",
-        "disable": "停用"
-      },
-      "settings": {
-        "eyebrow": "設置",
-        "title": "設置",
-        "subtitle": "個人化你的應用體驗"
-      },
-      "updates": {
-        "eyebrow": "更新",
-        "title": "檢查更新",
-        "subtitle": "查看並升級到最新版本"
-      },
-      "about": {
-        "version": "版本",
-        "author": "作者",
-        "license": "授權條款",
-        "repository": "儲存庫",
-        "homepage": "首頁"
-      },
-      "help": {
-        "eyebrow": "幫助",
-        "title": "幫助文檔",
-        "subtitle": "了解應用功能與使用方法"
-      },
-      "whatsNew": {
-        "eyebrow": "更新",
-        "title": "最新動態",
-        "subtitle": "查看版本更新內容"
-      },
-      "shortcuts": {
-        "eyebrow": "快速鍵",
-        "title": "鍵盤快速鍵",
-        "subtitle": "自訂快速鍵綁定"
-      },
-      "license": {
-        "eyebrow": "法律",
-        "title": "MIT 開源授權條款",
-        "subtitle": "本應用隨附的開源授權條款全文"
+      "def": {
+        "envScanner": {
+          "name": "本機環境掃描",
+          "description": "偵測系統中已安裝的執行時環境（Node.js、Python、Java 等）"
+        },
+        "packageManagerDetector": {
+          "name": "套件管理器偵測",
+          "description": "偵測 npm、pnpm、yarn、pip、cargo 等套件管理器"
+        },
+        "themeSwitcher": {
+          "name": "主題切換",
+          "description": "提供多套配色方案與暗色模式支援"
+        },
+        "shortcutManager": {
+          "name": "快速鍵管理",
+          "description": "自訂全域與應用快速鍵綁定"
+        },
+        "notificationSystem": {
+          "name": "通知系統",
+          "description": "應用內通知與系統通知整合"
+        },
+        "logCollector": {
+          "name": "日誌收集",
+          "description": "收集應用診斷資料與日誌匯出"
+        },
+        "autoUpdater": {
+          "name": "自動更新",
+          "description": "自動下載並安裝應用更新（實驗性）"
+        },
+        "cloudSync": {
+          "name": "雲端同步",
+          "description": "將設定與掃描結果同步到雲端（即將推出）"
+        },
+        "envInstaller": {
+          "name": "環境安裝",
+          "description": "線上安裝與升級執行時環境（Node.js、Python 等）"
+        },
+        "repoCacheScanner": {
+          "name": "本機儲存庫與快取",
+          "description": "掃描 android/gradle/maven/pip/yarn/npm/pnpm/bun 等本機儲存庫與快取目錄"
+        },
+        "globalPackagesScanner": {
+          "name": "全域套件管理",
+          "description": "檢視 npm/yarn/pnpm/cnpm/bun 全域安裝的套件並檢查更新"
+        },
+        "projectPackagesScanner": {
+          "name": "專案套件管理",
+          "description": "掃描指定專案的 package.json 依賴並檢查更新"
+        }
+      }
+    },
+    "tray": {
+      "tooltip": "許柚環境時刻",
+      "menu": {
+        "show": "顯示主視窗",
+        "quit": "退出"
       }
     }
   }
