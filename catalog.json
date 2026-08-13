@@ -81,7 +81,10 @@
       "mode": "light",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/themes/bamboo-ink-wash/manifest.json",
       "origin": "official",
-      "swatches": ["#f5f3ee", "#5a6b5a", "#2c3327", "#d9d4cc"]
+      "swatches": ["#f5f3ee", "#5a6b5a", "#2c3327", "#d9d4cc"],
+      "background": {
+        "image": "background.png"
+      }
     }
   ],
   "locales": [
