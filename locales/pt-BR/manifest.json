@@ -3,7 +3,7 @@
   "code": "pt-BR",
   "nativeName": "Português (Brasil)",
   "flag": "🇧🇷",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "XuYou",
   "origin": "official",
   "description": "Português brasileiro.",
@@ -15,6 +15,7 @@
       "envScan": "Scan de Ambiente",
       "envInstall": "Instalar Ambiente",
       "runtimeManager": "Gerenciador de Runtime",
+      "npmRegistry": "Gerenciador de Registry NPM",
       "themeCenter": "Centro de Temas",
       "pluginCenter": "Centro de Plugins",
       "extensionMarket": "Marketplace de Extensões",
@@ -78,6 +79,7 @@
         "tabGlobalPackages": "Pacotes Globais",
         "tabProjectPackages": "Pacotes do Projeto",
         "tabDashboard": "Painel",
+        "registryManager": "Gerenciador visual de registry npm",
         "dashboard": {
           "kpiRuntimes": "Runtimes",
           "kpiPackageManagers": "Gerenciadores de Pacotes",
@@ -144,11 +146,19 @@
           "emptyDesc": "Clique em \"Atualizar Versões Mais Recentes\" para obter informações dos pacotes",
           "cancel": "Cancelar",
           "scan": "Escanear",
-          "selectDirectory": "Selecionar Diretório"
+          "selectDirectory": "Selecionar Diretório",
+          "runUpdateInTerminal": "Executar atualização no terminal",
+          "runReinstallInTerminal": "Executar reinstalação no terminal",
+          "runUninstallInTerminal": "Executar desinstalação no terminal",
+          "openedTerminal": "Terminal aberto, pressione Enter para executar"
         },
         "projectPackages": {
           "emptyTitle": "Sem dados de pacotes do projeto",
-          "emptyDesc": "Clique no botão acima para escanear o package.json do projeto"
+          "emptyDesc": "Clique no botão acima para escanear o package.json do projeto",
+          "runUpdateInTerminal": "Executar atualização no terminal",
+          "runReinstallInTerminal": "Executar reinstalação no terminal",
+          "runUninstallInTerminal": "Executar desinstalação no terminal",
+          "openedTerminal": "Terminal aberto, pressione Enter para executar"
         },
         "group": {
           "count": "{count} itens"
@@ -320,6 +330,12 @@
         "languageDesc": "Escolha o idioma do aplicativo",
         "fontSize": "Tamanho da Fonte",
         "fontSizeDesc": "Tamanho base global da fonte",
+        "packageManager": "Gerenciador de Pacotes",
+        "packageManagerDesc": "Usado para gerar comandos de gerenciamento de pacotes do projeto",
+        "nodePackageManager": "Gerenciador de Pacotes Node.js",
+        "packageManagerNotScannedHint": "Vá para \"Scan de Ambiente\" executar o scan para detectar gerenciadores de pacotes disponíveis",
+        "npmRegistryManager": "Gerenciador visual de registry npm",
+        "npmRegistryManagerDesc": "Ver registry oficial npm e mirrors nacionais",
         "theme": "Tema",
         "themeDesc": "Claro / Escuro / Automático",
         "plugins": "Plugins",
@@ -593,6 +609,21 @@
         "copy": "Copiar Texto Completo",
         "copied": "Copiado",
         "viewSource": "Ver Fonte no GitHub"
+      },
+      "registryManager": {
+        "eyebrow": "Registry NPM",
+        "title": "Gerenciador visual de registry npm",
+        "subtitle": "Ver registry oficial npm e mirrors nacionais, gerenciar registry dos gerenciadores de pacotes",
+        "availableSources": "Registries disponíveis",
+        "currentRegistries": "Registries atuais dos gerenciadores de pacotes",
+        "official": "Oficial",
+        "mirror": "Mirror",
+        "custom": "Personalizado",
+        "unknown": "Desconhecido",
+        "copyUrl": "Copiar URL",
+        "copied": "Copiado",
+        "openInBrowser": "Abrir no navegador",
+        "emptyHint": "Nenhum gerenciador de pacotes Node.js detectado. Vá para \"Scan de Ambiente\" executar o scan."
       }
     },
     "breadcrumb": {
@@ -612,6 +643,7 @@
       "whatsNew": "Novidades",
       "license": "Licença",
       "runtimeManager": "Gerenciador de Runtime",
+      "npmRegistry": "Gerenciador de Registry NPM",
       "unknown": "Desconhecido"
     },
     "anchor": {

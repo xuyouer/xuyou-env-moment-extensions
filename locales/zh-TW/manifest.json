@@ -3,7 +3,7 @@
   "code": "zh-TW",
   "nativeName": "繁體中文",
   "flag": "🇹🇼",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "XuYou",
   "origin": "official",
   "description": "繁體中文（台灣）語言包。",
@@ -15,6 +15,7 @@
       "envScan": "本機環境掃描",
       "envInstall": "本機環境安裝",
       "runtimeManager": "執行時管理",
+      "npmRegistry": "NPM 源管理",
       "themeCenter": "主題中心",
       "pluginCenter": "插件中心",
       "extensionMarket": "擴充市場",
@@ -78,6 +79,7 @@
         "tabGlobalPackages": "全域套件管理",
         "tabProjectPackages": "專案套件管理",
         "tabDashboard": "資料看板",
+        "registryManager": "npm 源視覺化管理",
         "dashboard": {
           "kpiRuntimes": "執行時",
           "kpiPackageManagers": "套件管理器",
@@ -132,6 +134,10 @@
           "copiedReinstallCmd": "已複製重裝指令",
           "copyUninstallCmd": "複製解除安裝指令",
           "copiedUninstallCmd": "已複製解除安裝指令",
+          "runUpdateInTerminal": "在終端機執行更新",
+          "runReinstallInTerminal": "在終端機執行重新安裝",
+          "runUninstallInTerminal": "在終端機執行解除安裝",
+          "openedTerminal": "已開啟終端機，請確認執行指令",
           "projectPackages": "專案套件",
           "latestVersion": "最新版本",
           "localVersion": "本機版本",
@@ -148,7 +154,11 @@
         },
         "projectPackages": {
           "emptyTitle": "暫無專案套件資料",
-          "emptyDesc": "點擊上方按鈕掃描專案 package.json"
+          "emptyDesc": "點擊上方按鈕掃描專案 package.json",
+          "runUpdateInTerminal": "在終端機執行更新",
+          "runReinstallInTerminal": "在終端機執行重新安裝",
+          "runUninstallInTerminal": "在終端機執行解除安裝",
+          "openedTerminal": "已開啟終端機，請確認執行指令"
         },
         "group": {
           "count": "{count} 個"
@@ -320,6 +330,12 @@
         "languageDesc": "選擇應用介面語言",
         "fontSize": "字型大小",
         "fontSizeDesc": "全域基礎字級",
+        "packageManager": "套件管理器",
+        "packageManagerDesc": "用於產生專案套件管理指令",
+        "nodePackageManager": "Node.js 套件管理器",
+        "packageManagerNotScannedHint": "請先前往「本機環境掃描」執行掃描以偵測可用的套件管理器",
+        "npmRegistryManager": "npm 源視覺化管理",
+        "npmRegistryManagerDesc": "檢視 npm 官方源與國內鏡像源",
         "theme": "主題",
         "themeDesc": "淺色 / 深色 / 跟隨系統",
         "plugins": "插件",
@@ -593,6 +609,21 @@
         "copy": "複製全文",
         "copied": "已複製",
         "viewSource": "在 GitHub 查看原始檔"
+      },
+      "registryManager": {
+        "eyebrow": "NPM 源",
+        "title": "npm 源視覺化管理",
+        "subtitle": "檢視 npm 官方源與國內鏡像源，管理套件管理器 registry",
+        "availableSources": "可用源",
+        "currentRegistries": "當前套件管理器源",
+        "official": "官方源",
+        "mirror": "鏡像源",
+        "custom": "自訂源",
+        "unknown": "未知",
+        "copyUrl": "複製 URL",
+        "copied": "已複製",
+        "openInBrowser": "在瀏覽器開啟",
+        "emptyHint": "未偵測到 Node.js 套件管理器，請前往「本機環境掃描」執行掃描"
       }
     },
     "breadcrumb": {
@@ -612,6 +643,7 @@
       "whatsNew": "最新變化",
       "license": "授權條款",
       "runtimeManager": "執行時管理",
+      "npmRegistry": "NPM 源管理",
       "unknown": "未知"
     },
     "anchor": {

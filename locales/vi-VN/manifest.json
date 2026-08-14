@@ -3,7 +3,7 @@
   "code": "vi-VN",
   "nativeName": "Tiếng Việt",
   "flag": "🇻🇳",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "XuYou",
   "origin": "official",
   "description": "Tiếng Việt.",
@@ -32,7 +32,8 @@
       "about": "Giới thiệu",
       "aboutApp": "Giới thiệu XuYou Env Moment",
       "checkUpdates": "Kiểm tra Cập nhật",
-      "github": "GitHub"
+      "github": "GitHub",
+      "npmRegistry": "Quản lý Registry NPM"
     },
     "page": {
       "home": {
@@ -78,6 +79,7 @@
         "tabGlobalPackages": "Gói toàn cục",
         "tabProjectPackages": "Gói dự án",
         "tabDashboard": "Bảng điều khiển",
+        "registryManager": "Quản lý Registry NPM",
         "dashboard": {
           "kpiRuntimes": "Runtime",
           "kpiPackageManagers": "Trình quản lý gói",
@@ -144,11 +146,19 @@
           "emptyDesc": "Nhấn \"Làm mới phiên bản mới nhất\" để lấy thông tin gói",
           "cancel": "Hủy",
           "scan": "Quét",
-          "selectDirectory": "Chọn thư mục"
+          "selectDirectory": "Chọn thư mục",
+          "runUpdateInTerminal": "Chạy cập nhật trong terminal",
+          "runReinstallInTerminal": "Chạy cài lại trong terminal",
+          "runUninstallInTerminal": "Chạy gỡ cài đặt trong terminal",
+          "openedTerminal": "Đã mở terminal, nhấn Enter để thực thi"
         },
         "projectPackages": {
           "emptyTitle": "Không có dữ liệu gói dự án",
-          "emptyDesc": "Nhấn nút phía trên để quét package.json của dự án"
+          "emptyDesc": "Nhấn nút phía trên để quét package.json của dự án",
+          "runUpdateInTerminal": "Chạy cập nhật trong terminal",
+          "runReinstallInTerminal": "Chạy cài lại trong terminal",
+          "runUninstallInTerminal": "Chạy gỡ cài đặt trong terminal",
+          "openedTerminal": "Đã mở terminal, nhấn Enter để thực thi"
         },
         "group": {
           "count": "{count} mục"
@@ -320,6 +330,12 @@
         "languageDesc": "Chọn ngôn ngữ giao diện ứng dụng",
         "fontSize": "Cỡ chữ",
         "fontSizeDesc": "Cỡ chữ cơ sở toàn cục",
+        "packageManager": "Trình quản lý gói",
+        "packageManagerDesc": "Dùng để tạo lệnh quản lý gói dự án",
+        "nodePackageManager": "Trình quản lý gói Node.js",
+        "packageManagerNotScannedHint": "Vui lòng đến \"Quét Môi trường\" thực hiện quét để phát hiện trình quản lý gói khả dụng",
+        "npmRegistryManager": "Quản lý Registry NPM",
+        "npmRegistryManagerDesc": "Xem registry chính thức npm và mirror trong nước",
         "theme": "Giao diện",
         "themeDesc": "Sáng / Tối / Theo hệ thống",
         "plugins": "Plugin",
@@ -593,6 +609,21 @@
         "copy": "Sao chép toàn bộ",
         "copied": "Đã sao chép",
         "viewSource": "Xem nguồn trên GitHub"
+      },
+      "registryManager": {
+        "eyebrow": "Registry NPM",
+        "title": "Quản lý Registry NPM",
+        "subtitle": "Xem registry chính thức npm và mirror trong nước, quản lý registry của trình quản lý gói",
+        "availableSources": "Registry khả dụng",
+        "currentRegistries": "Registry hiện tại của trình quản lý gói",
+        "official": "Chính thức",
+        "mirror": "Mirror",
+        "custom": "Tùy chỉnh",
+        "unknown": "Không xác định",
+        "copyUrl": "Sao chép URL",
+        "copied": "Đã sao chép",
+        "openInBrowser": "Mở trong trình duyệt",
+        "emptyHint": "Không phát hiện trình quản lý gói Node.js. Vui lòng đến \"Quét Môi trường\" thực hiện quét."
       }
     },
     "breadcrumb": {
@@ -612,6 +643,7 @@
       "whatsNew": "Có gì mới",
       "license": "Giấy phép",
       "runtimeManager": "Quản lý Runtime",
+      "npmRegistry": "Quản lý Registry NPM",
       "unknown": "Không xác định"
     },
     "anchor": {

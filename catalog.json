@@ -92,7 +92,7 @@
       "code": "zh-TW",
       "nativeName": "繁體中文",
       "flag": "🇹🇼",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/zh-TW/manifest.json",
       "origin": "official"
@@ -101,7 +101,7 @@
       "code": "pt-BR",
       "nativeName": "Português (Brasil)",
       "flag": "🇧🇷",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/pt-BR/manifest.json",
       "origin": "official"
@@ -110,7 +110,7 @@
       "code": "vi-VN",
       "nativeName": "Tiếng Việt",
       "flag": "🇻🇳",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "XuYou",
       "downloadUrl": "https://raw.githubusercontent.com/xuyouer/xuyou-env-moment-extensions/main/locales/vi-VN/manifest.json",
       "origin": "official"
